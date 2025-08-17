@@ -18,7 +18,6 @@ def _normalize_space(text: str) -> str:
 
 
 def _split_tail_modifiers(obj_text: str) -> (str, str):
-	"""Split trailing modifiers like 'in 2020', 'on Monday', 'at X', etc."""
 	m = re.search(r"\s+(in|on|at|by|during|since|from)\s+.+$", obj_text, flags=re.IGNORECASE)
 	if not m:
 		return obj_text, ""
@@ -27,14 +26,12 @@ def _split_tail_modifiers(obj_text: str) -> (str, str):
 
 
 def _split_enumeration(text: str) -> List[str]:
-	# Split on commas or 'and' when used for coordination
-	parts = re.split(r"\s*,\s*|\s+and\s+", text)
+	parts = re.split(r"\s*,\s*|\s+and\s+|\s+or\s+", text)
 	return [p for p in (t.strip() for t in parts) if p]
 
 
 def _extract_triplet_rule_based(span: str, srl_frames: Optional[Sequence[Dict[str, Any]]]) -> Optional[AtomicClaim]:
 	span = _normalize_space(span)
-	# Use SRL if provided (expecting ARG0=subject, V=predicate, ARG1=object)
 	if srl_frames:
 		for fr in srl_frames:
 			roles = fr.get("roles") or {}
@@ -42,9 +39,15 @@ def _extract_triplet_rule_based(span: str, srl_frames: Optional[Sequence[Dict[st
 			pred = roles.get("V") or roles.get("predicate")
 			obj = roles.get("ARG1") or roles.get("object")
 			if subj and pred and obj:
-				text = f"{subj} {pred} {obj}"
-				return AtomicClaim(text=text, subject=subj, predicate=pred, object=obj)
-	# Naive regex fallback: subject + predicate + object(+mods)
+				return AtomicClaim(text=f"{subj} {pred} {obj}", subject=subj, predicate=pred, object=obj)
+	# Prefer explicit patterns for buy/acquire verbs
+	m = re.match(r"^(?P<subj>[^,;]+?)\s+(?P<verb>bought|acquired|purchased)\s+(?P<obj>.+)$", span, flags=re.IGNORECASE)
+	if m:
+		subj = _normalize_space(m.group("subj"))
+		pred = m.group("verb").lower()
+		obj = _normalize_space(m.group("obj"))
+		return AtomicClaim(text=f"{subj} {pred} {obj}", subject=subj, predicate=pred, object=obj)
+	# Generic fallback: subject + predicate + object
 	m = re.match(r"^(?P<subj>[^,;]+?)\s+(?P<pred>\b\w+(?:[\s-]+\w+){0,2})\s+(?P<obj>.+)$", span)
 	if not m:
 		return None
@@ -77,41 +80,26 @@ def _llm_atomicize(span: str) -> List[AtomicClaim]:
 		data = json.loads(content)
 		results: List[AtomicClaim] = []
 		for item in data:
-			claim = AtomicClaim(
-				text=item.get("text", ""),
-				subject=item.get("subject", ""),
-				predicate=item.get("predicate", ""),
-				object=item.get("object", ""),
-			)
-			results.append(claim)
+			results.append(AtomicClaim(text=item.get("text", ""), subject=item.get("subject", ""), predicate=item.get("predicate", ""), object=item.get("object", "")))
 		return results
 	except Exception:
 		return []
 
 
 def to_atomic(span: str, srl_frames: Optional[Sequence[Dict[str, Any]]]) -> List[AtomicClaim]:
-	"""Split a span into atomic factual claims.
-
-	1) Try rule-based using SRL roles or simple patterns. If the object contains
-	   coordination (commas/and), split into multiple claims and keep trailing
-	   modifiers (e.g., 'in 2020').
-	2) If ambiguous or nothing splits cleanly, try an LLM prompt.
-	"""
 	base = _extract_triplet_rule_based(span, srl_frames)
 	if not base:
 		llm = _llm_atomicize(span)
 		return llm or []
-	obj_core, tail = _split_tail_modifiers(base["object"]) if base.get("object") else ("", "")
+	obj_core, tail = _split_tail_modifiers(base.get("object", ""))
+	# Split coordinated objects
 	items = _split_enumeration(obj_core)
 	if len(items) <= 1:
-		# Try LLM if we couldn't split
 		llm = _llm_atomicize(span)
 		return llm or [base]
 	claims: List[AtomicClaim] = []
 	for it in items:
 		obj_text = (it + tail).strip()
 		text = f"{base['subject']} {base['predicate']} {obj_text}".strip()
-		claims.append(
-			AtomicClaim(text=text, subject=base["subject"], predicate=base["predicate"], object=obj_text)
-		)
+		claims.append(AtomicClaim(text=text, subject=base["subject"], predicate=base["predicate"], object=obj_text))
 	return claims
