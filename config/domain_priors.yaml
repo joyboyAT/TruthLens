@@ -1,0 +1,8 @@
+'who.int': 1.00
+'cdc.gov': 1.00
+'nih.gov': 0.95
+'nature.com': 0.90
+'bbc.com': 0.85
+'wikipedia.org': 0.80
+'*.blogspot.*': 0.45
+default: 0.60
