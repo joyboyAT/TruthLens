@@ -1,0 +1,72 @@
+[
+  {
+    "claim": "Climate change is caused by human activities",
+    "language": "en",
+    "category": "environment",
+    "expected_sources": ["politifact", "boom", "altnews"],
+    "keywords": ["climate change", "human activities", "global warming", "carbon emissions"]
+  },
+  {
+    "claim": "Vaccines cause autism",
+    "language": "en",
+    "category": "health",
+    "expected_sources": ["politifact", "boom", "altnews"],
+    "keywords": ["vaccines", "autism", "vaccination", "safety"]
+  },
+  {
+    "claim": "The Earth is flat",
+    "language": "en",
+    "category": "science",
+    "expected_sources": ["politifact", "boom", "altnews"],
+    "keywords": ["earth", "flat", "round", "planet", "shape"]
+  },
+  {
+    "claim": "जलवायु परिवर्तन मानवीय गतिविधियों के कारण होता है",
+    "language": "hi",
+    "category": "environment",
+    "expected_sources": ["pib", "boom", "altnews"],
+    "keywords": ["जलवायु परिवर्तन", "मानवीय गतिविधियां", "ग्लोबल वार्मिंग", "कार्बन उत्सर्जन"]
+  },
+  {
+    "claim": "टीके ऑटिज्म का कारण बनते हैं",
+    "language": "hi",
+    "category": "health",
+    "expected_sources": ["pib", "boom", "altnews"],
+    "keywords": ["टीके", "ऑटिज्म", "टीकाकरण", "सुरक्षा"]
+  },
+  {
+    "claim": "पृथ्वी चपटी है",
+    "language": "hi",
+    "category": "science",
+    "expected_sources": ["pib", "boom", "altnews"],
+    "keywords": ["पृथ्वी", "चपटी", "गोल", "ग्रह", "आकार"]
+  },
+  {
+    "claim": "जलवायू बदल मानवी कृतींमुळे होतो",
+    "language": "mr",
+    "category": "environment",
+    "expected_sources": ["pib", "boom"],
+    "keywords": ["जलवायू बदल", "मानवी कृती", "ग्लोबल वॉर्मिंग", "कार्बन उत्सर्जन"]
+  },
+  {
+    "claim": "लसी ऑटिझमचे कारण बनतात",
+    "language": "mr",
+    "category": "health",
+    "expected_sources": ["pib", "boom"],
+    "keywords": ["लसी", "ऑटिझम", "लसीकरण", "सुरक्षा"]
+  },
+  {
+    "claim": "காலநிலை மாற்றம் மனித செயல்பாடுகளால் ஏற்படுகிறது",
+    "language": "ta",
+    "category": "environment",
+    "expected_sources": ["pib", "boom"],
+    "keywords": ["காலநிலை மாற்றம்", "மனித செயல்பாடுகள்", "புவி வெப்பமயமாதல்", "கார்பன் உமிழ்வு"]
+  },
+  {
+    "claim": "தடுப்பூசிகள் ஆட்டிசம் ஏற்படுத்துகின்றன",
+    "language": "ta",
+    "category": "health",
+    "expected_sources": ["pib", "boom"],
+    "keywords": ["தடுப்பூசிகள்", "ஆட்டிசம்", "தடுப்பூசி", "பாதுகாப்பு"]
+  }
+]

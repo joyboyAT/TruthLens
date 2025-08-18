@@ -1,0 +1,218 @@
+# TruthLens Phase 3: Evidence Retrieval System Configuration
+# Copy this file to settings.yaml and update with your actual values
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  debug: false
+  cors_origins: ["*"]
+  rate_limit_per_minute: 100
+
+# Database Configuration
+database:
+  vector_db:
+    host: "localhost"
+    port: 5432
+    database: "truthlens"
+    user: "postgres"
+    password: "password"
+    pool_size: 10
+    max_overflow: 20
+    pool_timeout: 30
+  
+  bigquery:
+    project_id: "your-project-id"
+    dataset: "truthlens"
+    location: "US"
+    credentials_file: "path/to/service-account.json"
+  
+  redis:
+    host: "localhost"
+    port: 6379
+    password: ""
+    db: 0
+    max_connections: 20
+
+# Model Configuration
+models:
+  embeddings:
+    name: "intfloat/multilingual-e5-large"
+    max_length: 512
+    device: "auto"  # "cpu", "cuda", "auto"
+    batch_size: 32
+  
+  reranker:
+    name: "BAAI/bge-reranker-v2-m3"
+    max_length: 512
+    device: "auto"
+    batch_size: 16
+  
+  nli:
+    name: "microsoft/DialoGPT-medium"
+    max_length: 256
+    device: "auto"
+    batch_size: 8
+  
+  chunking:
+    name: "sentence-transformers/all-MiniLM-L6-v2"
+    chunk_size: 512
+    overlap: 50
+    min_chunk_size: 100
+
+# Cache Configuration
+cache:
+  ttl_hours: 24
+  refresh_threshold: 0.8
+  max_size: 10000
+  eviction_policy: "lru"  # "lru", "lfu", "fifo"
+  compression: true
+  persistence: true
+
+# Search Configuration
+search:
+  max_results: 100
+  min_relevance: 0.3
+  max_chunks_per_evidence: 10
+  hybrid_search_weight: 0.7  # Weight for vector vs keyword search
+  rerank_top_k: 50  # Number of results to re-rank
+
+# API Keys (Store these securely in production)
+api_keys:
+  openai: "your-openai-api-key"
+  newsapi: "your-newsapi-key"
+  wikipedia: "your-wikipedia-key"
+  google_search: "your-google-search-api-key"
+  factcheck_api: "your-factcheck-api-key"
+
+# Fact-checking Sources
+factcheck_sources:
+  pib:
+    base_url: "https://pib.gov.in"
+    enabled: true
+    rate_limit: 10  # requests per minute
+    timeout: 30
+  
+  politifact:
+    base_url: "https://www.politifact.com"
+    enabled: true
+    rate_limit: 20
+    timeout: 30
+  
+  boom:
+    base_url: "https://www.boomlive.in"
+    enabled: true
+    rate_limit: 15
+    timeout: 30
+  
+  factcheck_org:
+    base_url: "https://www.factcheck.org"
+    enabled: true
+    rate_limit: 15
+    timeout: 30
+
+# News Sources
+news_sources:
+  newsapi:
+    enabled: true
+    rate_limit: 100
+    max_articles_per_query: 100
+  
+  reuters:
+    enabled: true
+    rate_limit: 50
+    max_articles_per_query: 50
+  
+  ap:
+    enabled: true
+    rate_limit: 50
+    max_articles_per_query: 50
+
+# Wikipedia Configuration
+wikipedia:
+  enabled: true
+  language: "en"
+  max_results: 20
+  rate_limit: 30
+  timeout: 30
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/retrieval.log"
+  max_size: "100MB"
+  backup_count: 5
+  console: true
+  file: true
+
+# Monitoring and Metrics
+monitoring:
+  enabled: true
+  prometheus_port: 9090
+  health_check_interval: 30
+  metrics_export_interval: 60
+
+# Pipeline Configuration
+pipeline:
+  max_workers: 4
+  batch_size: 10
+  timeout: 300  # 5 minutes
+  retry_attempts: 3
+  retry_delay: 5
+
+# Deduplication Configuration
+deduplication:
+  enabled: true
+  similarity_threshold: 0.85
+  min_cluster_size: 2
+  max_cluster_size: 100
+  algorithm: "hdbscan"  # "hdbscan", "dbscan", "agglomerative"
+
+# Scoring Configuration
+scoring:
+  weights:
+    relevance: 0.4
+    freshness: 0.2
+    source: 0.4
+  
+  freshness_decay:
+    half_life_days: 30
+    min_score: 0.1
+  
+  source_trust:
+    fact_checking: 0.95
+    government: 0.90
+    academic: 0.85
+    news: 0.70
+    social_media: 0.30
+    blog: 0.50
+
+# Rate Limiting
+rate_limiting:
+  enabled: true
+  default_limit: 100  # requests per minute
+  burst_limit: 200
+  storage: "redis"  # "memory", "redis"
+
+# Security
+security:
+  api_key_required: true
+  allowed_origins: ["*"]
+  max_request_size: "10MB"
+  request_timeout: 300
+
+# Development Settings
+development:
+  mock_models: false
+  cache_models: true
+  profile_performance: false
+  enable_debug_endpoints: false
+
+# Testing Configuration
+testing:
+  mock_external_apis: true
+  use_test_database: true
+  seed_data: true
+  cleanup_after_tests: true

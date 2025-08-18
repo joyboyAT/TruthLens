@@ -1,0 +1,21 @@
+# Grounded Search Dependencies for TruthLens Phase 3
+
+# Core search and content extraction
+trafilatura>=7.0.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+requests>=2.32.0
+
+# Date parsing and URL handling
+dateparser>=1.2.0
+
+# RSS feed processing (optional)
+feedparser>=6.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+
+# Development
+black>=24.1.0
+flake8>=7.0.0

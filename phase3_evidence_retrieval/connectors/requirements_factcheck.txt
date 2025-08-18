@@ -1,0 +1,28 @@
+# Fact-Check Connector Dependencies for TruthLens Phase 3
+
+# Core scraping and parsing
+trafilatura>=1.8.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+feedparser>=6.0.0
+
+# Date parsing and URL handling
+dateparser>=1.2.0
+tldextract>=5.1.0
+
+# Fuzzy string matching
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.23.0
+
+# HTTP requests and async support
+requests>=2.32.0
+aiohttp>=3.9.0
+asyncio>=3.4.3
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+
+# Development
+black>=24.1.0
+flake8>=7.0.0

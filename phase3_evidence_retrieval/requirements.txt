@@ -1,0 +1,108 @@
+# Core ML and NLP Libraries
+torch>=2.3.0
+transformers>=4.42.0
+sentence-transformers>=2.5.0
+datasets>=2.20.0
+tokenizers>=0.19.0
+
+# Vector Database and Search
+pgvector>=0.2.0
+faiss-cpu>=1.7.4
+annoy>=1.17.3
+
+# Text Processing
+nltk>=3.8.1
+spacy>=3.7.0
+textstat>=0.7.3
+langdetect>=1.0.9
+python-dateutil>=2.8.2
+
+# Web Scraping and APIs
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+selenium>=4.18.0
+scrapy>=2.11.0
+wikipedia-api>=0.6.0
+newsapi-python>=0.2.6
+feedparser>=6.0.11
+trafilatura>=1.8.0
+readability-lxml>=0.8.1
+
+# Database and Storage
+psycopg2-binary>=2.9.9
+redis>=5.0.0
+pymongo>=4.6.0
+google-cloud-bigquery>=3.15.0
+sqlalchemy>=2.0.0
+
+# API Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.8.0
+httpx>=0.27.0
+
+# Data Processing
+pandas>=2.2.2
+numpy>=1.26.0
+scikit-learn>=1.4.0
+scipy>=1.12.0
+
+# Caching and Job Queues
+celery>=5.3.0
+redis>=5.0.0
+schedule>=1.2.0
+
+# Configuration and Logging
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+structlog>=24.1.0
+colorama>=0.4.6
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.12.0
+httpx>=0.27.0
+
+# Development and Utilities
+black>=24.1.0
+flake8>=7.0.0
+mypy>=1.8.0
+pre-commit>=3.6.0
+jupyter>=1.0.0
+
+# Monitoring and Metrics
+prometheus-client>=0.20.0
+structlog>=24.1.0
+
+# Image and Media Processing (for future multimedia support)
+pillow>=10.2.0
+opencv-python>=4.9.0
+
+# Additional ML Libraries
+openai>=1.34.0
+tiktoken>=0.6.0
+tqdm>=4.66.0
+
+# Security and Validation
+cryptography>=42.0.0
+validators>=0.22.0
+
+# Async and Concurrency
+aiohttp>=3.9.0
+asyncio-mqtt>=0.16.0
+
+# File and Data Formats
+openpyxl>=3.1.0
+xlrd>=2.0.1
+python-multipart>=0.0.9
+
+# Environment-specific
+# Uncomment for GPU support
+# torch[cu118]>=2.3.0
+# faiss-gpu>=1.7.4
+
+# Uncomment for development
+# ipython>=8.18.0
+# ipdb>=0.13.0
