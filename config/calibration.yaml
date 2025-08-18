@@ -1,0 +1,10 @@
+temperature: 1.2
+discrepancy_delta: 0.20
+discrepancy_jsd: 0.20
+cosine_floor: 0.65
+topk_dense: 100
+topk_rrf: 30
+topk_cross_encoder: 20
+final_k: 3
+recency_tau_days: 365
+nei_max_prob_keep: 0.45

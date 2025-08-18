@@ -1,0 +1,9 @@
+embedding_model: sentence-transformers/all-mpnet-base-v2
+nli_model_en: facebook/bart-large-mnli
+nli_model_multi: MoritzLaurer/multilingual-MiniLMv2-L6-mnli
+calibration:
+  temperature: 1.0
+embedding_model: sentence-transformers/all-mpnet-base-v2
+embedding_pooling: mean
+max_evidence: 3
+
