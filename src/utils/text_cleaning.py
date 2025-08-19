@@ -43,7 +43,8 @@ def clean_text(text: str,
     
     # Normalize whitespace
     if normalize_whitespace:
-        text = normalize_whitespace(text)
+        # Avoid shadowing the function name by parameter
+        text = globals()["normalize_whitespace"](text)
     
     # Remove special characters
     if remove_special_chars:

@@ -22,8 +22,15 @@ def _fallback_extract(sentence: str) -> List[Span]:
 	m = re.search(_FALLBACK_VERB, sentence, flags=re.IGNORECASE)
 	if not m:
 		return []
-	# expand to end of clause
-	start = max(0, sentence.rfind(' ', 0, m.start()))
+	# Expand start to include up to three preceding tokens before the verb
+	start_idx = m.start()
+	for _ in range(3):
+		prev = sentence.rfind(' ', 0, start_idx)
+		if prev == -1:
+			start_idx = 0
+			break
+		start_idx = prev
+	start = 0 if start_idx == 0 else start_idx + 1
 	end = len(sentence)
 	for p in ['.', '!', '?', ';', ',']:
 		idx = sentence.find(p, m.end())
