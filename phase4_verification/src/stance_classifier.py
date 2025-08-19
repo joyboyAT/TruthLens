@@ -4,6 +4,7 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import os
 from datetime import datetime, timezone
 
 
@@ -37,14 +38,41 @@ class StanceClassifier:
 
     def __init__(self, model_name: str = "roberta-large-mnli", device: Optional[str] = None) -> None:
         self.model_name = model_name
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-        self.model.to(self.device)
-        self.model.eval()
-        logger.info(f"Loaded NLI model {model_name} on {self.device}")
+        self._offline = os.environ.get("TRUTHLENS_FORCE_OFFLINE", "0") == "1"
+        if self._offline:
+            self.tokenizer = None  # type: ignore
+            self.model = None  # type: ignore
+            logger.warning("TRUTHLENS_FORCE_OFFLINE=1 → using offline heuristic NLI")
+        else:
+            try:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+                self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
+                self.model.to(self.device)
+                self.model.eval()
+                logger.info(f"Loaded NLI model {model_name} on {self.device}")
+            except Exception as e:
+                # Offline fallback: simple lexical heuristics for logits
+                self._offline = True
+                self.tokenizer = None  # type: ignore
+                self.model = None  # type: ignore
+                logger.warning(f"Failed to load NLI model '{model_name}'. Using offline heuristic. Error: {e}")
 
     def _predict_logits(self, premises: Sequence[str], hypotheses: Sequence[str]) -> torch.Tensor:
+        if self._offline:
+            # Heuristic logits based on keyword overlap; order [ref, nei, sup]
+            batch = []
+            for prem, hyp in zip(premises, hypotheses):
+                ps = set((prem or "").lower().split())
+                hs = set((hyp or "").lower().split())
+                inter = len(ps & hs)
+                # crude signals
+                has_neg = any(w in prem.lower() for w in ["no", "not", "fake", "false", "deny", "hoax"]) 
+                z_sup = 0.2 + 0.15 * inter
+                z_ref = (0.3 if has_neg else 0.1) + 0.1 * (len(ps) > 0)
+                z_nei = 0.2
+                batch.append([float(z_ref), float(z_nei), float(z_sup)])
+            return torch.tensor(batch, dtype=torch.float32)
         inputs = self.tokenizer(
             list(premises),
             list(hypotheses),

@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional, Tuple
 
 import yaml
+import os
 import numpy as np
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from sklearn.metrics.pairwise import cosine_similarity
@@ -55,11 +56,22 @@ def rrf_fuse(rankings: Dict[str, List[str]], k: int = 60) -> List[str]:
 def cross_encoder_rerank(claim: str, docs: List[EvidenceItem], top_k: int) -> List[EvidenceItem]:
     if not docs:
         return []
-    model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L6-v2")
-    pairs = [(claim, (d.snippet or d.full_text or d.title or "")) for d in docs]
-    scores = model.predict(pairs).tolist()
-    for d, s in zip(docs, scores):
-        d.scores["cross"] = float(s)
+    text_docs = [(d, (d.snippet or d.full_text or d.title or "")) for d in docs]
+    try:
+        model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L6-v2")
+        pairs = [(claim, txt) for _, txt in text_docs]
+        scores = model.predict(pairs).tolist()
+        for (d, _), s in zip(text_docs, scores):
+            d.scores["cross"] = float(s)
+    except Exception as e:
+        # Offline fallback: lexical overlap as proxy
+        logger.warning(f"Cross-encoder unavailable; using offline overlap heuristic. Error: {e}")
+        claim_set = set((claim or "").lower().split())
+        for d, txt in text_docs:
+            toks = set((txt or "").lower().split())
+            inter = len(claim_set & toks)
+            denom = max(1, len(claim_set) + len(toks) - inter)
+            d.scores["cross"] = float(inter / denom)
     return sorted(docs, key=lambda d: d.scores.get("cross", 0.0), reverse=True)[:top_k]
 
 
@@ -78,8 +90,31 @@ class EvidenceSelector:
     """Selects evidence snippets by fused ranking (dense + BM25) and cross-encoder reranking."""
 
     def __init__(self, model_name: str = "sentence-transformers/all-mpnet-base-v2") -> None:
-        self.model = SentenceTransformer(model_name)
-        logger.info(f"Loaded embedding model: {model_name}")
+        self._offline = os.environ.get("TRUTHLENS_FORCE_OFFLINE", "0") == "1"
+        if self._offline:
+            self.model = None
+            logger.warning("TRUTHLENS_FORCE_OFFLINE=1 → using offline embedding stub")
+        else:
+            try:
+                self.model = SentenceTransformer(model_name)
+                logger.info(f"Loaded embedding model: {model_name}")
+            except Exception as e:
+                # Offline fallback: lightweight, deterministic embedding via hashing
+                self.model = None
+                self._offline = True
+                logger.warning(f"Failed to load embedding model '{model_name}'. Falling back to offline stub. Error: {e}")
+
+    def _cheap_embed(self, texts: List[str], dim: int = 384) -> np.ndarray:
+        vecs = np.zeros((len(texts), dim), dtype=float)
+        for i, t in enumerate(texts):
+            tokens = (t or "").lower().split()
+            for tok in tokens:
+                h = hash(tok) % dim
+                vecs[i, h] += 1.0
+            n = np.linalg.norm(vecs[i])
+            if n > 0:
+                vecs[i] = vecs[i] / n
+        return vecs
 
     def _evidence_text(self, ev: EvidenceItem) -> str:
         return (ev.snippet or ev.full_text or ev.title or "").strip()
@@ -105,9 +140,13 @@ class EvidenceSelector:
         if not nonempty_idxs:
             return []
 
-        # Dense cosine
-        claim_emb = self.model.encode([claim], normalize_embeddings=True)
-        cand_embs = self.model.encode([texts[i] for i in nonempty_idxs], normalize_embeddings=True)
+        # Dense cosine (offline-friendly)
+        if self._offline:
+            claim_emb = self._cheap_embed([claim])
+            cand_embs = self._cheap_embed([texts[i] for i in nonempty_idxs])
+        else:
+            claim_emb = self.model.encode([claim], normalize_embeddings=True)
+            cand_embs = self.model.encode([texts[i] for i in nonempty_idxs], normalize_embeddings=True)
         sims = cosine_similarity(claim_emb, cand_embs)[0]
         id_by_idx = {i: evidence_list[i].id for i in nonempty_idxs}
         cosine_map: Dict[str, float] = {id_by_idx[i]: float(sims[j]) for j, i in enumerate(nonempty_idxs)}
