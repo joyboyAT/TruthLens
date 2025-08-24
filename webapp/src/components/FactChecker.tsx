@@ -42,6 +42,13 @@ interface FactCheckResult {
   manipulation_types: string[];
   overall_verdict: string;
   confidence: number;
+  input_processing?: {
+    detected_type: string;
+    original_length: number;
+    processed_length: number;
+    translated: boolean;
+    original_language: string;
+  };
 }
 
 export default function FactChecker({ onClose }: FactCheckerProps) {
@@ -54,7 +61,8 @@ export default function FactChecker({ onClose }: FactCheckerProps) {
   const inputTypes = [
     { id: 'text', icon: <FileText className="w-5 h-5" />, label: 'Text Input' },
     { id: 'url', icon: <Globe className="w-5 h-5" />, label: 'URL Analysis' },
-    { id: 'file', icon: <Camera className="w-5 h-5" />, label: 'File Upload' }
+    { id: 'image', icon: <Camera className="w-5 h-5" />, label: 'Image OCR' },
+    { id: 'file', icon: <Mic className="w-5 h-5" />, label: 'Audio/Video' }
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {

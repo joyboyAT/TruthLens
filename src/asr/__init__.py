@@ -1,6 +1,8 @@
 """
-ASR module for TruthLens.
-Handles speech recognition from audio and video content.
+Automatic Speech Recognition (ASR) for TruthLens.
+Transcribes audio and video content to text.
 """
 
-__all__ = []
+from .transcriber import transcribe_audio, transcribe_video
+
+__all__ = ["transcribe_audio", "transcribe_video"]

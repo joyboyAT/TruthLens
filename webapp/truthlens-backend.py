@@ -10,6 +10,8 @@ import logging
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
+import re
+import uuid
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -32,6 +34,10 @@ try:
     from src.evidence_retrieval.vector_search import VectorEvidenceRetriever
     from src.evidence_retrieval.grounded_search import SerperClient, BingClient
     from src.schemas.evidence import Evidence, SourceType
+    
+    # Import input processing modules
+    from src.ingestion import process_input, detect_input_type
+    from src.translation import normalize_text
     
     TRUTHLENS_AVAILABLE = True
     print("✅ TruthLens models loaded successfully")
@@ -91,23 +97,57 @@ def extract_claims_with_truthlens(text: str) -> List[Dict[str, Any]]:
         return []
     
     try:
-        # Use the actual TruthLens pipeline
-        atomic_claims = process_text(text)
+        # Import components directly to bypass strict filtering
+        from extractor.claim_extractor import extract_claim_spans
+        from extractor.atomicizer import to_atomic
+        from extractor.context import analyze_context
+        from extractor.ranker import score_claim
         
-        # Convert to the format expected by frontend
-        claims = []
-        for claim in atomic_claims:
-            claims.append({
-                "id": claim["id"],
-                "text": claim["text"],
-                "subject": claim["subject"],
-                "predicate": claim["predicate"],
-                "object": claim["object"],
-                "checkworthiness": claim["checkworthiness"],
-                "context": claim["context"]
-            })
+        # Process text directly without strict claim detection
+        results = []
         
-        return claims
+        # Split into sentences
+        def _normalize(text: str) -> str:
+            return re.sub(r"\s+", " ", (text or "").strip())
+        
+        def _split_sentences(doc: str):
+            text = _normalize(doc)
+            if not text:
+                return []
+            parts = re.split(r"(?<=[.!?])\s+", text)
+            return [p.strip() for p in parts if p.strip()]
+        
+        sentences = _split_sentences(text)
+        if not sentences:
+            sentences = [text]  # If no sentence splitting, use the whole text
+        
+        for sent in sentences:
+            # Extract claim spans
+            spans = extract_claim_spans(sent)
+            if not spans:
+                spans = [{"text": sent, "start": 0, "end": len(sent), "conf": 0.5}]
+            
+            for sp in spans:
+                atomic_claims = to_atomic(sp.get("text", ""), None) or []
+                if not atomic_claims:
+                    atomic_claims = [{"text": sp.get("text", ""), "subject": "", "predicate": "", "object": ""}]
+                
+                for ac in atomic_claims:
+                    claim_text = _normalize(ac.get("text", ""))
+                    ctx = analyze_context(claim_text, sent)
+                    score = score_claim(claim_text)
+                    
+                    results.append({
+                        "id": str(uuid.uuid4()),
+                        "text": claim_text,
+                        "subject": _normalize(ac.get("subject", "")),
+                        "predicate": _normalize(ac.get("predicate", "")),
+                        "object": _normalize(ac.get("object", "")),
+                        "checkworthiness": float(max(0.0, min(1.0, score))),
+                        "context": ctx
+                    })
+        
+        return results
     except Exception as e:
         logger.error(f"Error extracting claims: {e}")
         return []
@@ -259,14 +299,41 @@ def fact_check():
         
         logger.info(f"Processing fact-check request: {input_type} - {content[:100]}...")
         
+        # Process input based on type
+        if TRUTHLENS_AVAILABLE:
+            try:
+                # Detect and process input
+                detected_type = detect_input_type(content)
+                processed_result = process_input(content)
+                
+                if not processed_result["success"]:
+                    return jsonify({
+                        "error": "Input processing failed",
+                        "details": processed_result["errors"]
+                    }), 400
+                
+                # Normalize text (translate if needed)
+                normalized_result = normalize_text(processed_result["text"])
+                final_text = normalized_result["text"]
+                
+                logger.info(f"Input processed: {detected_type.value} -> {len(final_text)} chars")
+                if normalized_result["translated"]:
+                    logger.info(f"Translated from {normalized_result['original_language']}")
+                
+            except Exception as e:
+                logger.warning(f"Input processing failed: {e}, using original content")
+                final_text = content
+        else:
+            final_text = content
+        
         # Extract claims using TruthLens
-        claims = extract_claims_with_truthlens(content)
+        claims = extract_claims_with_truthlens(final_text)
         
         # Search for evidence
         evidence = []
         if claims:
             # Use the first claim as search query
-            search_query = claims[0].get("text", content[:100])
+            search_query = claims[0].get("text", final_text[:100])
             evidence = search_evidence_with_truthlens(search_query, max_results=5)
         
         # Analyze manipulation
@@ -282,7 +349,14 @@ def fact_check():
             "manipulation_types": manipulation_analysis["manipulation_types"],
             "overall_verdict": verdict_analysis["overall_verdict"],
             "confidence": verdict_analysis["confidence"],
-            "processing_time": datetime.now().isoformat()
+            "processing_time": datetime.now().isoformat(),
+            "input_processing": {
+                "detected_type": detected_type.value if TRUTHLENS_AVAILABLE else "text",
+                "original_length": len(content),
+                "processed_length": len(final_text),
+                "translated": normalized_result.get("translated", False) if TRUTHLENS_AVAILABLE else False,
+                "original_language": normalized_result.get("original_language", "en") if TRUTHLENS_AVAILABLE else "en"
+            }
         }
         
         logger.info(f"Fact-check completed: {verdict_analysis['overall_verdict']} ({verdict_analysis['confidence']:.2f})")

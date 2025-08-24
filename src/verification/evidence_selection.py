@@ -58,7 +58,7 @@ def cross_encoder_rerank(claim: str, docs: List[EvidenceItem], top_k: int) -> Li
         return []
     text_docs = [(d, (d.snippet or d.full_text or d.title or "")) for d in docs]
     try:
-        model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L6-v2")
+        model = CrossEncoder("cross-encoder/roberta-large-ms-marco")
         pairs = [(claim, txt) for _, txt in text_docs]
         scores = model.predict(pairs).tolist()
         for (d, _), s in zip(text_docs, scores):
@@ -89,7 +89,7 @@ def _median(values: List[float]) -> float:
 class EvidenceSelector:
     """Selects evidence snippets by fused ranking (dense + BM25) and cross-encoder reranking."""
 
-    def __init__(self, model_name: str = "sentence-transformers/all-mpnet-base-v2") -> None:
+    def __init__(self, model_name: str = "sentence-transformers/all-roberta-large-v1") -> None:
         self._offline = os.environ.get("TRUTHLENS_FORCE_OFFLINE", "0") == "1"
         if self._offline:
             self.model = None

@@ -46,10 +46,10 @@ class VectorEvidenceRetriever:
     
     def __init__(
         self,
-        model_name: str = "all-MiniLM-L6-v2",
+        model_name: str = "sentence-transformers/all-roberta-large-v1",
         index_path: Optional[str] = None,
         embeddings_path: Optional[str] = None,
-        dimension: int = 384,
+        dimension: int = 1024,
         use_gpu: bool = False
     ):
         """

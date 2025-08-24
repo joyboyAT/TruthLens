@@ -23,7 +23,7 @@ class PipelineOutput:
 class VerificationPipeline:
     """Phase 4 end-to-end: select evidence → NLI → calibrate → verdict mapping."""
 
-    def __init__(self, emb_model: str = "sentence-transformers/all-mpnet-base-v2", nli_model: str = "roberta-large-mnli") -> None:
+    def __init__(self, emb_model: str = "sentence-transformers/all-roberta-large-v1", nli_model: str = "roberta-large-mnli") -> None:
         self.selector = EvidenceSelector(model_name=emb_model)
         self.nli = StanceClassifier(model_name=nli_model)
 

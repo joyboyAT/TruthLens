@@ -21,6 +21,18 @@ lxml>=4.9.0
 python-dotenv>=1.0.0
 datasets>=2.20.0
 evaluate>=0.4.1
+
+# Input processing and OCR
+easyocr>=1.7.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# Speech recognition
+openai-whisper>=20231117
+moviepy>=1.0.3
+
+# Translation
+googletrans==4.0.0rc1
 xxhash>=3.4.1
 google-cloud-firestore>=2.16.0
 
