@@ -1,0 +1,25 @@
+2025-08-29 01:22:07,906 - src.asr.transcriber - WARNING - MoviePy not available
+2025-08-29 01:22:08,039 - src.translation.translator - WARNING - Google Translate not available
+2025-08-29 01:22:39,877 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-08-29 01:22:47,952 - __main__.TruthLensPipelineTester - WARNING - langdetect not available, using default language
+2025-08-29 01:22:55,168 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-08-29 01:35:54,038 - __main__.TruthLensPipelineTester - INFO - Debug mode enabled - detailed logging will be provided
+2025-08-29 01:35:54,040 - __main__.TruthLensPipelineTester - INFO - Initializing TruthLens pipeline components...
+2025-08-29 01:36:06,021 - src.asr.transcriber - WARNING - MoviePy not available
+2025-08-29 01:36:06,147 - src.translation.translator - WARNING - Google Translate not available
+2025-08-29 01:36:09,745 - __main__.TruthLensPipelineTester - INFO - Enhanced pipeline initialized
+2025-08-29 01:36:09,858 - __main__.TruthLensPipelineTester - INFO - Claim processor initialized
+2025-08-29 01:36:09,858 - __main__.TruthLensPipelineTester - INFO - Starting complete TruthLens pipeline test
+2025-08-29 01:36:09,859 - __main__.TruthLensPipelineTester - INFO - Input text: Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory...
+2025-08-29 01:36:09,859 - __main__.TruthLensPipelineTester - INFO - Phase 1: Input & Normalization
+2025-08-29 01:36:09,860 - __main__.TruthLensPipelineTester - WARNING - langdetect not available, using default language
+2025-08-29 01:36:09,861 - __main__.TruthLensPipelineTester - INFO - Phase 1 completed: 19 words, 111 characters
+2025-08-29 01:36:09,861 - __main__.TruthLensPipelineTester - INFO - Phase 2: Claim Extraction & Ranking
+2025-08-29 01:36:14,327 - __main__.TruthLensPipelineTester - INFO - Phase 2 completed: 0 checkworthy claims found
+2025-08-29 01:36:14,327 - __main__.TruthLensPipelineTester - INFO - Phase 3: Evidence Retrieval
+2025-08-29 01:36:14,335 - __main__.TruthLensPipelineTester - INFO - Phase 3 completed: 0 evidence items retrieved
+2025-08-29 01:36:14,336 - __main__.TruthLensPipelineTester - INFO - Phase 4: Verification & Scoring
+2025-08-29 01:36:14,343 - __main__.TruthLensPipelineTester - INFO - Phase 4 completed: Verdict = Not Verified (confidence: 0.000)
+2025-08-29 01:36:14,343 - __main__.TruthLensPipelineTester - INFO - Phase 5: User Explanation Layer
+2025-08-29 01:36:14,344 - __main__.TruthLensPipelineTester - INFO - Phase 5 completed: Generated 0 manipulation cues
+2025-08-29 01:36:14,344 - __main__.TruthLensPipelineTester - INFO - Total processing time: 4.49 seconds

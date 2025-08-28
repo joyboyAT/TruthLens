@@ -1,0 +1,117 @@
+[
+  {
+    "input_text": "COVID-19 vaccines cause autism in children according to recent studies.",
+    "normalized_text": "COVID-19 vaccines cause autism in children according to recent studies.",
+    "extracted_claims": [
+      "COVID-19 vaccines cause autism in children according to recent studies"
+    ],
+    "evidence_sources": [
+      "WHO",
+      "CDC",
+      "medical journals",
+      "peer-reviewed studies"
+    ],
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.3,
+    "explanation": "There is insufficient evidence to determine the accuracy of this claim. More information from reliable sources is needed. Confidence level: 30.0%",
+    "processing_time": 0.0002448558807373047,
+    "success": true,
+    "errors": []
+  },
+  {
+    "input_text": "5G towers emit dangerous radiation that causes cancer in nearby residents.",
+    "normalized_text": "5G towers emit dangerous radiation that causes cancer in nearby residents.",
+    "extracted_claims": [
+      "5G towers emit dangerous radiation that causes cancer in nearby residents"
+    ],
+    "evidence_sources": [
+      "FCC",
+      "IEEE",
+      "scientific studies",
+      "regulatory bodies"
+    ],
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.3,
+    "explanation": "There is insufficient evidence to determine the accuracy of this claim. More information from reliable sources is needed. Confidence level: 30.0%",
+    "processing_time": 1.9788742065429688e-05,
+    "success": true,
+    "errors": []
+  },
+  {
+    "input_text": "Water boils at 100 degrees Celsius at sea level under normal atmospheric pressure.",
+    "normalized_text": "Water boils at 100 degrees Celsius at sea level under normal atmospheric pressure.",
+    "extracted_claims": [
+      "Water boils at 100 degrees Celsius at sea level under normal atmospheric pressure."
+    ],
+    "evidence_sources": [
+      "physics textbooks",
+      "scientific literature",
+      "experimental data"
+    ],
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.3,
+    "explanation": "There is insufficient evidence to determine the accuracy of this claim. More information from reliable sources is needed. Confidence level: 30.0%",
+    "processing_time": 1.9550323486328125e-05,
+    "success": true,
+    "errors": []
+  },
+  {
+    "input_text": "The Earth is flat and NASA has been hiding this fact for decades.",
+    "normalized_text": "The Earth is flat and NASA has been hiding this fact for decades.",
+    "extracted_claims": [
+      "The Earth is flat and NASA has been hiding this fact for decades."
+    ],
+    "evidence_sources": [
+      "NASA",
+      "astronomical observations",
+      "satellite data",
+      "scientific consensus"
+    ],
+    "verdict": "SUPPORTED",
+    "confidence": 0.7,
+    "explanation": "This claim appears to be supported by available evidence. Multiple sources confirm this information. Confidence level: 70.0%",
+    "processing_time": 1.6689300537109375e-05,
+    "success": true,
+    "errors": []
+  },
+  {
+    "input_text": "Drinking 8 glasses of water per day is essential for good health.",
+    "normalized_text": "Drinking 8 glasses of water per day is essential for good health.",
+    "extracted_claims": [
+      "Drinking 8 glasses of water per day is essential for good health."
+    ],
+    "evidence_sources": [
+      "WHO",
+      "CDC",
+      "medical journals",
+      "peer-reviewed studies",
+      "physics textbooks",
+      "scientific literature",
+      "experimental data"
+    ],
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.3,
+    "explanation": "There is insufficient evidence to determine the accuracy of this claim. More information from reliable sources is needed. Confidence level: 30.0%",
+    "processing_time": 1.3828277587890625e-05,
+    "success": true,
+    "errors": []
+  },
+  {
+    "input_text": "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade",
+    "normalized_text": "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade",
+    "extracted_claims": [
+      "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade"
+    ],
+    "evidence_sources": [
+      "fact-checking websites",
+      "reliable news sources",
+      "expert opinions"
+    ],
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.3,
+    "explanation": "There is insufficient evidence to determine the accuracy of this claim. More information from reliable sources is needed. Confidence level: 30.0%",
+    "processing_time": 1.3113021850585938e-05,
+    "success": true,
+    "errors": []
+  }
+]
