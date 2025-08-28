@@ -1,0 +1,98 @@
+{
+  "pib_20250824_143436": {
+    "id": "pib_20250824_143436",
+    "source_id": "pib_main",
+    "title": "Government Announces New Economic Package",
+    "url": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=123456",
+    "snippet": "The Government of India has announced a comprehensive economic package to support various sectors.",
+    "full_text": "The Government of India has announced a comprehensive economic package to support various sectors including agriculture, manufacturing, and services. The package includes measures for financial support, policy reforms, and infrastructure development.",
+    "published_date": "2025-08-24T12:34:36.375656",
+    "last_updated": "2025-08-24T14:34:36.375661",
+    "tags": [
+      "economy",
+      "government",
+      "policy"
+    ],
+    "relevance_score": 0.8
+  },
+  "who_20250824_143436": {
+    "id": "who_20250824_143436",
+    "source_id": "who_main",
+    "title": "WHO Updates COVID-19 Guidelines",
+    "url": "https://www.who.int/news-room/detail/covid-19-guidelines",
+    "snippet": "The World Health Organization has updated its COVID-19 prevention and treatment guidelines.",
+    "full_text": "The World Health Organization has updated its COVID-19 prevention and treatment guidelines based on the latest scientific evidence. The new guidelines include updated recommendations for vaccination, treatment protocols, and preventive measures.",
+    "published_date": "2025-08-24T10:34:36.377283",
+    "last_updated": "2025-08-24T14:34:36.377288",
+    "tags": [
+      "health",
+      "covid-19",
+      "guidelines"
+    ],
+    "relevance_score": 0.9
+  },
+  "rbi_20250824_143436": {
+    "id": "rbi_20250824_143436",
+    "source_id": "rbi_main",
+    "title": "RBI Announces Monetary Policy Decision",
+    "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=12345",
+    "snippet": "The Reserve Bank of India has announced its monetary policy decision for the current quarter.",
+    "full_text": "The Reserve Bank of India has announced its monetary policy decision for the current quarter. The central bank has maintained the repo rate at current levels while providing forward guidance on inflation and growth outlook.",
+    "published_date": "2025-08-24T08:34:36.378763",
+    "last_updated": "2025-08-24T14:34:36.378778",
+    "tags": [
+      "economy",
+      "monetary policy",
+      "rbi"
+    ],
+    "relevance_score": 0.85
+  },
+  "pib_20250824_143655": {
+    "id": "pib_20250824_143655",
+    "source_id": "pib_main",
+    "title": "Government Announces New Economic Package",
+    "url": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=123456",
+    "snippet": "The Government of India has announced a comprehensive economic package to support various sectors.",
+    "full_text": "The Government of India has announced a comprehensive economic package to support various sectors including agriculture, manufacturing, and services. The package includes measures for financial support, policy reforms, and infrastructure development.",
+    "published_date": "2025-08-24T12:36:55.088765",
+    "last_updated": "2025-08-24T14:36:55.088774",
+    "tags": [
+      "economy",
+      "government",
+      "policy"
+    ],
+    "relevance_score": 0.8
+  },
+  "who_20250824_143655": {
+    "id": "who_20250824_143655",
+    "source_id": "who_main",
+    "title": "WHO Updates COVID-19 Guidelines",
+    "url": "https://www.who.int/news-room/detail/covid-19-guidelines",
+    "snippet": "The World Health Organization has updated its COVID-19 prevention and treatment guidelines.",
+    "full_text": "The World Health Organization has updated its COVID-19 prevention and treatment guidelines based on the latest scientific evidence. The new guidelines include updated recommendations for vaccination, treatment protocols, and preventive measures.",
+    "published_date": "2025-08-24T10:36:55.090141",
+    "last_updated": "2025-08-24T14:36:55.090147",
+    "tags": [
+      "health",
+      "covid-19",
+      "guidelines"
+    ],
+    "relevance_score": 0.9
+  },
+  "rbi_20250824_143655": {
+    "id": "rbi_20250824_143655",
+    "source_id": "rbi_main",
+    "title": "RBI Announces Monetary Policy Decision",
+    "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=12345",
+    "snippet": "The Reserve Bank of India has announced its monetary policy decision for the current quarter.",
+    "full_text": "The Reserve Bank of India has announced its monetary policy decision for the current quarter. The central bank has maintained the repo rate at current levels while providing forward guidance on inflation and growth outlook.",
+    "published_date": "2025-08-24T08:36:55.090969",
+    "last_updated": "2025-08-24T14:36:55.090973",
+    "tags": [
+      "economy",
+      "monetary policy",
+      "rbi"
+    ],
+    "relevance_score": 0.85
+  }
+}

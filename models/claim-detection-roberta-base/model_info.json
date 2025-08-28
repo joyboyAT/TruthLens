@@ -1,0 +1,13 @@
+{
+  "model_name": "roberta-base",
+  "dataset": "Nithiwat/claim-detection",
+  "training_config": {
+    "num_epochs": 3,
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "max_length": 256
+  },
+  "model_path": "models/claim-detection-roberta-base",
+  "num_parameters": 124647170,
+  "vocab_size": 50265
+}

@@ -41,7 +41,7 @@ def _fallback_extract(sentence: str) -> List[Span]:
 
 
 # --- ML path (optional) ------------------------------------------------------
-_MODEL_NAME = "roberta-base"
+_MODEL_NAME = "roberta-large"
 _LABELS: List[str] = ["O", "B", "I"]
 _NUM_LABELS = len(_LABELS)
 _LABEL2ID: Dict[str, int] = {l: i for i, l in enumerate(_LABELS)}

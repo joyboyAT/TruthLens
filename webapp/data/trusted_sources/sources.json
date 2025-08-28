@@ -1,0 +1,68 @@
+{
+  "pib_main": {
+    "id": "pib_main",
+    "name": "Press Information Bureau",
+    "source_type": "pib",
+    "domain": "pib.gov.in",
+    "url": "https://pib.gov.in",
+    "description": "Official press releases and announcements from Government of India",
+    "reliability_score": 0.95,
+    "last_updated": "2025-08-24T17:24:49.943872",
+    "is_active": true
+  },
+  "who_main": {
+    "id": "who_main",
+    "name": "World Health Organization",
+    "source_type": "who",
+    "domain": "who.int",
+    "url": "https://www.who.int",
+    "description": "International health guidelines and advisories",
+    "reliability_score": 0.95,
+    "last_updated": "2025-08-24T17:24:49.945072",
+    "is_active": true
+  },
+  "rbi_main": {
+    "id": "rbi_main",
+    "name": "Reserve Bank of India",
+    "source_type": "rbi",
+    "domain": "rbi.org.in",
+    "url": "https://www.rbi.org.in",
+    "description": "Official economic and financial data from RBI",
+    "reliability_score": 0.95,
+    "last_updated": "2025-08-24T17:24:49.945088",
+    "is_active": true
+  },
+  "factcheck_org": {
+    "id": "factcheck_org",
+    "name": "FactCheck.org",
+    "source_type": "fact_check",
+    "domain": "factcheck.org",
+    "url": "https://www.factcheck.org",
+    "description": "Non-partisan fact-checking organization",
+    "reliability_score": 0.9,
+    "last_updated": "2025-08-24T17:24:49.945097",
+    "is_active": true
+  },
+  "reuters": {
+    "id": "reuters",
+    "name": "Reuters",
+    "source_type": "news_portal",
+    "domain": "reuters.com",
+    "url": "https://www.reuters.com",
+    "description": "International news agency with high editorial standards",
+    "reliability_score": 0.85,
+    "last_updated": "2025-08-24T17:24:49.945104",
+    "is_active": true
+  },
+  "bbc_news": {
+    "id": "bbc_news",
+    "name": "BBC News",
+    "source_type": "news_portal",
+    "domain": "bbc.com",
+    "url": "https://www.bbc.com/news",
+    "description": "British public service broadcaster",
+    "reliability_score": 0.85,
+    "last_updated": "2025-08-24T17:24:49.945106",
+    "is_active": true
+  }
+}
