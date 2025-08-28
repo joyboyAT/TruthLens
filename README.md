@@ -40,7 +40,7 @@ TruthLens/
 
 ### 3. ASR (`src/asr/`)
 - Speech recognition from audio and video
-- Multilingual speech transcription
+- Multilingual speech transcription...
 
 ### 4. Translation (`src/translation/`)
 - Multilingual text translation
