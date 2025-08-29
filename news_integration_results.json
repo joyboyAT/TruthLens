@@ -1,0 +1,1085 @@
+[
+  {
+    "test_name": "Test 1",
+    "input_text": "nanded floods",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Maharashtra rains: Five missing in Nanded floods, 293 rescued (The Times of India)\n2. Army columns deployed for relief in Nanded district (The Indian Express)\n3. Uttarkashi floods: 51 tourists from Maharashtra safe, govt working on evacuation (The Times of India)",
+      "articles": [
+        {
+          "title": "Maharashtra rains: Five missing in Nanded floods, 293 rescued",
+          "description": "Heavy rains and floods in Maharashtra have resulted in six deaths and five missing individuals in Nanded. Mumbai experienced substantial rainfall, with some areas exceeding 200 mm in the last 24 hours. Hundreds of passengers were rescued from a stranded Mumba…",
+          "url": "https://economictimes.indiatimes.com/news/india/maharashtra-rains-six-dead-five-missing-in-floods-293-rescued-in-nanded/articleshow/123398518.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-20T02:58:02Z",
+          "relevance_score": 1.0
+        },
+        {
+          "title": "Army columns deployed for relief in Nanded district",
+          "description": "The Mukhed taluka of Nanded district was badly hit by floods following heavy rains over the last two days.",
+          "url": "https://indianexpress.com/article/cities/pune/army-columns-relief-nanded-10199377/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-19T16:59:15Z",
+          "relevance_score": 0.6666666666666666
+        },
+        {
+          "title": "Uttarkashi floods: 51 tourists from Maharashtra safe, govt working on evacuation",
+          "description": "Good news emerges from Uttarakhand. 51 tourists from Maharashtra are now safe after being stranded in Uttarkashi district. This follows flash floods in Dharali village. The Maharashtra government is working with Uttarakhand authorities for safe evacuation. Ef…",
+          "url": "https://economictimes.indiatimes.com/news/india/uttarkashi-floods-51-tourists-from-maharashtra-safe-govt-working-on-evacuation/articleshow/123140105.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-06T09:58:30Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "Search on for missing woman in Nanded",
+          "description": "Afrin was one of four persons who was swept away when gushing waters from Lendi barrage submerged the Dharaknal bridge in Ardhrapur. They were on the bridge when floodwaters swept away the car and the autorickshaw they were travelling in.",
+          "url": "https://indianexpress.com/article/cities/pune/search-on-for-missing-woman-in-nanded-10201496/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-20T18:38:21Z",
+          "relevance_score": 0.4166666666666667
+        },
+        {
+          "title": "Even Amitabh Bachchan's home not spared in Mumbai flood. Viral video claims actor's bungalow, Prateeksha, waterlogged",
+          "description": "Mumbai's monsoon unleashed chaos, with nearly 300 mm of rain disrupting daily life. Transportation networks suffered, and schools remained closed. A viral video showed Amitabh Bachchan's bungalow, Prateeksha, waterlogged, highlighting the widespread impact of…",
+          "url": "https://economictimes.indiatimes.com/magazines/panache/even-amitabh-bachchans-home-not-spared-in-mumbai-flood-viral-video-claims-actors-bungalow-prateeksha-waterlogged/articleshow/123412757.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-20T14:37:49Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Maharashtra rains: Five missing in Nanded floods, 293 rescued",
+      "Viral video claims actor's bungalow, Prateeksha, waterlogged"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Maharashtra rains: Five missing in Nanded floods, 293 rescued",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "Viral video claims actor's bungalow, Prateeksha, waterlogged",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 2.5430421829223633,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 2",
+    "input_text": "Maharashtra heavy rains",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Heavy rains damage vegetable, pulses crops (The Times of India)\n2. Mumbai Rains Highlights: Torrential rains cripple Mumbai; roads flooded, local trains delayed and schools, colleges closed amid ‘Red’ alert (BusinessLine)\n3. Heavy rain paralyses life in India's financial capital Mumbai (BBC News)",
+      "articles": [
+        {
+          "title": "Heavy rains damage vegetable, pulses crops",
+          "description": "Heavy rains in central and south India are expected to cause losses for farmers due to widespread damage to key kharif crops like urad, tur, soyabean, and cotton. Vegetable prices in Mumbai have crashed due to buyers staying home, but are expected to rise soo…",
+          "url": "https://economictimes.indiatimes.com/news/economy/agriculture/heavy-rains-damage-vegetable-pulses-crops/articleshow/123416452.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-20T17:56:31Z",
+          "relevance_score": 0.6666666666666666
+        },
+        {
+          "title": "Mumbai Rains Highlights: Torrential rains cripple Mumbai; roads flooded, local trains delayed and schools, colleges closed amid ‘Red’ alert",
+          "description": "Mumbai Weather & Rains Highlights: Mumbaikars woke up to very heavy rainfall on Monday, while the India Meteorological Department (IMD) issued a ‘red’ alert, forecasting extremely heavy rains at isolated places in the city and adjoining areas, prompting the c…",
+          "url": "https://www.thehindubusinessline.com/news/mumbai-weather-mumbai-rains-highlights/article69946123.ece",
+          "source": "BusinessLine",
+          "published_at": "2025-08-18T04:48:06Z",
+          "relevance_score": 0.4444444444444444
+        },
+        {
+          "title": "Heavy rain paralyses life in India's financial capital Mumbai",
+          "description": "Nearly 600 people were rescued from a stalled monorail system and 350 others have been shifted to shelters.",
+          "url": "https://www.bbc.com/news/articles/cx29jw7488go",
+          "source": "BBC News",
+          "published_at": "2025-08-20T06:52:13Z",
+          "relevance_score": 0.2222222222222222
+        },
+        {
+          "title": "Army columns deployed for relief in Nanded district",
+          "description": "The Mukhed taluka of Nanded district was badly hit by floods following heavy rains over the last two days.",
+          "url": "https://indianexpress.com/article/cities/pune/army-columns-relief-nanded-10199377/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-19T16:59:15Z",
+          "relevance_score": 0.2222222222222222
+        },
+        {
+          "title": "School Closed on August 27: List of states where schools are closed – Jammu, Punjab & Himachal due to heavy rain",
+          "description": "J&K, Punjab and Himachal School Closed: Various state governments and district administrations have decided to close the schools. Here is the list of states where schools are closed on August 27.",
+          "url": "https://indianexpress.com/article/education/schools-closed-in-these-states-on-august-27-heavy-rains-cloudburst-floods-10212807/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-26T12:35:01Z",
+          "relevance_score": 0.16666666666666666
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Heavy rains damage vegetable, pulses crops"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Heavy rains damage vegetable, pulses crops",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 1.6381480693817139,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 3",
+    "input_text": "Mumbai rains disruption",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Mumbai University reschedules exams amid heavy rains: Check revised schedule here (The Times of India)\n2. Mumbai on red alert for second consecutive day; heavy rain disrupts travel, shuts educational institutions (The Times of India)\n3. School Holiday Declared On August 19 After IMD Issues Red Alert For Mumbai And Thane (Ndtvprofit.com)",
+      "articles": [
+        {
+          "title": "Mumbai University reschedules exams amid heavy rains: Check revised schedule here",
+          "description": "Mumbai remained battered by relentless rains this week, prompting the IMD to issue a red alert as flooding crippled transport, diverted flights, and forced evacuations. The disruption spilled into academics with Mumbai University postponing exams scheduled on…",
+          "url": "https://timesofindia.indiatimes.com/education/news/mumbai-university-reschedules-exams-amid-heavy-rains-check-revised-schedule-here/articleshow/123430770.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-21T10:26:11Z",
+          "relevance_score": 0.6666666666666666
+        },
+        {
+          "title": "Mumbai on red alert for second consecutive day; heavy rain disrupts travel, shuts educational institutions",
+          "description": "Mumbai faced severe disruption due to heavy rains. A red alert was issued. Roads flooded, impacting airport operations. Schools and colleges were closed. The Chief Minister reviewed the situation. He instructed officials to be on high alert. Train services we…",
+          "url": "https://economictimes.indiatimes.com/news/weather/mumbai-on-red-alert-for-second-consecutive-day-heavy-rain-disrupts-travel-shuts-educational-institutions/articleshow/123375296.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-19T01:59:19Z",
+          "relevance_score": 0.6111111111111112
+        },
+        {
+          "title": "School Holiday Declared On August 19 After IMD Issues Red Alert For Mumbai And Thane",
+          "description": "The civic body also declared a holiday for schools on Monday after heavy rains lashed the city since Sunday night, resulting in disruption to daily life across Mumbai.",
+          "url": "https://www.ndtvprofit.com/nation/school-holiday-declared-on-august-19-after-imd-issues-red-alert-for-mumbai-and-thane",
+          "source": "Ndtvprofit.com",
+          "published_at": "2025-08-18T13:30:44Z",
+          "relevance_score": 0.5555555555555556
+        },
+        {
+          "title": "MMRDA installed 58-meter-long steel span in Ghatkopar, Mumbai Metro Line 4 nears completion",
+          "description": "Metro Line 4 connecting Wadala to Kasarvadavli via a 32.3 km stretch is reported to be 84.5 per cent ready.",
+          "url": "https://indianexpress.com/article/cities/mumbai/mmrda-installed-steel-span-ghatkopar-metro-line-4-10181013/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-10T09:43:55Z",
+          "relevance_score": 0.2222222222222222
+        },
+        {
+          "title": "GST assesses from Mumbai and surrounding can file GSTR3B till Aug 27",
+          "description": "Form GSTR-3B is a simplified summary return and the purpose of the return is for taxpayers to declare their summary GST liabilities for a particular tax period and discharge these liabilities",
+          "url": "https://www.thehindubusinessline.com/economy/gst-assesses-from-mumbai-and-surrounding-can-file-gstr3b-till-aug-27/article69959569.ece",
+          "source": "BusinessLine",
+          "published_at": "2025-08-21T09:38:21Z",
+          "relevance_score": 0.2222222222222222
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Mumbai University reschedules exams amid heavy rains: Check revised schedule here"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Mumbai University reschedules exams amid heavy rains: Check revised schedule here",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by FACTLY with a rating of 'MISLEADING'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.674727201461792,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 4",
+    "input_text": "Nanded cloudburst",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 3,
+      "context": "Recent news coverage:\n1. Maharashtra rains wreak havoc: 8 dead in Nanded ‘cloudburst’, Mumbai paralysed, crops hit (The Times of India)\n2. Cloudburst kills 8 in India's Maharashtra (The Star Online)\n3. ‘Observe precaution’: Maharashtra CM warns about severe weather conditions in State (BusinessLine)",
+      "articles": [
+        {
+          "title": "Maharashtra rains wreak havoc: 8 dead in Nanded ‘cloudburst’, Mumbai paralysed, crops hit",
+          "description": "Heavy rains across Maharashtra have claimed eight lives in Nanded, with Mumbai and other regions facing severe flooding. NDRF and SDRF teams are actively involved in rescue operations as rising waters inundate homes and disrupt transportation. Chief Minister …",
+          "url": "https://economictimes.indiatimes.com/news/india/maharashtra-rains-wreak-havoc-8-dead-in-nanded-cloudburst-mumbai-paralysed-crops-hit/articleshow/123394410.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-19T18:52:31Z",
+          "relevance_score": 0.8333333333333334
+        },
+        {
+          "title": "Cloudburst kills 8 in India's Maharashtra",
+          "description": "NEW DELHI, Aug. 19 (Xinhua) -- At least eight people were killed Tuesday in a cloudburst during incessant rains in the western Indian state of Maharashtra, officials said. Read full story",
+          "url": "https://www.thestar.com.my/news/world/2025/08/20/cloudburst-kills-8-in-india039s-maharashtra",
+          "source": "The Star Online",
+          "published_at": "2025-08-19T16:17:00Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "‘Observe precaution’: Maharashtra CM warns about severe weather conditions in State",
+          "description": "A red alert has been issued for Mumbai, Thane and Raigad, with the IMD forecasting extremely heavy rainfall in these areas",
+          "url": "https://www.thehindubusinessline.com/news/observe-precaution-maharashtra-cm-warns-about-severe-weather-conditions-in-state/article69950172.ece",
+          "source": "BusinessLine",
+          "published_at": "2025-08-19T04:45:56Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Maharashtra rains wreak havoc: 8 dead in Nanded ‘cloudburst’, Mumbai paralysed, crops hit"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Maharashtra rains wreak havoc: 8 dead in Nanded ‘cloudburst’, Mumbai paralysed, crops hit",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 1.8604707717895508,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 5",
+    "input_text": "Maharashtra army rescue",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Maharashtra on high alert as heavy rain leaves 6 dead (The Times of India)\n2. 6 dead, hundreds evacuated in rain-hit districts of Maharashtra; next 48 hours crucial, says CM (The Times of India)\n3. Army columns deployed for relief in Nanded district (The Indian Express)",
+      "articles": [
+        {
+          "title": "Maharashtra on high alert as heavy rain leaves 6 dead",
+          "description": "Maharashtra faced severe consequences from heavy rains. Six people died across the state. Marathwada was the worst-hit region. Nanded experienced a cloud burst. Rescue operations are underway. NDRF, SDRF, and the army are assisting. Chief Minister Devendra Fa…",
+          "url": "https://economictimes.indiatimes.com/news/india/maharashtra-on-high-alert-as-heavy-rain-leaves-6-dead/articleshow/123371509.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-18T18:31:25Z",
+          "relevance_score": 0.5555555555555556
+        },
+        {
+          "title": "6 dead, hundreds evacuated in rain-hit districts of Maharashtra; next 48 hours crucial, says CM",
+          "description": "Maharashtra is grappling with severe flooding due to heavy rains. Six people have died, and hundreds are displaced. Mumbai and other districts are on high alert. Rescue operations are underway with SDRF and Army assistance. Agricultural land is submerged, and…",
+          "url": "https://economictimes.indiatimes.com/news/india/mumbai-rains-6-dead-hundreds-evacuated-in-rain-hit-districts-of-maharashtra-next-48-hours-crucial-says-cm/articleshow/123382252.cms",
+          "source": "The Times of India",
+          "published_at": "2025-08-19T08:21:56Z",
+          "relevance_score": 0.5555555555555556
+        },
+        {
+          "title": "Army columns deployed for relief in Nanded district",
+          "description": "The Mukhed taluka of Nanded district was badly hit by floods following heavy rains over the last two days.",
+          "url": "https://indianexpress.com/article/cities/pune/army-columns-relief-nanded-10199377/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-19T16:59:15Z",
+          "relevance_score": 0.2777777777777778
+        },
+        {
+          "title": "Heavy rain lashes Marathwada; 5 missing in Nanded, says CM Devendra Fadnavis",
+          "description": "Eight people were evacuated from Hassanal, while 20 others stranded in Bhaswadi and around 40 people stuck in Bhingeli are reportedly safe, Maharashtra Chief Minister Devendra Fadnavis said.",
+          "url": "https://indianexpress.com/article/cities/mumbai/heavy-rain-lashes-marathwada-5-missing-in-nanded-says-cm-devendra-fadnavis-10196321/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-18T09:36:18Z",
+          "relevance_score": 0.16666666666666666
+        },
+        {
+          "title": "Search on for missing woman in Nanded",
+          "description": "Afrin was one of four persons who was swept away when gushing waters from Lendi barrage submerged the Dharaknal bridge in Ardhrapur. They were on the bridge when floodwaters swept away the car and the autorickshaw they were travelling in.",
+          "url": "https://indianexpress.com/article/cities/pune/search-on-for-missing-woman-in-nanded-10201496/",
+          "source": "The Indian Express",
+          "published_at": "2025-08-20T18:38:21Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Maharashtra on high alert as heavy rain leaves 6 dead",
+      "6 dead, hundreds evacuated in rain-hit districts of Maharashtra; next 48 hours crucial, says CM",
+      "Heavy rain lashes Marathwada; 5 missing in Nanded, says CM Devendra Fadnavis"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Maharashtra on high alert as heavy rain leaves 6 dead",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "6 dead, hundreds evacuated in rain-hit districts of Maharashtra; next 48 hours crucial, says CM",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "Heavy rain lashes Marathwada; 5 missing in Nanded, says CM Devendra Fadnavis",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 3.185410261154175,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 6",
+    "input_text": "COVID-19 vaccines",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. RFK Jr. Attacks Pediatricians for Daring to Recommend Covid-19 Vaccines for Kids (Gizmodo.com)\n2. FDA approves updated COVID vaccines with restrictions on who can receive them (ABC News)\n3. RFK Jr. pulls $500 million in funding for mRNA vaccine contracts (NPR)",
+      "articles": [
+        {
+          "title": "RFK Jr. Attacks Pediatricians for Daring to Recommend Covid-19 Vaccines for Kids",
+          "description": "Kennedy accused the American Academy of Pediatrics of working for Big Pharma, even as he himself has profited from attacking vaccines.",
+          "url": "https://gizmodo.com/rfk-jr-attacks-pediatricians-for-daring-to-recommend-covid-19-vaccines-for-kids-2000645554",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-20T16:10:08Z",
+          "relevance_score": 0.8333333333333334
+        },
+        {
+          "title": "FDA approves updated COVID vaccines with restrictions on who can receive them",
+          "description": "The U.S. Food and Drug Administration on Wednesday approved updated COVID-19 vaccines with restrictions on who can receive the shots.",
+          "url": "https://abcnews.go.com/Health/fda-approves-updated-covid-vaccines-restrictions-receive/story?id=125032817",
+          "source": "ABC News",
+          "published_at": "2025-08-27T17:53:15Z",
+          "relevance_score": 0.75
+        },
+        {
+          "title": "RFK Jr. pulls $500 million in funding for mRNA vaccine contracts",
+          "description": "The Department of Health and Human Services will cancel contracts and pull funding for some vaccines that are being developed to fight respiratory viruses like COVID-19 and the flu.",
+          "url": "https://www.npr.org/2025/08/05/nx-s1-5493550/rfk-jr-funding-mrna-vaccine-development",
+          "source": "NPR",
+          "published_at": "2025-08-06T03:55:48Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "CDC shooter believed COVID vaccine made him suicidal, his father tells police",
+          "description": "The Georgia Bureau of Investigation identified the man who opened fire at the Centers for Disease Control and Prevention as Patrick Joseph White. White died and a police officer was shot and killed.",
+          "url": "https://www.npr.org/2025/08/09/nx-s1-5497178/cdc-atlanta-emory-shooter-covid-vaccine-suicidal",
+          "source": "NPR",
+          "published_at": "2025-08-09T13:50:46Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "RFK Jr. Posts Fishing Trip Pics Online Amidst Fallout From CDC Shooting",
+          "description": "The health czar has been criticized for how he handled the attack on the health agency.",
+          "url": "https://gizmodo.com/rfk-jr-posts-fishing-trip-pics-online-amidst-fallout-from-cdc-shooting-2000641604",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-12T12:30:28Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "RFK Jr. Attacks Pediatricians for Daring to Recommend Covid-19 Vaccines for Kids"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "RFK Jr. Attacks Pediatricians for Daring to Recommend Covid-19 Vaccines for Kids",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by WCNC with a rating of 'Needs Context'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.730928659439087,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 7",
+    "input_text": "climate change",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Has the British summer changed beyond recognition? (BBC News)\n2. Scientists Say New Government Climate Report Twists Their Work (Wired)\n3. Trump’s EPA Wants to Pretend That Greenhouse Gases Aren’t a Threat to Human Health (Gizmodo.com)",
+      "articles": [
+        {
+          "title": "Has the British summer changed beyond recognition?",
+          "description": "Climate change means UK summers are getting drier and hotter but complaints about rain may not be a thing of the past. Ben Rich explains.",
+          "url": "https://www.bbc.com/weather/articles/cd9jn8pg2ldo",
+          "source": "BBC News",
+          "published_at": "2025-08-24T16:06:03Z",
+          "relevance_score": 0.6666666666666666
+        },
+        {
+          "title": "Scientists Say New Government Climate Report Twists Their Work",
+          "description": "A new Department of Energy report “fundamentally misrepresents” climate research and leaves out key context, multiple scientists cited in the report tell WIRED.",
+          "url": "https://www.wired.com/story/scientists-say-new-government-climate-report-twists-their-work/",
+          "source": "Wired",
+          "published_at": "2025-07-30T20:31:16Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "Trump’s EPA Wants to Pretend That Greenhouse Gases Aren’t a Threat to Human Health",
+          "description": "The Trump administration’s latest and greatest assault on climate change mitigation would eliminate all greenhouse gas emissions regulations for motor vehicles and engines.",
+          "url": "https://gizmodo.com/trumps-epa-wants-to-pretend-that-greenhouse-gases-arent-a-threat-to-human-health-2000636732",
+          "source": "Gizmodo.com",
+          "published_at": "2025-07-30T19:40:17Z",
+          "relevance_score": 0.3333333333333333
+        },
+        {
+          "title": "The Arctic Got So Warm in February, Svalbard’s Ground Was ‘Like Soft Ice Cream’",
+          "description": "The Arctic outpost meant to safeguard humanity’s future is now ground zero for a host of issues linked to climate change.",
+          "url": "https://gizmodo.com/the-arctic-got-so-warm-in-february-svalbards-ground-was-like-soft-ice-cream-2000636102",
+          "source": "Gizmodo.com",
+          "published_at": "2025-07-30T13:00:08Z",
+          "relevance_score": 0.3333333333333333
+        },
+        {
+          "title": "Hurricane Swarms Are a Thing We Have to Worry About Now",
+          "description": "Scientists have known climate change is increasing the severity of hurricanes for years now, but new research suggests it’s also leading to tropical cyclone clusters.",
+          "url": "https://gizmodo.com/hurricane-swarms-are-a-thing-we-have-to-worry-about-now-2000642070",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-12T19:50:35Z",
+          "relevance_score": 0.3333333333333333
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Has the British summer changed beyond recognition?"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Has the British summer changed beyond recognition?",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by Science Feedback with a rating of 'Incorrect'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.8404250144958496,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 8",
+    "input_text": "artificial intelligence",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. AI invents new antibiotics that could kill superbugs gonorrhoea and MRSA (BBC News)\n2. Meta’s Already Bleeding AI Talent Two Months Into Hiring Spree (Gizmodo.com)\n3. AI Is Eliminating Jobs for Younger Workers (Wired)",
+      "articles": [
+        {
+          "title": "AI invents new antibiotics that could kill superbugs gonorrhoea and MRSA",
+          "description": "Two new potential drugs have been designed, by an artificial intelligence model, to kill gonorrhoea and MRSA",
+          "url": "https://www.bbc.com/news/articles/cgr94xxye2lo",
+          "source": "BBC News",
+          "published_at": "2025-08-14T15:03:49Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "Meta’s Already Bleeding AI Talent Two Months Into Hiring Spree",
+          "description": "Zuckerberg’s quest to artificial superintelligence is off to a rocky start. OpenAI, however, gets the final laugh.",
+          "url": "https://gizmodo.com/metas-already-bleeding-ai-talent-two-months-into-hiring-spree-2000649110",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-27T17:45:09Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "AI Is Eliminating Jobs for Younger Workers",
+          "description": "New research from Stanford provides the clearest available evidence that AI is reshaping the workforce—but it’s complicated.",
+          "url": "https://www.wired.com/story/stanford-research-ai-replace-jobs-young-workers/",
+          "source": "Wired",
+          "published_at": "2025-08-26T07:00:00Z",
+          "relevance_score": 0.16666666666666666
+        },
+        {
+          "title": "Gemini for Home is Google’s biggest smart home play in years",
+          "description": "It’s finally happening: Google Assistant in the home is getting its Gemini glow-up. “Gemini for Home” is an all-new voice assistant for Google Home, set to arrive later this year, the company announced today.  This new voice assistant, powered by Google’s Gem…",
+          "url": "https://www.theverge.com/news/762370/google-announces-gemini-for-home-nest-smart-speakers-voice-assistant",
+          "source": "The Verge",
+          "published_at": "2025-08-20T16:59:47Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "Inside the Biden Administration’s Unpublished Report on AI Safety",
+          "description": "The US government conducted a groundbreaking study on frontier models—and never published the results.",
+          "url": "https://www.wired.com/story/inside-the-biden-administrations-unpublished-report-on-ai-safety/",
+          "source": "Wired",
+          "published_at": "2025-08-06T18:00:00Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "AI invents new antibiotics that could kill superbugs gonorrhoea and MRSA"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "AI invents new antibiotics that could kill superbugs gonorrhoea and MRSA",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been fact-checked and rated as 'False' by Press Trust of India. The claim appears to be false or misleading.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.6268274784088135,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 9",
+    "input_text": "space exploration",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Scientists Unveil Wild New Way to Explore the Edge of Space (Gizmodo.com)\n2. Solar-Powered Device Turns Moon Dirt Into Bricks, a Potential Breakthrough in Lunar Construction (Gizmodo.com)\n3. Acting NASA Chief Tells Agency to Build a Nuclear Reactor on the Moon, Before China Does It First (Gizmodo.com)",
+      "articles": [
+        {
+          "title": "Scientists Unveil Wild New Way to Explore the Edge of Space",
+          "description": "Engineers have crafted a tiny, lightweight device that only requires sunlight to explore parts of the atmosphere that are typically hard to reach.",
+          "url": "https://gizmodo.com/scientists-unveil-wild-new-way-to-explore-the-edge-of-space-2000642161",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-13T15:00:33Z",
+          "relevance_score": 0.25
+        },
+        {
+          "title": "Solar-Powered Device Turns Moon Dirt Into Bricks, a Potential Breakthrough in Lunar Construction",
+          "description": "A new invention could make a sustained presence on the Moon more feasible.",
+          "url": "https://gizmodo.com/solar-powered-device-turns-moon-dirt-into-bricks-a-potential-breakthrough-in-lunar-construction-2000640313",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-08T10:00:25Z",
+          "relevance_score": 0.08333333333333333
+        },
+        {
+          "title": "Acting NASA Chief Tells Agency to Build a Nuclear Reactor on the Moon, Before China Does It First",
+          "description": "The project would power a future human settlement on the lunar surface.",
+          "url": "https://gizmodo.com/acting-nasa-chief-tells-agency-to-build-a-nuclear-reactor-on-the-moon-before-china-does-it-first-2000638940",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-05T15:50:48Z",
+          "relevance_score": 0.08333333333333333
+        },
+        {
+          "title": "Alien: Earth is a brilliant and terrifying expansion of the franchise",
+          "description": "While the monsters in each of the nine Alien movies have been a little bit different, the nefarious corporate forces have remained the same. Ridley Scott's original Alien didn't need to mention Weyland-Yutani by name for it to be clear that a singular mega-co…",
+          "url": "https://www.theverge.com/tv-reviews/719173/alien-earth-review",
+          "source": "The Verge",
+          "published_at": "2025-08-12T13:16:07Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "Picking a Spot for NASA’s Lunar Nuclear Reactor Is Trickier Than It Sounds",
+          "description": "The U.S. wants to build a nuclear reactor on the Moon by 2030, but the first challenge is finding an ideal spot.",
+          "url": "https://gizmodo.com/picking-a-spot-for-nasas-lunar-nuclear-reactor-is-trickier-than-it-sounds-2000644356",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-18T15:36:22Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Scientists Unveil Wild New Way to Explore the Edge of Space"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Scientists Unveil Wild New Way to Explore the Edge of Space",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by News Mobile with a rating of 'Misleading'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.770538330078125,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 10",
+    "input_text": "renewable energy",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Trump blames renewable energy for rising electricity prices. Experts point elsewhere (Yahoo Entertainment)\n2. Major city set to tap into limitless underground energy source — here are the details (Yahoo Entertainment)\n3. Officials celebrate after energy switch saves billions of dollars: 'This is a historic milestone' (Yahoo Entertainment)",
+      "articles": [
+        {
+          "title": "Trump blames renewable energy for rising electricity prices. Experts point elsewhere",
+          "description": "With electricity prices rising at more than twice the rate of inflation, President Donald Trump has lashed out at renewable energy sources such as wind and...",
+          "url": "https://www.yahoo.com/news/articles/trump-blames-renewable-energy-rising-200917468.html",
+          "source": "Yahoo Entertainment",
+          "published_at": "2025-08-21T20:09:17Z",
+          "relevance_score": 1.0
+        },
+        {
+          "title": "Major city set to tap into limitless underground energy source — here are the details",
+          "description": "It provides consistent output and can lower energy bills.",
+          "url": "https://www.yahoo.com/news/articles/major-city-set-tap-limitless-160000402.html",
+          "source": "Yahoo Entertainment",
+          "published_at": "2025-08-12T16:00:00Z",
+          "relevance_score": 0.5833333333333334
+        },
+        {
+          "title": "Officials celebrate after energy switch saves billions of dollars: 'This is a historic milestone'",
+          "description": "They are far ahead of international goals.",
+          "url": "https://www.yahoo.com/news/articles/officials-celebrate-energy-switch-saves-191500644.html",
+          "source": "Yahoo Entertainment",
+          "published_at": "2025-08-26T19:15:00Z",
+          "relevance_score": 0.4166666666666667
+        },
+        {
+          "title": "Japanese Power Plant Turns Saltwater Into Electricity—and It’s a Glimpse Into the Future",
+          "description": "The Japanese city of Fukuoka is the second in the world to harness the power of osmosis to generate electricity for surrounding areas.",
+          "url": "https://gizmodo.com/japanese-power-plant-turns-saltwater-into-electricity-and-its-a-glimpse-into-the-future-2000648284",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-26T18:05:02Z",
+          "relevance_score": 0.16666666666666666
+        },
+        {
+          "title": "This U.S. Airport Wants to Go Nuclear, and the Backlash Has Already Begun",
+          "description": "Denver International Airport believes a small modular reactor could help it meet its emissions goals, but getting the community on board presents a major hurdle.",
+          "url": "https://gizmodo.com/this-u-s-airport-wants-to-go-nuclear-and-the-backlash-has-already-begun-2000641893",
+          "source": "Gizmodo.com",
+          "published_at": "2025-08-12T15:45:48Z",
+          "relevance_score": 0.08333333333333333
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Trump blames renewable energy for rising electricity prices. Experts point elsewhere"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Trump blames renewable energy for rising electricity prices. Experts point elsewhere",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by Science Feedback with a rating of 'Partially correct'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.7915380001068115,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 11",
+    "input_text": "COVID-19 vaccines cause autism",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. ‘Alternative Facts’ Aren’t a Reason To Skip Vaccines (Nakedcapitalism.com)\n2. What do mRNA vaccines, Synthroid, and pharmaceuticals have in common (according to MAHA)? (Sciencebasedmedicine.org)\n3. How RFK Jr’s vaccine funding cuts fit with Trump’s vision (Al Jazeera English)",
+      "articles": [
+        {
+          "title": "‘Alternative Facts’ Aren’t a Reason To Skip Vaccines",
+          "description": "Just because RFK, Jr. is wrong on vaccines does not make vaccine orthodoxy correct.",
+          "url": "https://www.nakedcapitalism.com/2025/08/alternative-facts-arent-a-reason-to-skip-vaccines.html",
+          "source": "Nakedcapitalism.com",
+          "published_at": "2025-08-15T14:46:15Z",
+          "relevance_score": 0.3333333333333333
+        },
+        {
+          "title": "What do mRNA vaccines, Synthroid, and pharmaceuticals have in common (according to MAHA)?",
+          "description": "If you want to understand why Secretary of Health and Human Services Robert F. Kennedy Jr. has halted $500 million in funding for mRNA vaccine development, look no further than Synthroid and herbal medicines.\nThe post What do mRNA vaccines, Synthroid, and pha…",
+          "url": "https://sciencebasedmedicine.org/what-do-mrna-vaccines-synthroid-and-pharmaceuticals-have-in-common-according-to-maha/",
+          "source": "Sciencebasedmedicine.org",
+          "published_at": "2025-08-18T07:46:00Z",
+          "relevance_score": 0.20833333333333334
+        },
+        {
+          "title": "How RFK Jr’s vaccine funding cuts fit with Trump’s vision",
+          "description": "Latest move to cut funding for vaccines is not down to US health secretary. It is part of Trump's wider war on science.",
+          "url": "https://www.aljazeera.com/news/2025/8/9/how-rfk-jrs-vaccine-funding-cuts-fit-with-trumps-vision",
+          "source": "Al Jazeera English",
+          "published_at": "2025-08-09T10:27:06Z",
+          "relevance_score": 0.08333333333333333
+        },
+        {
+          "title": "Chronically Ill? In RFK Jr.’s View, It Might Be Your Own Fault",
+          "description": "RFK, Jr.'s policy views confirm that he hates the poors.",
+          "url": "https://www.nakedcapitalism.com/2025/08/chronically-ill-in-rfk-jr-s-view-it-might-be-your-own-fault.html",
+          "source": "Nakedcapitalism.com",
+          "published_at": "2025-08-01T06:59:23Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "Scientists And Doctors Don't Give A Damn What RFK Jr. Thinks About The COVID Vaccine",
+          "description": "Vaxx your kids! Vaxx your wife!",
+          "url": "https://www.wonkette.com/p/scientists-and-doctors-dont-give",
+          "source": "Wonkette.com",
+          "published_at": "2025-08-27T14:02:25Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "‘Alternative Facts’ Aren’t a Reason To Skip Vaccines",
+      "What do mRNA vaccines, Synthroid, and pharmaceuticals have in common (according to MAHA)?"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "‘Alternative Facts’ Aren’t a Reason To Skip Vaccines",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "What do mRNA vaccines, Synthroid, and pharmaceuticals have in common (according to MAHA)?",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been fact-checked and rated as 'False' by AFP Fact Check. The claim appears to be false or misleading.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 2.339393377304077,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 12",
+    "input_text": "5G causes coronavirus",
+    "input_type": "claim",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Dave Vellante’s Breaking Analysis: The complete collection (SiliconANGLE News)\n2. Dave Vellante’s Breaking Analysis: The complete collection (SiliconANGLE News)\n3. Dave Vellante’s Breaking Analysis: The complete collection (SiliconANGLE News)",
+      "articles": [
+        {
+          "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+          "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+          "url": "https://siliconangle.com/2025/08/08/dave-vellantes-breaking-analysis-complete-collection/",
+          "source": "SiliconANGLE News",
+          "published_at": "2025-08-08T10:33:12Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+          "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+          "url": "https://siliconangle.com/2025/08/22/dave-vellantes-breaking-analysis-complete-collection/",
+          "source": "SiliconANGLE News",
+          "published_at": "2025-08-22T10:33:12Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+          "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+          "url": "https://siliconangle.com/2025/08/02/dave-vellantes-breaking-analysis-complete-collection/",
+          "source": "SiliconANGLE News",
+          "published_at": "2025-08-02T10:33:12Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+          "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+          "url": "https://siliconangle.com/2025/08/15/dave-vellantes-breaking-analysis-complete-collection/",
+          "source": "SiliconANGLE News",
+          "published_at": "2025-08-15T10:33:12Z",
+          "relevance_score": 0.0
+        },
+        {
+          "title": "ERK-METTL3 axis acts as a novel regulator of antiviral innate immunity combating pseudorabies virus infection",
+          "description": "Author summary Type I interferon (IFN) is crucial for antiviral innate immunity and resistance to α-herpesvirus infections. Our findings suggest that the ERK-METTL3 axis regulates IFN production by activating NF-κB, enhancing m6A modification, and promoting c…",
+          "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1013234",
+          "source": "Plos.org",
+          "published_at": "2025-08-13T14:00:00Z",
+          "relevance_score": 0.0
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Dave Vellante’s Breaking Analysis: The complete collection"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Dave Vellante’s Breaking Analysis: The complete collection",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by AAP with a rating of 'False. The studies cited as evidence do not claim to have found a link between 5G and COVID.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 1.5474462509155273,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 13",
+    "input_text": "The Earth is flat",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Carbon Dioxide Isn’t What You Think It Is (Scientific American)\n2. Why a NASA satellite that scientists and farmers rely on may be destroyed on purpose (NPR)\n3. To build a new runway, RDU must first make a long, flat surface (Raleigh News & Observer)",
+      "articles": [
+        {
+          "title": "Carbon Dioxide Isn’t What You Think It Is",
+          "description": "In his latest book, science journalist Peter Brannen argues that CO2 is the most important—and most misunderstood—molecule on Earth",
+          "url": "https://www.scientificamerican.com/article/carbon-dioxide-isnt-what-you-think-it-is/",
+          "source": "Scientific American",
+          "published_at": "2025-08-21T20:15:00Z",
+          "relevance_score": 0.4583333333333333
+        },
+        {
+          "title": "Why a NASA satellite that scientists and farmers rely on may be destroyed on purpose",
+          "description": "The Trump administration has asked NASA staffers to draw up plans to end at least two satellite missions that measure carbon dioxide in the atmosphere, according to current and former NASA employees.",
+          "url": "https://www.npr.org/2025/08/04/nx-s1-5453731/nasa-carbon-dioxide-satellite-mission-threatened",
+          "source": "NPR",
+          "published_at": "2025-08-04T09:30:00Z",
+          "relevance_score": 0.375
+        },
+        {
+          "title": "To build a new runway, RDU must first make a long, flat surface",
+          "description": "Contractors have begun moving dirt and crushed rock to smooth out the undulating landscape near Raleigh-Durham International Airport’s main runway.",
+          "url": "https://www.newsobserver.com/news/local/article311749812.html",
+          "source": "Raleigh News & Observer",
+          "published_at": "2025-08-25T09:00:00Z",
+          "relevance_score": 0.375
+        },
+        {
+          "title": "Scientists make unbelievable discovery nearly 9,000 feet below surface of Pacific Ocean: 'A new piece of the puzzle'",
+          "description": "\"We've invested more than 20 years in understanding ... \"",
+          "url": "https://www.yahoo.com/news/articles/scientists-unbelievable-discovery-nearly-9-113500325.html",
+          "source": "Yahoo Entertainment",
+          "published_at": "2025-08-25T11:35:00Z",
+          "relevance_score": 0.3333333333333333
+        },
+        {
+          "title": "10 Winners and 4 Losers From San Diego Comic-Con 2025",
+          "description": "io9 recaps its favorite, and least favorite, things about this year's mega pop culture convention.",
+          "url": "https://gizmodo.com/10-winners-and-4-losers-from-san-diego-comic-con-2025-2000636660",
+          "source": "Gizmodo.com",
+          "published_at": "2025-07-30T18:20:19Z",
+          "relevance_score": 0.16666666666666666
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Carbon Dioxide Isn’t What You Think It Is",
+      "The Trump administration has asked NASA staffers to draw up plans to end at least two satellite missions that measure carbon dioxide in the atmosphere, according to current and former NASA employees"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Carbon Dioxide Isn’t What You Think It Is",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "The Trump administration has asked NASA staffers to draw up plans to end at least two satellite missions that measure carbon dioxide in the atmosphere, according to current and former NASA employees",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.9,
+      "reasoning": "This claim has been reviewed by Australian Associated Press with a rating of 'False. The post misinterprets common aeronautical flight calculation methodologies.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 2.782240152359009,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 14",
+    "input_text": "Climate change is a hoax",
+    "input_type": "general",
+    "news_context": {
+      "articles_found": 5,
+      "context": "Recent news coverage:\n1. Trump Is Making Climate Change Denialism Federal Policy (Foreign Policy)\n2. How to Change the Mind of the Most Stubborn Person You Know (Psychology Today)\n3. Ghislaine Maxwell’s testimony says a lot about our dystopia (Al Jazeera English)",
+      "articles": [
+        {
+          "title": "Trump Is Making Climate Change Denialism Federal Policy",
+          "description": "Even as the world reels from record temperatures, the U.S. leader is spreading misinformation.",
+          "url": "http://foreignpolicy.com/2025/08/04/trump-climate-change-epa-regulation/",
+          "source": "Foreign Policy",
+          "published_at": "2025-08-04T21:27:13Z",
+          "relevance_score": 0.6666666666666666
+        },
+        {
+          "title": "How to Change the Mind of the Most Stubborn Person You Know",
+          "description": "Many persuasion attempts fail and cause frustration. Discover the neurological secrets to changing minds using reward-based messaging designed to leverage how the brain works.",
+          "url": "https://www.psychologytoday.com/us/blog/motivate/202507/how-to-change-the-mind-of-the-most-stubborn-person-you-know",
+          "source": "Psychology Today",
+          "published_at": "2025-08-04T16:42:25Z",
+          "relevance_score": 0.5
+        },
+        {
+          "title": "Ghislaine Maxwell’s testimony says a lot about our dystopia",
+          "description": "That the US president needs a character certificate from a convicted criminal is quite befitting.",
+          "url": "https://www.aljazeera.com/opinions/2025/8/24/ghislaine-maxwells-testimony-says-a-lot-about-our-dystopia",
+          "source": "Al Jazeera English",
+          "published_at": "2025-08-24T17:24:07Z",
+          "relevance_score": 0.4
+        },
+        {
+          "title": "Controversial actor Jussie Smollett returns to Fox in latest Special Forces cast",
+          "description": "The ‘Empire’ actor’s hate crime hoax conviction was overturned last November",
+          "url": "https://www.the-independent.com/arts-entertainment/tv/news/jussie-smollett-special-forces-fox-cast-b2803227.html",
+          "source": "The-independent.com",
+          "published_at": "2025-08-06T20:02:48Z",
+          "relevance_score": 0.36666666666666664
+        },
+        {
+          "title": "It Was the Crime Saga That Baffled the Nation Six Years Ago. Now a Netflix Documentary Promises New Insights.",
+          "description": "The whole confusing saga, plus the film The Truth About Jussie Smollett?’s new claims, explained.",
+          "url": "https://slate.com/culture/2025/08/the-truth-about-jussie-smollett-documentary-netflix-crime-attack-case-now.html",
+          "source": "Slate Magazine",
+          "published_at": "2025-08-22T21:53:38Z",
+          "relevance_score": 0.3333333333333333
+        }
+      ]
+    },
+    "extracted_claims": [
+      "Trump Is Making Climate Change Denialism Federal Policy",
+      "Ghislaine Maxwell’s testimony says a lot about our dystopia",
+      "The whole confusing saga, plus the film The Truth About Jussie Smollett?’s new claims, explained"
+    ],
+    "google_factcheck_results": [
+      {
+        "claim": "Trump Is Making Climate Change Denialism Federal Policy",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "Ghislaine Maxwell’s testimony says a lot about our dystopia",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      },
+      {
+        "claim": "The whole confusing saga, plus the film The Truth About Jussie Smollett?’s new claims, explained",
+        "verdict": "NOT ENOUGH INFO",
+        "confidence": 0.0,
+        "publisher": "None",
+        "rating": "None",
+        "url": "None"
+      }
+    ],
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.9,
+      "reasoning": "This claim has been fact-checked and rated as 'False' by FactCheck.org. The claim appears to be false or misleading.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 3.5471887588500977,
+    "success": true,
+    "errors": []
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "input_text": "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade",
+  "input_type": "general",
+  "news_context": {
+    "query": "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade",
+    "articles_found": 0,
+    "claims": [],
+    "context": "No recent news articles found for this query."
+  },
+  "extracted_claims": [
+    "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade"
+  ],
+  "verification_results": [
+    {
+      "claim_text": "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade",
+      "evidence_text": "No evidence available",
+      "stance": "NOT ENOUGH INFO",
+      "confidence_score": 0.0,
+      "source": "No sources",
+      "reasoning": "No evidence or fact-check results available for verification"
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.0,
+    "reasoning": "Based on 1 verification results",
+    "source": "NLI Model"
+  },
+  "processing_time": 1.0177760124206543,
+  "sources_checked": [
+    "Google Fact Check API"
+  ],
+  "google_factcheck_used": false,
+  "success": true,
+  "errors": []
+}

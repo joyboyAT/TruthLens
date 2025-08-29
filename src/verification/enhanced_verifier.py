@@ -1,319 +1,272 @@
 #!/usr/bin/env python3
 """
-Enhanced Verifier using NLI for stance detection
-Works with any input text and evidence, not just pre-detected claims
+Enhanced Verifier with Google Fact Check API Integration
+Uses Google Fact Check API and NLI models for comprehensive claim verification.
 """
 
 import time
-from typing import List, Dict, Any, Tuple
+import logging
+from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
-from pathlib import Path
-import sys
+import torch
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import numpy as np
 
-# Add parent directory to path
-sys.path.append(str(Path(__file__).parent.parent.parent))
+# Import Google Fact Check API
+try:
+    from .google_factcheck_api import GoogleFactCheckAPI, FactCheckResult
+    GOOGLE_FACTCHECK_AVAILABLE = True
+except ImportError:
+    GOOGLE_FACTCHECK_AVAILABLE = False
+
+logger = logging.getLogger(__name__)
 
 @dataclass
 class VerificationResult:
-    """Result of verification using NLI."""
+    """Result of claim verification."""
     claim_text: str
     evidence_text: str
-    stance: str  # "entailment", "contradiction", "neutral"
+    stance: str  # SUPPORTED, REFUTED, NOT ENOUGH INFO
     confidence_score: float
     source: str
     reasoning: str
+    google_factcheck_result: Optional[Dict[str, Any]] = None
 
 class EnhancedVerifier:
-    """
-    Enhanced verifier that uses NLI models for stance detection.
-    Works with any input text and evidence.
-    """
+    """Enhanced verifier using Google Fact Check API and NLI models."""
     
-    def __init__(self):
-        self.nli_model = None
-        self.tokenizer = None
-        self._load_nli_model()
-    
-    def _load_nli_model(self):
-        """Load the NLI model for stance detection."""
-        try:
-            from transformers import AutoTokenizer, AutoModelForSequenceClassification
-            import torch
-            
-            model_name = "roberta-large-mnli"
-            print(f"Loading NLI model: {model_name}")
-            
-            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            self.nli_model = AutoModelForSequenceClassification.from_pretrained(model_name)
-            
-            # Move to GPU if available
-            if torch.cuda.is_available():
-                self.nli_model = self.nli_model.to('cuda')
-                print("NLI model loaded on GPU")
-            else:
-                print("NLI model loaded on CPU")
-                
-        except Exception as e:
-            print(f"Error loading NLI model: {e}")
-            print("Falling back to rule-based verification")
-            self.nli_model = None
-    
-    def verify_text_against_evidence(self, text: str, evidence_list: List[Any]) -> List[VerificationResult]:
+    def __init__(self, google_api_key: Optional[str] = None, nli_model_name: str = "roberta-large-mnli"):
         """
-        Verify any input text against a list of evidence.
+        Initialize the enhanced verifier.
         
         Args:
-            text: Input text to verify (can be any text, not just claims)
-            evidence_list: List of evidence objects (DynamicEvidence or dict)
-            
-        Returns:
-            List of verification results
+            google_api_key: Google Fact Check API key
+            nli_model_name: NLI model to use for verification
         """
-        results = []
+        self.google_factcheck = None
+        self.nli_model = None
+        self.nli_tokenizer = None
         
-        for evidence in evidence_list:
-            # Handle both DynamicEvidence objects and dictionaries
-            if hasattr(evidence, 'content'):
-                # DynamicEvidence object
-                evidence_content = evidence.content
-                evidence_source = evidence.source
-            else:
-                # Dictionary
-                evidence_content = evidence.get('content', '')
-                evidence_source = evidence.get('source', 'Unknown')
-            
-            if evidence_content:
-                result = self._verify_single_pair(text, evidence_content, evidence_source)
-                results.append(result)
+        # Initialize Google Fact Check API
+        if GOOGLE_FACTCHECK_AVAILABLE and google_api_key:
+            try:
+                self.google_factcheck = GoogleFactCheckAPI(google_api_key)
+                logger.info("Google Fact Check API initialized successfully")
+            except Exception as e:
+                logger.error(f"Failed to initialize Google Fact Check API: {e}")
+                self.google_factcheck = None
         
-        return results
-    
-    def _verify_single_pair(self, claim: str, evidence: str, source: str) -> VerificationResult:
-        """Verify a single claim-evidence pair using NLI."""
-        
-        if self.nli_model is not None:
-            return self._nli_verification(claim, evidence, source)
-        else:
-            return self._rule_based_verification(claim, evidence, source)
-    
-    def _nli_verification(self, claim: str, evidence: str, source: str) -> VerificationResult:
-        """Use NLI model for verification."""
+        # Initialize NLI model
         try:
-            import torch
+            logger.info(f"Loading NLI model: {nli_model_name}")
+            self.nli_tokenizer = AutoTokenizer.from_pretrained(nli_model_name)
+            self.nli_model = AutoModelForSequenceClassification.from_pretrained(nli_model_name)
+            self.nli_model.eval()
+            logger.info("NLI model loaded successfully")
+        except Exception as e:
+            logger.error(f"Error loading NLI model: {e}")
+            logger.info("Falling back to rule-based verification")
+            self.nli_model = None
+            self.nli_tokenizer = None
+    
+    def verify_claim_with_google_factcheck(self, claim: str) -> Optional[FactCheckResult]:
+        """Verify claim using Google Fact Check API."""
+        if not self.google_factcheck:
+            return None
+        
+        try:
+            logger.info(f"Verifying claim with Google Fact Check API: {claim[:50]}...")
+            result = self.google_factcheck.verify_claim(claim)
             
-            # Prepare input for NLI
-            # NLI models expect: "premise" + "hypothesis" format
-            # We treat evidence as premise and claim as hypothesis
-            premise = evidence[:500]  # Limit evidence length
-            hypothesis = claim
-            
-            # Tokenize
-            inputs = self.tokenizer(
-                premise,
-                hypothesis,
+            if result:
+                logger.info(f"Found Google Fact Check result: {result.verdict} (confidence: {result.confidence:.1%})")
+                return result
+            else:
+                logger.info("No Google Fact Check result found")
+                return None
+                
+        except Exception as e:
+            logger.error(f"Error verifying claim with Google Fact Check API: {e}")
+            return None
+    
+    def verify_with_nli_model(self, claim: str, evidence: str) -> tuple[str, float]:
+        """Verify claim against evidence using NLI model."""
+        if not self.nli_model or not self.nli_tokenizer:
+            return self._rule_based_verification(claim, evidence)
+        
+        try:
+            # Prepare input for NLI model
+            inputs = self.nli_tokenizer(
+                claim,
+                evidence,
                 return_tensors="pt",
                 truncation=True,
-                max_length=512,
-                padding=True
+                max_length=512
             )
             
-            # Move to same device as model
-            if torch.cuda.is_available():
-                inputs = {k: v.to('cuda') for k, v in inputs.items()}
-            
-            # Get predictions
+            # Get model predictions
             with torch.no_grad():
                 outputs = self.nli_model(**inputs)
                 probabilities = torch.softmax(outputs.logits, dim=1)
-                
+                scores = probabilities[0].numpy()
+            
+            # Map NLI labels to our stance
             # NLI labels: 0=entailment, 1=neutral, 2=contradiction
-            probs = probabilities[0].cpu().numpy()
-            stance_idx = probs.argmax()
-            confidence = float(probs[stance_idx])
+            entailment_score = scores[0]  # SUPPORTED
+            contradiction_score = scores[2]  # REFUTED
+            neutral_score = scores[1]  # NOT ENOUGH INFO
             
-            # Map to stance labels
-            stance_map = {0: "entailment", 1: "neutral", 2: "contradiction"}
-            stance = stance_map.get(stance_idx, "neutral")
+            # Determine stance based on highest score
+            if entailment_score > contradiction_score and entailment_score > neutral_score:
+                stance = "SUPPORTED"
+                confidence = float(entailment_score)
+            elif contradiction_score > entailment_score and contradiction_score > neutral_score:
+                stance = "REFUTED"
+                confidence = float(contradiction_score)
+            else:
+                stance = "NOT ENOUGH INFO"
+                confidence = float(neutral_score)
             
-            # Generate reasoning
-            reasoning = self._generate_reasoning(stance, confidence, claim, evidence)
-            
-            return VerificationResult(
-                claim_text=claim,
-                evidence_text=evidence[:200] + "..." if len(evidence) > 200 else evidence,
-                stance=stance,
-                confidence_score=confidence,
-                source=source,
-                reasoning=reasoning
-            )
+            return stance, confidence
             
         except Exception as e:
-            print(f"Error in NLI verification: {e}")
-            return self._rule_based_verification(claim, evidence, source)
+            logger.error(f"Error with NLI model verification: {e}")
+            return self._rule_based_verification(claim, evidence)
     
-    def _rule_based_verification(self, claim: str, evidence: str, source: str) -> VerificationResult:
-        """Enhanced rule-based verification with source-specific logic."""
-        import re
-        
-        # Simple keyword matching
+    def _rule_based_verification(self, claim: str, evidence: str) -> tuple[str, float]:
+        """Fallback rule-based verification."""
         claim_lower = claim.lower()
         evidence_lower = evidence.lower()
         
-        # Extract key terms from claim
-        claim_terms = set(re.findall(r'\b[a-zA-Z]{4,}\b', claim_lower))
+        # Keywords that suggest contradiction
+        contradiction_keywords = [
+            "false", "debunked", "myth", "hoax", "disproven", "incorrect",
+            "no evidence", "misleading", "inaccurate", "wrong"
+        ]
         
-        # Count matching terms
-        matching_terms = sum(1 for term in claim_terms if term in evidence_lower)
-        total_terms = len(claim_terms)
+        # Keywords that suggest support
+        support_keywords = [
+            "true", "confirmed", "verified", "proven", "fact", "correct",
+            "evidence shows", "studies confirm", "research proves"
+        ]
         
-        # Source-specific adjustments
-        source_confidence_boost = 0.0
-        if source.lower() in ['snopes', 'politifact', 'factcheck.org']:
-            source_confidence_boost = 0.2  # Boost for fact-checking sources
-        elif source.lower() == 'wikipedia':
-            source_confidence_boost = 0.1  # Boost for Wikipedia
+        # Count keywords
+        contradiction_count = sum(1 for keyword in contradiction_keywords if keyword in evidence_lower)
+        support_count = sum(1 for keyword in support_keywords if keyword in evidence_lower)
         
-        # Look for contradiction indicators
-        contradiction_indicators = ['false', 'debunked', 'misleading', 'no evidence', 'unfounded', 'hoax', 'myth']
-        contradiction_count = sum(1 for indicator in contradiction_indicators if indicator in evidence_lower)
-        
-        # Look for support indicators
-        support_indicators = ['true', 'confirmed', 'verified', 'accurate', 'correct', 'supported by']
-        support_count = sum(1 for indicator in support_indicators if indicator in evidence_lower)
-        
-        if total_terms == 0:
-            confidence = 0.5
-            stance = "neutral"
+        # Determine stance
+        if contradiction_count > support_count:
+            return "REFUTED", 0.6
+        elif support_count > contradiction_count:
+            return "SUPPORTED", 0.6
         else:
-            match_ratio = matching_terms / total_terms
-            
-            # Adjust based on contradiction/support indicators
-            if contradiction_count > support_count:
-                stance = "contradiction"
-                confidence = min(0.9, 0.6 + contradiction_count * 0.1 + source_confidence_boost)
-            elif support_count > contradiction_count:
-                stance = "entailment"
-                confidence = min(0.9, 0.5 + match_ratio * 0.3 + support_count * 0.1 + source_confidence_boost)
-            elif match_ratio > 0.6:
-                stance = "entailment"
-                confidence = min(0.8, 0.5 + match_ratio * 0.3 + source_confidence_boost)
-            elif match_ratio < 0.3:
-                stance = "contradiction"
-                confidence = min(0.8, 0.4 + (1 - match_ratio) * 0.4 + source_confidence_boost)
-            else:
-                stance = "neutral"
-                confidence = 0.5 + source_confidence_boost
-        
-        reasoning = self._generate_reasoning(stance, confidence, claim, evidence)
-        
-        return VerificationResult(
-            claim_text=claim,
-            evidence_text=evidence[:200] + "..." if len(evidence) > 200 else evidence,
-            stance=stance,
-            confidence_score=confidence,
-            source=source,
-            reasoning=reasoning
-        )
+            return "NOT ENOUGH INFO", 0.3
     
-    def _generate_reasoning(self, stance: str, confidence: float, claim: str, evidence: str) -> str:
-        """Generate human-readable reasoning for the verification result."""
+    def verify_text_against_evidence(self, claim_text: str, evidence_list: List[Dict[str, Any]]) -> List[VerificationResult]:
+        """Verify claim against multiple evidence sources."""
+        results = []
         
-        if stance == "entailment":
-            if confidence > 0.8:
-                return f"The evidence strongly supports this claim. The information in the evidence directly relates to and confirms the statement."
-            else:
-                return f"The evidence provides some support for this claim, though the connection may not be definitive."
+        # First, try Google Fact Check API
+        google_result = self.verify_claim_with_google_factcheck(claim_text)
         
-        elif stance == "contradiction":
-            if confidence > 0.8:
-                return f"The evidence contradicts this claim. The information in the evidence directly refutes the statement."
-            else:
-                return f"The evidence appears to contradict this claim, though the contradiction may not be definitive."
+        if google_result:
+            # Use Google Fact Check result as primary verification
+            result = VerificationResult(
+                claim_text=claim_text,
+                evidence_text=f"Google Fact Check: {google_result.rating}",
+                stance=google_result.verdict,
+                confidence_score=google_result.confidence,
+                source="Google Fact Check API",
+                reasoning=google_result.explanation,
+                google_factcheck_result={
+                    "publisher": google_result.publisher,
+                    "rating": google_result.rating,
+                    "url": google_result.url,
+                    "review_date": google_result.review_date
+                }
+            )
+            results.append(result)
+            logger.info(f"Primary verification from Google Fact Check: {google_result.verdict}")
         
-        else:  # neutral
-            return f"The evidence neither clearly supports nor contradicts this claim. More specific information would be needed to make a determination."
+        # If no Google Fact Check result, use evidence list with NLI model
+        if not google_result and evidence_list:
+            logger.info("No Google Fact Check result found, using evidence list with NLI model")
+            
+            for i, evidence in enumerate(evidence_list[:3]):  # Limit to top 3 evidence
+                evidence_text = evidence.get('snippet', '') or evidence.get('text', '')
+                source = evidence.get('source', f'Evidence {i+1}')
+                
+                if evidence_text:
+                    stance, confidence = self.verify_with_nli_model(claim_text, evidence_text)
+                    
+                    result = VerificationResult(
+                        claim_text=claim_text,
+                        evidence_text=evidence_text[:200] + "..." if len(evidence_text) > 200 else evidence_text,
+                        stance=stance,
+                        confidence_score=confidence,
+                        source=source,
+                        reasoning=f"Verified using NLI model against {source}"
+                    )
+                    results.append(result)
+        
+        # If still no results, create a default result
+        if not results:
+            logger.info("No verification results found, creating default result")
+            result = VerificationResult(
+                claim_text=claim_text,
+                evidence_text="No evidence available",
+                stance="NOT ENOUGH INFO",
+                confidence_score=0.0,
+                source="No sources",
+                reasoning="No evidence or fact-check results available for verification"
+            )
+            results.append(result)
+        
+        return results
     
     def get_overall_verdict(self, verification_results: List[VerificationResult]) -> Dict[str, Any]:
         """Get overall verdict from multiple verification results."""
-        
         if not verification_results:
             return {
-                "verdict": "Not Verified",
+                "verdict": "NOT ENOUGH INFO",
                 "confidence": 0.0,
-                "reasoning": "No evidence available for verification."
+                "reasoning": "No verification results available"
             }
         
-        # Calculate weighted average based on source reliability
-        source_weights = {
-            "Wikipedia": 0.8,
-            "Fact-Checking Organizations": 0.9,
-            "News": 0.7,
-            "Web Search": 0.6,
-            "Unknown": 0.5
-        }
+        # If we have Google Fact Check result, use it as primary
+        google_results = [r for r in verification_results if r.google_factcheck_result]
+        if google_results:
+            primary_result = google_results[0]
+            return {
+                "verdict": primary_result.stance,
+                "confidence": primary_result.confidence_score,
+                "reasoning": primary_result.reasoning,
+                "source": "Google Fact Check API"
+            }
         
-        total_weight = 0
-        weighted_score = 0
-        
-        for result in verification_results:
-            weight = source_weights.get(result.source, 0.5)
-            
-            # Convert stance to score
-            if result.stance == "entailment":
-                score = result.confidence_score
-            elif result.stance == "contradiction":
-                score = 1 - result.confidence_score
-            else:  # neutral
-                score = 0.5
-            
-            weighted_score += score * weight * result.confidence_score
-            total_weight += weight * result.confidence_score
-        
-        if total_weight == 0:
-            overall_score = 0.5
-        else:
-            overall_score = weighted_score / total_weight
-        
-        # Determine verdict
-        if overall_score >= 0.7:
-            verdict = "Likely True"
-        elif overall_score <= 0.3:
-            verdict = "Likely False"
-        else:
-            verdict = "Unclear"
-        
-        # Generate overall reasoning
-        reasoning = self._generate_overall_reasoning(verification_results, overall_score)
-        
-        return {
-            "verdict": verdict,
-            "confidence": overall_score,
-            "reasoning": reasoning,
-            "evidence_count": len(verification_results)
-        }
-    
-    def _generate_overall_reasoning(self, results: List[VerificationResult], overall_score: float) -> str:
-        """Generate overall reasoning based on all verification results."""
-        
-        if not results:
-            return "No evidence was found to verify this claim."
+        # Otherwise, aggregate results
+        stances = [r.stance for r in verification_results]
+        confidences = [r.confidence_score for r in verification_results]
         
         # Count stances
-        stances = [r.stance for r in results]
-        entailment_count = stances.count("entailment")
-        contradiction_count = stances.count("contradiction")
-        neutral_count = stances.count("neutral")
+        stance_counts = {}
+        for stance in stances:
+            stance_counts[stance] = stance_counts.get(stance, 0) + 1
         
-        if entailment_count > contradiction_count and entailment_count > neutral_count:
-            return f"Multiple sources ({entailment_count} out of {len(results)}) support this claim, suggesting it is likely true."
-        elif contradiction_count > entailment_count and contradiction_count > neutral_count:
-            return f"Multiple sources ({contradiction_count} out of {len(results)}) contradict this claim, suggesting it is likely false."
+        # Get most common stance
+        if stance_counts:
+            most_common_stance = max(stance_counts, key=stance_counts.get)
+            avg_confidence = sum(confidences) / len(confidences)
+            
+            return {
+                "verdict": most_common_stance,
+                "confidence": avg_confidence,
+                "reasoning": f"Based on {len(verification_results)} verification results",
+                "source": "NLI Model"
+            }
         else:
-            return f"The evidence is mixed or unclear. {len(results)} sources were checked, but no clear consensus emerged."
-
-# Convenience function for easy integration
-def verify_text_with_evidence(text: str, evidence_list: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Verify any text against evidence and return overall verdict."""
-    verifier = EnhancedVerifier()
-    results = verifier.verify_text_against_evidence(text, evidence_list)
-    return verifier.get_overall_verdict(results)
+            return {
+                "verdict": "NOT ENOUGH INFO",
+                "confidence": 0.0,
+                "reasoning": "No clear verification results"
+            }

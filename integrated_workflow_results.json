@@ -1,0 +1,268 @@
+[
+  {
+    "test_name": "Test 1",
+    "input_text": "COVID-19 vaccines cause autism",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AFP Fact Check",
+      "rating": "False",
+      "url": "https://factcheck.afp.com/doc.afp.com.36TP484",
+      "explanation": "This claim has been fact-checked and rated as 'False' by AFP Fact Check. The claim appears to be false or misleading."
+    },
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been fact-checked and rated as 'False' by AFP Fact Check. The claim appears to be false or misleading.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.6789429187774658,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 2",
+    "input_text": "5G causes coronavirus",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AAP",
+      "rating": "False. The studies cited as evidence do not claim to have found a link between 5G and COVID.",
+      "url": "https://www.aap.com.au/factcheck/bombshell-5g-covid-studies-tank-upon-closer-inspection/",
+      "explanation": "This claim has been reviewed by AAP with a rating of 'False. The studies cited as evidence do not claim to have found a link between 5G and COVID.'. More context may be needed for a complete assessment."
+    },
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by AAP with a rating of 'False. The studies cited as evidence do not claim to have found a link between 5G and COVID.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.6217584609985352,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 3",
+    "input_text": "Bill Gates wants to microchip people",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AAP",
+      "rating": "False. The Kenyan Digital ID system does not involve implanting anything in babies.",
+      "url": "https://www.aap.com.au/factcheck/kenyan-babies-are-not-targets-of-bill-gates-plot-to-implant-digital-id/",
+      "explanation": "This claim has been reviewed by AAP with a rating of 'False. The Kenyan Digital ID system does not involve implanting anything in babies.'. More context may be needed for a complete assessment."
+    },
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by AAP with a rating of 'False. The Kenyan Digital ID system does not involve implanting anything in babies.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.5324325561523438,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 4",
+    "input_text": "Hydroxychloroquine cures COVID-19",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AAP",
+      "rating": "False. Multiply high-quality human trials and studies have found the drug is not effective against the COVID virus.",
+      "url": "https://www.aap.com.au/factcheck/palmers-covid-drug-claim-flies-in-the-face-of-science/",
+      "explanation": "This claim has been reviewed by AAP with a rating of 'False. Multiply high-quality human trials and studies have found the drug is not effective against the COVID virus.'. More context may be needed for a complete assessment."
+    },
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by AAP with a rating of 'False. Multiply high-quality human trials and studies have found the drug is not effective against the COVID virus.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.5613119602203369,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 5",
+    "input_text": "The Earth is flat",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.9,
+      "publisher": "Australian Associated Press",
+      "rating": "False. The post misinterprets common aeronautical flight calculation methodologies.",
+      "url": "https://www.aap.com.au/factcheck/no-nasa-didnt-admit-the-earth-is-flat/",
+      "explanation": "This claim has been reviewed by Australian Associated Press with a rating of 'False. The post misinterprets common aeronautical flight calculation methodologies.'. More context may be needed for a complete assessment."
+    },
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.9,
+      "reasoning": "This claim has been reviewed by Australian Associated Press with a rating of 'False. The post misinterprets common aeronautical flight calculation methodologies.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.7514932155609131,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 6",
+    "input_text": "Climate change is a hoax",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.9,
+      "publisher": "FactCheck.org",
+      "rating": "False",
+      "url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/",
+      "explanation": "This claim has been fact-checked and rated as 'False' by FactCheck.org. The claim appears to be false or misleading."
+    },
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.9,
+      "reasoning": "This claim has been reviewed by FactCheck.org with a rating of 'Misleading'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.7478647232055664,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 7",
+    "input_text": "The moon landing was fake",
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AAP",
+      "rating": "False. The initial images used by newspapers were taken from the live footage beamed around the world during the landing.",
+      "url": "https://www.aap.com.au/factcheck/fake-moon-landing-claim-orbits-the-simple-facts/",
+      "explanation": "This claim has been reviewed by AAP with a rating of 'False. The initial images used by newspapers were taken from the live footage beamed around the world during the landing.'. More context may be needed for a complete assessment."
+    },
+    "pipeline_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by AAP with a rating of 'False. The initial images used by newspapers were taken from the live footage beamed around the world during the landing.'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.740105390548706,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 8",
+    "input_text": "Chemtrails are real",
+    "google_factcheck_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "publisher": "AFP Fact Check",
+      "rating": "Altered video",
+      "url": "https://factcheck.afp.com/doc.afp.com.36ZH8NR",
+      "explanation": "This claim has been reviewed by AFP Fact Check with a rating of 'Altered video'. More context may be needed for a complete assessment."
+    },
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "reasoning": "This claim has been reviewed by AFP Fact Check with a rating of 'Altered video'. More context may be needed for a complete assessment.",
+      "source": "Google Fact Check API",
+      "google_factcheck_used": true
+    },
+    "processing_time": 0.6473824977874756,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 9",
+    "input_text": "Water boils at 100 degrees Celsius at sea level",
+    "google_factcheck_result": null,
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 0.526172399520874,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 10",
+    "input_text": "The sky is blue due to Rayleigh scattering",
+    "google_factcheck_result": null,
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 0.7334170341491699,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 11",
+    "input_text": "Modi visited Japan in 2024",
+    "google_factcheck_result": null,
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 0.6419544219970703,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 12",
+    "input_text": "Python is a programming language",
+    "google_factcheck_result": null,
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 0.4875917434692383,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 13",
+    "input_text": "The Great Wall of China is visible from space",
+    "google_factcheck_result": null,
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 0.6772782802581787,
+    "success": true,
+    "errors": []
+  },
+  {
+    "test_name": "Test 14",
+    "input_text": "Drinking 8 glasses of water per day is essential",
+    "google_factcheck_result": null,
+    "pipeline_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.0,
+      "reasoning": "Based on 1 verification results",
+      "source": "NLI Model",
+      "google_factcheck_used": false
+    },
+    "processing_time": 0.651261568069458,
+    "success": true,
+    "errors": []
+  }
+]

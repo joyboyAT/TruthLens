@@ -126,6 +126,37 @@ class SimpleTruthLensPipeline:
         else:
             return "NOT ENOUGH INFO", 0.3
     
+    def fallback_verification(self, claim: str) -> tuple[str, float]:
+        """Fallback verification using keyword analysis."""
+        claim_lower = claim.lower()
+        
+        # Keywords that suggest false claims (common misinformation patterns)
+        false_indicators = [
+            "myth", "hoax", "conspiracy", "fake", "false", "debunked",
+            "no evidence", "disproven", "misleading", "inaccurate",
+            "flat earth", "nasa hiding", "cover up", "they don't want you to know",
+            "secret", "hidden", "suppressed", "censored", "mainstream media lies"
+        ]
+        
+        # Keywords that suggest true claims
+        true_indicators = [
+            "confirmed", "verified", "proven", "fact", "true", "accurate",
+            "scientific consensus", "peer-reviewed", "established", "evidence shows",
+            "studies confirm", "research proves", "experts agree"
+        ]
+        
+        # Count indicators
+        false_count = sum(1 for indicator in false_indicators if indicator in claim_lower)
+        true_count = sum(1 for indicator in true_indicators if indicator in claim_lower)
+        
+        # Determine verdict
+        if false_count > true_count:
+            return "REFUTED", 0.6
+        elif true_count > false_count:
+            return "SUPPORTED", 0.6
+        else:
+            return "NOT ENOUGH INFO", 0.3
+    
     def generate_explanation(self, claim: str, verdict: str, confidence: float) -> str:
         """Generate explanation for the verdict."""
         if verdict == "REFUTED":

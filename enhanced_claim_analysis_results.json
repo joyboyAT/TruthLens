@@ -1,0 +1,966 @@
+[
+  {
+    "original_claim": "Nanded floods caused massive destruction in Maharashtra",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "Nanded floods",
+      "massive destruction in Maharashtra",
+      "Nanded floods massive destruction in Maharashtra",
+      "Nanded",
+      "Maharashtra"
+    ],
+    "news_articles": [
+      {
+        "title": "Maharashtra rains: Five missing in Nanded floods, 293 rescued",
+        "description": "Heavy rains and floods in Maharashtra have resulted in six deaths and five missing individuals in Nanded. Mumbai experienced substantial rainfall, with some areas exceeding 200 mm in the last 24 hours. Hundreds of passengers were rescued from a stranded Mumba…",
+        "url": "https://economictimes.indiatimes.com/news/india/maharashtra-rains-six-dead-five-missing-in-floods-293-rescued-in-nanded/articleshow/123398518.cms",
+        "source": "The Times of India",
+        "published_at": "2025-08-20T02:58:02Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Nanded floods"
+      },
+      {
+        "title": "Search on for missing woman in Nanded",
+        "description": "Afrin was one of four persons who was swept away when gushing waters from Lendi barrage submerged the Dharaknal bridge in Ardhrapur. They were on the bridge when floodwaters swept away the car and the autorickshaw they were travelling in.",
+        "url": "https://indianexpress.com/article/cities/pune/search-on-for-missing-woman-in-nanded-10201496/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-20T18:38:21Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Nanded"
+      },
+      {
+        "title": "Army columns deployed for relief in Nanded district",
+        "description": "The Mukhed taluka of Nanded district was badly hit by floods following heavy rains over the last two days.",
+        "url": "https://indianexpress.com/article/cities/pune/army-columns-relief-nanded-10199377/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-19T16:59:15Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Nanded"
+      },
+      {
+        "title": "Heavy rain lashes Marathwada; 5 missing in Nanded, says CM Devendra Fadnavis",
+        "description": "Eight people were evacuated from Hassanal, while 20 others stranded in Bhaswadi and around 40 people stuck in Bhingeli are reportedly safe, Maharashtra Chief Minister Devendra Fadnavis said.",
+        "url": "https://indianexpress.com/article/cities/mumbai/heavy-rain-lashes-marathwada-5-missing-in-nanded-says-cm-devendra-fadnavis-10196321/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-18T09:36:18Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Nanded"
+      },
+      {
+        "title": "Apple Announces Fourth Store in India",
+        "description": "Apple is launching a new retail store location in India, with Apple Koregaon Park set to open on Thursday, September 4 at 1:00 p.m. local time.\n\n\n\n\n\nApple Koregaon Park is located in Pune, in the state of Maharashtra. Apple already has two retail store locati…",
+        "url": "https://www.macrumors.com/2025/08/26/apple-announces-fourth-store-in-india/",
+        "source": "MacRumors",
+        "published_at": "2025-08-26T19:44:06Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Maharashtra"
+      },
+      {
+        "title": "Health v heritage: Pigeon feeding ban sparks debate in India",
+        "description": "Feeding pigeons is common in Indian cities but is now controversial due to rising numbers and health risks.",
+        "url": "https://www.bbc.com/news/articles/cvg3mj0vkzro",
+        "source": "BBC News",
+        "published_at": "2025-08-17T23:32:50Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Maharashtra"
+      },
+      {
+        "title": "Delhi Confidential: All set for ‘next step’",
+        "description": "Nearly 50 achievers, either hailing from Maharashtra or allotted the state cadre, are expected to participate",
+        "url": "https://indianexpress.com/article/delhi-confidential/delhi-confidential-all-set-for-next-step-10199614/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-19T20:48:06Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Maharashtra"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.29285714285714287,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "Mixed evidence: 0 supporting, 0 contradicting, 7 neutral"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Nanded floods caused massive destruction in Maharashtra\n- Claim Type: causal\n- Search Phrases: Nanded floods, massive destruction in Maharashtra, Nanded floods massive destruction in Maharashtra, Nanded, Maharashtra\n- News Articles Found: 7\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (29.3%)\n- Reasoning: Mixed evidence: 0 supporting, 0 contradicting, 7 neutral\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.858079195022583
+  },
+  {
+    "original_claim": "COVID-19 vaccines cause autism in children",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "19 vaccines",
+      "autism in children",
+      "19 vaccines autism in children",
+      "COVID",
+      "COVID-19 vaccines cause autism in children"
+    ],
+    "news_articles": [
+      {
+        "title": "A Rare Flu Complication Is Killing More U.S. Children",
+        "description": "At least 11 children in the U.S. have died from influenza-associated acute necrotizing encephalopathy since October 2023, a new study shows.",
+        "url": "https://gizmodo.com/a-rare-flu-complication-is-killing-more-u-s-children-2000636499",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T15:00:04Z",
+        "relevance_score": 0.6666666666666666,
+        "search_phrase": "autism in children"
+      },
+      {
+        "title": "RFK Jr. Attacks Pediatricians for Daring to Recommend Covid-19 Vaccines for Kids",
+        "description": "Kennedy accused the American Academy of Pediatrics of working for Big Pharma, even as he himself has profited from attacking vaccines.",
+        "url": "https://gizmodo.com/rfk-jr-attacks-pediatricians-for-daring-to-recommend-covid-19-vaccines-for-kids-2000645554",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-20T16:10:08Z",
+        "relevance_score": 0.5333333333333333,
+        "search_phrase": "19 vaccines autism in children"
+      },
+      {
+        "title": "RFK, Jr., Demanded Study on Vaccines and Aluminum Be Retracted—The Journal Said No",
+        "description": "US health secretary and vaccine sceptic Robert F. Kennedy Jr has called for the retraction of a Danish study that found no link between aluminium in vaccines...",
+        "url": "https://www.yahoo.com/news/articles/rfk-jr-demanded-study-vaccines-194500702.html",
+        "source": "Yahoo Entertainment",
+        "published_at": "2025-08-25T19:45:00Z",
+        "relevance_score": 0.3888888888888889,
+        "search_phrase": "autism in children"
+      },
+      {
+        "title": "‘Alternative Facts’ Aren’t a Reason To Skip Vaccines",
+        "description": "Just because RFK, Jr. is wrong on vaccines does not make vaccine orthodoxy correct.",
+        "url": "https://www.nakedcapitalism.com/2025/08/alternative-facts-arent-a-reason-to-skip-vaccines.html",
+        "source": "Nakedcapitalism.com",
+        "published_at": "2025-08-15T14:46:15Z",
+        "relevance_score": 0.3888888888888889,
+        "search_phrase": "COVID-19 vaccines cause autism in children"
+      },
+      {
+        "title": "America’s leading physician groups are now openly defying RFK Jr.",
+        "description": "For decades, the American public, the federal government, and the medical community have been nearly unanimous: Vaccines are important because they save lives. Today, after years of escalating attacks, that consensus has irrevocably shattered.  The rupture ha…",
+        "url": "https://www.vox.com/health/459226/rfk-jr-trump-covid-vaccine-ban",
+        "source": "Vox",
+        "published_at": "2025-08-25T21:24:49Z",
+        "relevance_score": 0.26666666666666666,
+        "search_phrase": "19 vaccines autism in children"
+      },
+      {
+        "title": "How RFK Jr’s vaccine funding cuts fit with Trump’s vision",
+        "description": "Latest move to cut funding for vaccines is not down to US health secretary. It is part of Trump's wider war on science.",
+        "url": "https://www.aljazeera.com/news/2025/8/9/how-rfk-jrs-vaccine-funding-cuts-fit-with-trumps-vision",
+        "source": "Al Jazeera English",
+        "published_at": "2025-08-09T10:27:06Z",
+        "relevance_score": 0.26666666666666666,
+        "search_phrase": "19 vaccines autism in children"
+      },
+      {
+        "title": "Chronically Ill? In RFK Jr.’s View, It Might Be Your Own Fault",
+        "description": "RFK, Jr.'s policy views confirm that he hates the poors.",
+        "url": "https://www.nakedcapitalism.com/2025/08/chronically-ill-in-rfk-jr-s-view-it-might-be-your-own-fault.html",
+        "source": "Nakedcapitalism.com",
+        "published_at": "2025-08-01T06:59:23Z",
+        "relevance_score": 0.1111111111111111,
+        "search_phrase": "COVID-19 vaccines cause autism in children"
+      },
+      {
+        "title": "FDA approves updated COVID vaccines with restrictions on who can receive them",
+        "description": "The U.S. Food and Drug Administration on Wednesday approved updated COVID-19 vaccines with restrictions on who can receive the shots.",
+        "url": "https://abcnews.go.com/Health/fda-approves-updated-covid-vaccines-restrictions-receive/story?id=125032817",
+        "source": "ABC News",
+        "published_at": "2025-08-27T17:53:15Z",
+        "relevance_score": 0.0,
+        "search_phrase": "19 vaccines"
+      },
+      {
+        "title": "Report: RFK Jr. and Trump to Pull Covid-19 Vaccines ‘Within Months’",
+        "description": "Cardiologist Aseem Malhotra claims that the Trump administration will take action to remove mRNA vaccines from the U.S. market later this year.",
+        "url": "https://gizmodo.com/report-rfk-jr-and-trump-to-pull-covid-19-vaccines-within-months-2000647528",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-25T15:40:45Z",
+        "relevance_score": 0.0,
+        "search_phrase": "19 vaccines"
+      },
+      {
+        "title": "Scientists Uncover Unexpected Connection Between Covid and the Common Cold",
+        "description": "If you've recently caught a cold, you might be less likely to get covid right after.",
+        "url": "https://gizmodo.com/scientists-uncover-unexpected-connection-between-covid-and-the-common-cold-2000648192",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-26T15:25:00Z",
+        "relevance_score": 0.0,
+        "search_phrase": "COVID"
+      },
+      {
+        "title": "An Account Using the Same Name as Trump's BLS Pick Posted Red-Pilled Conspiracy Theories",
+        "description": "A WIRED review of a now-deleted Twitter account that used the screen name “Dr. Erwin J. Antoni III” shows it posted conspiratorial content about the 2020 election, Covid-19, and Jeffrey Epstein.",
+        "url": "https://www.wired.com/story/twitter-ej-antoni-trump-bls-conspiracy-theories-epstein-covid-election-denial/",
+        "source": "Wired",
+        "published_at": "2025-08-18T21:25:31Z",
+        "relevance_score": 0.0,
+        "search_phrase": "COVID"
+      },
+      {
+        "title": "How Burning Man VR rebuilt after Microsoft shut it down",
+        "description": "It was all just supposed to be a one-time thing. When Burning Man got canceled because of covid-19 in 2020, a number of attendees banded together to re-create the festival on the social VR platform Altspace. That virtual Burning Man experience not only attrac…",
+        "url": "https://www.theverge.com/lowpass-newsletter/762887/burning-man-vr-microsoft-rebuilt",
+        "source": "The Verge",
+        "published_at": "2025-08-21T14:29:44Z",
+        "relevance_score": 0.0,
+        "search_phrase": "COVID"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.5491666666666668,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Found 2 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: COVID-19 vaccines cause autism in children\n- Claim Type: causal\n- Search Phrases: 19 vaccines, autism in children, 19 vaccines autism in children, COVID, COVID-19 vaccines cause autism in children\n- News Articles Found: 12\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (54.9%)\n- Reasoning: Found 2 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.8882551193237305
+  },
+  {
+    "original_claim": "5G technology causes coronavirus",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "5G technology",
+      "coronavirus",
+      "5G technology coronavirus",
+      "5G technology causes coronavirus"
+    ],
+    "news_articles": [
+      {
+        "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+        "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+        "url": "https://siliconangle.com/2025/08/22/dave-vellantes-breaking-analysis-complete-collection/",
+        "source": "SiliconANGLE News",
+        "published_at": "2025-08-22T10:33:12Z",
+        "relevance_score": 0.16666666666666666,
+        "search_phrase": "5G technology coronavirus"
+      },
+      {
+        "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+        "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+        "url": "https://siliconangle.com/2025/08/02/dave-vellantes-breaking-analysis-complete-collection/",
+        "source": "SiliconANGLE News",
+        "published_at": "2025-08-02T10:33:12Z",
+        "relevance_score": 0.16666666666666666,
+        "search_phrase": "5G technology coronavirus"
+      },
+      {
+        "title": "Dave Vellante’s Breaking Analysis: The complete collection",
+        "description": "Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…",
+        "url": "https://siliconangle.com/2025/08/08/dave-vellantes-breaking-analysis-complete-collection/",
+        "source": "SiliconANGLE News",
+        "published_at": "2025-08-08T10:33:12Z",
+        "relevance_score": 0.125,
+        "search_phrase": "5G technology causes coronavirus"
+      },
+      {
+        "title": "6 Ways to Protect Yourself from Unprecedented 6G Health Threats",
+        "description": "T.H.E.Y (The Hierarchy Enslaving You) see us as nothing more than bio-hackable “animals,” rather than mysterious human spirits. Regardless of any objection, T.H.E.Y want our bodies to be internally fused and configured with their advancing 6G technology curre…",
+        "url": "https://www.activistpost.com/6-ways-to-protect-yourself-from-unprecedented-6g-health-threats/",
+        "source": "Activistpost.com",
+        "published_at": "2025-08-19T14:00:00Z",
+        "relevance_score": 0.1111111111111111,
+        "search_phrase": "5G technology coronavirus"
+      },
+      {
+        "title": "Why people embrace conspiracy theories: It's about community, not gullibility",
+        "description": "Psychologists have long considered how a tendency towards irrational thinking or particular personality traits might predict people's interest in conspiracies. Yet these individual factors do not explain the group processes through which conspiracy theorists …",
+        "url": "https://phys.org/news/2025-08-people-embrace-conspiracy-theories-community.html",
+        "source": "Phys.Org",
+        "published_at": "2025-08-23T16:20:01Z",
+        "relevance_score": 0.0,
+        "search_phrase": "5G technology"
+      },
+      {
+        "title": "Rogers expands Wi-Fi 7 to Quebec",
+        "description": "Rogers is bringing Wi-Fi 7 to even more Canadians as it launches the new tech for people in Quebec. This comes as the carrier was the first to bring Wi-Fi 7 to Canada at the end of June, launching in select areas of Calgary. Then last week, it announced that …",
+        "url": "https://mobilesyrup.com/2025/07/30/rogers-expands-wi-fi-7-to-quebec/",
+        "source": "MobileSyrup",
+        "published_at": "2025-07-30T19:36:33Z",
+        "relevance_score": 0.0,
+        "search_phrase": "5G technology"
+      },
+      {
+        "title": "Fifth Generation (5G) Devices Market Outlook Report 2025, with Competitive Landscape and Company Profiles of Leading and Innovative Players",
+        "description": "The 5G devices market is poised for exponential growth, soaring from $4.33 billion in 2024 to $26.05 billion in 2029 with a 43.1% CAGR. Driven by high-speed connectivity needs, industrial demand, and innovative trends in IoT and smart cities, major players li…",
+        "url": "https://www.globenewswire.com/news-release/2025/08/18/3134750/28124/en/Fifth-Generation-5G-Devices-Market-Outlook-Report-2025-with-Competitive-Landscape-and-Company-Profiles-of-Leading-and-Innovative-Players.html",
+        "source": "GlobeNewswire",
+        "published_at": "2025-08-18T08:03:00Z",
+        "relevance_score": 0.0,
+        "search_phrase": "5G technology"
+      },
+      {
+        "title": "What to Know About Traveling to China for Business",
+        "description": "Recent developments and an escalating trade war have made travel to cities like Beijing challenging but by no means impossible.",
+        "url": "https://www.wired.com/story/how-to-travel-to-china/",
+        "source": "Wired",
+        "published_at": "2025-08-06T13:00:00Z",
+        "relevance_score": 0.0,
+        "search_phrase": "coronavirus"
+      },
+      {
+        "title": "RTO made its biggest post-pandemic comeback in July",
+        "description": "July saw the most US employees working from the office since the pandemic began, foot traffic data from Placer.ai shows.",
+        "url": "https://www.businessinsider.com/data-most-employees-working-at-office-since-covid-rto-mandate-2025-8",
+        "source": "Business Insider",
+        "published_at": "2025-08-14T10:59:02Z",
+        "relevance_score": 0.0,
+        "search_phrase": "coronavirus"
+      },
+      {
+        "title": "Chikungunya virus not a threat to Apple's Chinese supply chain",
+        "description": "There's another virus spreading in China, but despite what you may have heard on social media, it is not airborne, is contained, and isn't comparable to the COVID-19 situation for Apple or the world yet.Foxconn likely won't be affected by the virus. Image sou…",
+        "url": "https://appleinsider.com/articles/25/08/05/chikungunya-virus-not-a-threat-to-apples-chinese-supply-chain",
+        "source": "AppleInsider",
+        "published_at": "2025-08-05T20:48:02Z",
+        "relevance_score": 0.0,
+        "search_phrase": "coronavirus"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.39298333333333335,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "Found 2 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: 5G technology causes coronavirus\n- Claim Type: causal\n- Search Phrases: 5G technology, coronavirus, 5G technology coronavirus, 5G technology causes coronavirus\n- News Articles Found: 10\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (39.3%)\n- Reasoning: Found 2 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.1767685413360596
+  },
+  {
+    "original_claim": "Climate change causes extreme weather events",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "Climate change",
+      "extreme weather events",
+      "Climate change extreme weather events",
+      "Climate",
+      "Climate change causes extreme weather events"
+    ],
+    "news_articles": [
+      {
+        "title": "70 years of data show extreme heat is already wiping out tropical bird populations",
+        "description": "Human-driven climate change threatens many species, including birds. Most studies on this topic focus on long-term climate trends, such as gradual rises in average temperatures or shifts in rainfall patterns. But extreme weather events are becoming more commo…",
+        "url": "https://phys.org/news/2025-08-years-extreme-tropical-bird-populations.html",
+        "source": "Phys.Org",
+        "published_at": "2025-08-12T14:28:29Z",
+        "relevance_score": 0.4166666666666667,
+        "search_phrase": "Climate change causes extreme weather events"
+      },
+      {
+        "title": "Iran cuts electricity in capital as heatwave strains power grid",
+        "description": "Facing a worsening water crisis and extreme summer heat, authorities in the Iranian capital are stepping up conservation measures. In Tehran, the local...",
+        "url": "https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:250806-99-668053/",
+        "source": "Dpa-international.com",
+        "published_at": "2025-08-06T11:41:36Z",
+        "relevance_score": 0.16666666666666666,
+        "search_phrase": "extreme weather events"
+      },
+      {
+        "title": "Trump’s EPA Wants to Pretend That Greenhouse Gases Aren’t a Threat to Human Health",
+        "description": "The Trump administration’s latest and greatest assault on climate change mitigation would eliminate all greenhouse gas emissions regulations for motor vehicles and engines.",
+        "url": "https://gizmodo.com/trumps-epa-wants-to-pretend-that-greenhouse-gases-arent-a-threat-to-human-health-2000636732",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T19:40:17Z",
+        "relevance_score": 0.13333333333333333,
+        "search_phrase": "Climate change extreme weather events"
+      },
+      {
+        "title": "A ‘Flesh-Eating’ Germ Is on the Rise This Summer",
+        "description": "Several states have reported higher than normal cases of Vibrio vulnificus, a bacterium found in coastal waters.",
+        "url": "https://gizmodo.com/a-flesh-eating-germ-is-on-the-rise-this-summer-2000639077",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T19:45:07Z",
+        "relevance_score": 0.06666666666666667,
+        "search_phrase": "Climate change extreme weather events"
+      },
+      {
+        "title": "International group accuses major nations of withholding more than $400 million in life-saving funds: 'Every delay means ... more lives lost'",
+        "description": "\"This should not be part of any criteria.\"",
+        "url": "https://www.yahoo.com/news/articles/international-group-accuses-major-nations-021500718.html",
+        "source": "Yahoo Entertainment",
+        "published_at": "2025-08-12T02:15:00Z",
+        "relevance_score": 0.027777777777777776,
+        "search_phrase": "Climate change causes extreme weather events"
+      },
+      {
+        "title": "The Arctic Got So Warm in February, Svalbard’s Ground Was ‘Like Soft Ice Cream’",
+        "description": "The Arctic outpost meant to safeguard humanity’s future is now ground zero for a host of issues linked to climate change.",
+        "url": "https://gizmodo.com/the-arctic-got-so-warm-in-february-svalbards-ground-was-like-soft-ice-cream-2000636102",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T13:00:08Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate change"
+      },
+      {
+        "title": "Hurricane Swarms Are a Thing We Have to Worry About Now",
+        "description": "Scientists have known climate change is increasing the severity of hurricanes for years now, but new research suggests it’s also leading to tropical cyclone clusters.",
+        "url": "https://gizmodo.com/hurricane-swarms-are-a-thing-we-have-to-worry-about-now-2000642070",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-12T19:50:35Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate change"
+      },
+      {
+        "title": "FEMA Staffers Warned of Looming ‘Katrina-Level’ Disaster, Then Got Suspended",
+        "description": "After Katrina, Congress built safeguards to protect the U.S. from future storms. Now, the Trump administration is rolling back those reforms.",
+        "url": "https://gizmodo.com/fema-staffers-warned-of-looming-katrina-level-disaster-then-got-suspended-2000649312",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-27T20:50:58Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate change extreme weather events"
+      },
+      {
+        "title": "Scientists Say New Government Climate Report Twists Their Work",
+        "description": "A new Department of Energy report “fundamentally misrepresents” climate research and leaves out key context, multiple scientists cited in the report tell WIRED.",
+        "url": "https://www.wired.com/story/scientists-say-new-government-climate-report-twists-their-work/",
+        "source": "Wired",
+        "published_at": "2025-07-30T20:31:16Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate"
+      },
+      {
+        "title": "Trump Administration Moves to Destroy Satellite That Monitors Greenhouse Gases",
+        "description": "The Orbiting Carbon Observatories have been a game-changer for agriculture and climate science. Now, NASA is under pressure to terminate them.",
+        "url": "https://gizmodo.com/trump-administration-moves-to-destroy-satellite-that-monitors-greenhouse-gases-2000639234",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T20:15:35Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate"
+      },
+      {
+        "title": "Officials declare state of emergency as gargantuan fires blaze across vast area: 'We have fires in every region'",
+        "description": "\"This is the largest evacuation.\"",
+        "url": "https://www.yahoo.com/news/articles/officials-declare-state-emergency-gargantuan-091500649.html",
+        "source": "Yahoo Entertainment",
+        "published_at": "2025-08-03T09:15:00Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate change causes extreme weather events"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.4625592286501377,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Found 2 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Climate change causes extreme weather events\n- Claim Type: causal\n- Search Phrases: Climate change, extreme weather events, Climate change extreme weather events, Climate, Climate change causes extreme weather events\n- News Articles Found: 11\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (46.3%)\n- Reasoning: Found 2 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.8902268409729004
+  },
+  {
+    "original_claim": "The Earth is flat and NASA has been hiding this fact",
+    "claim_type": "factual",
+    "extracted_phrases": [
+      "The Earth",
+      "flat and NASA has",
+      "The Earth flat and NASA has"
+    ],
+    "news_articles": [
+      {
+        "title": "Why a NASA satellite that scientists and farmers rely on may be destroyed on purpose",
+        "description": "The Trump administration has asked NASA staffers to draw up plans to end at least two satellite missions that measure carbon dioxide in the atmosphere, according to current and former NASA employees.",
+        "url": "https://www.npr.org/2025/08/04/nx-s1-5453731/nasa-carbon-dioxide-satellite-mission-threatened",
+        "source": "NPR",
+        "published_at": "2025-08-04T09:30:00Z",
+        "relevance_score": 0.625,
+        "search_phrase": "flat and NASA has"
+      },
+      {
+        "title": "When Snoopy Gets the Gold Treatment: The MoonSwatch Mission to Earthphase Moonshine Edition",
+        "description": "When Snoopy Gets the Gold Treatment: The MoonSwatch Mission to Earthphase Moonshine EditionSwatch is about to drop something that’s got the watch world buzzing, and it’s about time. The Mission to Earthphase Moonshine Gold is landing during...",
+        "url": "https://www.yankodesign.com/2025/08/07/when-snoopy-gets-the-gold-treatment-the-moonswatch-mission-to-earthphase-moonshine-edition/",
+        "source": "Yanko Design",
+        "published_at": "2025-08-07T17:20:01Z",
+        "relevance_score": 0.5833333333333334,
+        "search_phrase": "The Earth flat and NASA has"
+      },
+      {
+        "title": "NASA Satellites That Scientists and Farmers Rely On May Be Destroyed On Purpose",
+        "description": "The Trump administration has reportedly directed NASA to draw up plans to shut down its Orbiting Carbon Observatory satellite missions, which provide vital climate and agricultural data for scientists, oil and gas companies and farmers who need detailed infor…",
+        "url": "https://tech.slashdot.org/story/25/08/06/050230/nasa-satellites-that-scientists-and-farmers-rely-on-may-be-destroyed-on-purpose",
+        "source": "Slashdot.org",
+        "published_at": "2025-08-06T07:00:00Z",
+        "relevance_score": 0.5416666666666666,
+        "search_phrase": "flat and NASA has"
+      },
+      {
+        "title": "Swatch Mission to Earthphase Moonshine Gold Review: Is the $450 Snoopy MoonSwatch Worth It?",
+        "description": "Swatch Mission to Earthphase Moonshine Gold Review: Is the $450 Snoopy MoonSwatch Worth It?Getting this watch was an adventure in itself. We dragged ourselves out of bed at 4am and made it to the Swatch store in Dallas...",
+        "url": "https://www.yankodesign.com/2025/08/09/swatch-mission-to-earthphase-moonshine-gold-review-is-the-450-snoopy-moonswatch-worth-it/",
+        "source": "Yanko Design",
+        "published_at": "2025-08-09T19:15:34Z",
+        "relevance_score": 0.5277777777777778,
+        "search_phrase": "The Earth flat and NASA has"
+      },
+      {
+        "title": "NASA-funded Compact Radar Drives Big Changes in Airborne and Suborbital Radar Capabilities",
+        "description": "A collaboration between NASA and the small business Aloft Sensing produced a new compact radar system that will enable researchers to leverage High Altitude Long Endurance (HALE) platforms to observe dynamic Earth systems. This new radar is small, provides hi…",
+        "url": "https://science.nasa.gov/directorates/smd/earth-science-division/nasa-funded-compact-radar-drives-big-changes-in-airborne-and-suborbital-radar-capabilities/",
+        "source": "NASA",
+        "published_at": "2025-08-19T13:57:58Z",
+        "relevance_score": 0.5,
+        "search_phrase": "flat and NASA has"
+      },
+      {
+        "title": "If aliens explore space like humans do, NASA scientists know where to look for their signals",
+        "description": "Studying the signals that humanity beams through the solar system has allowed a team of NASA researchers to pinpoint where and when astronomers should hunt for alien technosignatures.",
+        "url": "https://www.space.com/astronomy/if-aliens-explore-space-like-humans-do-nasa-scientists-know-where-to-look-for-their-signals",
+        "source": "Space.com",
+        "published_at": "2025-08-21T18:00:00Z",
+        "relevance_score": 0.4166666666666667,
+        "search_phrase": "The Earth flat and NASA has"
+      },
+      {
+        "title": "Clearest Mars images yet reveal mystery rock and ancient terrain in stunning detail",
+        "description": "Captured at a location called “Falbreen,” this 360-degree view mosaic was stitched together 96 images that were acquired May 26, 2025. In the upper image, the enhanced-color mosaic features deceptively blue skies and the 43rd rock abrasion (the white patch at…",
+        "url": "https://www.sciencedaily.com/releases/2025/08/250815034727.htm",
+        "source": "Science Daily",
+        "published_at": "2025-08-15T09:51:40Z",
+        "relevance_score": 0.2916666666666667,
+        "search_phrase": "flat and NASA has"
+      },
+      {
+        "title": "All the Polygons",
+        "description": "ŠUM – journal for contemporary art criticism",
+        "url": "https://www.sum.si/journal-articles/all-the-worlds-polygons",
+        "source": "Www.sum.si",
+        "published_at": "2025-08-25T12:35:41Z",
+        "relevance_score": 0.1111111111111111,
+        "search_phrase": "The Earth flat and NASA has"
+      },
+      {
+        "title": "Very Important Study Calculates Your Chance of Being Killed by an Asteroid vs Several Other Scary Things",
+        "description": "At least getting crushed by a giant space rock would lead to an instant death.",
+        "url": "https://gizmodo.com/very-important-study-calculates-your-chance-of-being-killed-by-an-asteroid-vs-several-other-scary-things-2000640193",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-07T20:11:24Z",
+        "relevance_score": 0.0,
+        "search_phrase": "The Earth"
+      },
+      {
+        "title": "After Mount Vesuvius Demolished Pompeii, People Returned to Live Among the Ruins",
+        "description": "Archaeologists are bringing to light a forgotten slice of Pompeiian history.",
+        "url": "https://gizmodo.com/after-mount-vesuvius-demolished-pompeii-people-returned-to-live-among-the-ruins-2000640319",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-08T00:56:11Z",
+        "relevance_score": 0.0,
+        "search_phrase": "The Earth"
+      },
+      {
+        "title": "New Line’s ‘Space Invaders’ Movie is Back in Business",
+        "description": "If you've been waiting to see 'Space Invaders' on the big screen and not just in 'Pixels,' New Line might have the movie for you.",
+        "url": "https://gizmodo.com/new-line-is-finally-ready-to-make-its-space-invaders-movie-2000641041",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-09T14:30:56Z",
+        "relevance_score": 0.0,
+        "search_phrase": "The Earth"
+      },
+      {
+        "title": "HBO Max’s ‘Looney Tunes’ Purge Has Found a Sanctuary in Tubi",
+        "description": "Around 700 episodes of the Warner Bros. Animation classic's catalogue have found a new home.",
+        "url": "https://gizmodo.com/hbo-maxs-looney-tunes-purge-has-found-a-sanctuary-in-tubi-2000643881",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-16T00:00:15Z",
+        "relevance_score": 0.0,
+        "search_phrase": "The Earth"
+      },
+      {
+        "title": "Six Books That Explain How Flying Really Works",
+        "description": "The fact that we regularly float six or seven miles above the Earth is worth our fascination and attention.",
+        "url": "https://www.theatlantic.com/books/archive/2025/08/flying-air-travel-explanation-book-recommendations/683789/",
+        "source": "The Atlantic",
+        "published_at": "2025-08-08T11:00:00Z",
+        "relevance_score": 0.0,
+        "search_phrase": "The Earth"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.5216814595660748,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Found 1 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: The Earth is flat and NASA has been hiding this fact\n- Claim Type: factual\n- Search Phrases: The Earth, flat and NASA has, The Earth flat and NASA has\n- News Articles Found: 13\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (52.2%)\n- Reasoning: Found 1 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 2.3741252422332764
+  },
+  {
+    "original_claim": "Maharashtra heavy rains led to 8 deaths in Nanded",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "Maharashtra heavy rains",
+      "8 deaths in Nanded",
+      "Maharashtra heavy rains 8 deaths in Nanded",
+      "Maharashtra",
+      "Nanded"
+    ],
+    "news_articles": [
+      {
+        "title": "Maharashtra rains: Five missing in Nanded floods, 293 rescued",
+        "description": "Heavy rains and floods in Maharashtra have resulted in six deaths and five missing individuals in Nanded. Mumbai experienced substantial rainfall, with some areas exceeding 200 mm in the last 24 hours. Hundreds of passengers were rescued from a stranded Mumba…",
+        "url": "https://economictimes.indiatimes.com/news/india/maharashtra-rains-six-dead-five-missing-in-floods-293-rescued-in-nanded/articleshow/123398518.cms",
+        "source": "The Times of India",
+        "published_at": "2025-08-20T02:58:02Z",
+        "relevance_score": 0.6904761904761905,
+        "search_phrase": "Maharashtra heavy rains 8 deaths in Nanded"
+      },
+      {
+        "title": "Mumbai gets 177mm rain in 6-8 hour period, says CM; all agencies asked to remain alert",
+        "description": "Mumbai experienced torrential rainfall, with 177 mm recorded in just 6-8 hours, prompting Chief Minister Fadnavis to urge citizens to take precautions. Tragically, seven rain-related deaths have occurred across Maharashtra in the last two days. With a red ale…",
+        "url": "https://economictimes.indiatimes.com/news/india/mumbai-gets-177mm-rain-in-6-8-hour-period-says-cm-all-agencies-asked-to-remain-alert/articleshow/123365291.cms",
+        "source": "The Times of India",
+        "published_at": "2025-08-18T12:24:18Z",
+        "relevance_score": 0.5416666666666666,
+        "search_phrase": "8 deaths in Nanded"
+      },
+      {
+        "title": "Heavy rain paralyses life in India's financial capital Mumbai",
+        "description": "Nearly 600 people were rescued from a stalled monorail system and 350 others have been shifted to shelters.",
+        "url": "https://www.bbc.com/news/articles/cx29jw7488go",
+        "source": "BBC News",
+        "published_at": "2025-08-20T06:52:13Z",
+        "relevance_score": 0.2222222222222222,
+        "search_phrase": "Maharashtra heavy rains"
+      },
+      {
+        "title": "Army columns deployed for relief in Nanded district",
+        "description": "The Mukhed taluka of Nanded district was badly hit by floods following heavy rains over the last two days.",
+        "url": "https://indianexpress.com/article/cities/pune/army-columns-relief-nanded-10199377/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-19T16:59:15Z",
+        "relevance_score": 0.2222222222222222,
+        "search_phrase": "Maharashtra heavy rains"
+      },
+      {
+        "title": "School Closed on August 27: List of states where schools are closed – Jammu, Punjab & Himachal due to heavy rain",
+        "description": "J&K, Punjab and Himachal School Closed: Various state governments and district administrations have decided to close the schools. Here is the list of states where schools are closed on August 27.",
+        "url": "https://indianexpress.com/article/education/schools-closed-in-these-states-on-august-27-heavy-rains-cloudburst-floods-10212807/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-26T12:35:01Z",
+        "relevance_score": 0.16666666666666666,
+        "search_phrase": "Maharashtra heavy rains"
+      },
+      {
+        "title": "Apple Announces Fourth Store in India",
+        "description": "Apple is launching a new retail store location in India, with Apple Koregaon Park set to open on Thursday, September 4 at 1:00 p.m. local time.\n\n\n\n\n\nApple Koregaon Park is located in Pune, in the state of Maharashtra. Apple already has two retail store locati…",
+        "url": "https://www.macrumors.com/2025/08/26/apple-announces-fourth-store-in-india/",
+        "source": "MacRumors",
+        "published_at": "2025-08-26T19:44:06Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Maharashtra"
+      },
+      {
+        "title": "Health v heritage: Pigeon feeding ban sparks debate in India",
+        "description": "Feeding pigeons is common in Indian cities but is now controversial due to rising numbers and health risks.",
+        "url": "https://www.bbc.com/news/articles/cvg3mj0vkzro",
+        "source": "BBC News",
+        "published_at": "2025-08-17T23:32:50Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Maharashtra"
+      },
+      {
+        "title": "Delhi Confidential: All set for ‘next step’",
+        "description": "Nearly 50 achievers, either hailing from Maharashtra or allotted the state cadre, are expected to participate",
+        "url": "https://indianexpress.com/article/delhi-confidential/delhi-confidential-all-set-for-next-step-10199614/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-19T20:48:06Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Maharashtra"
+      },
+      {
+        "title": "Search on for missing woman in Nanded",
+        "description": "Afrin was one of four persons who was swept away when gushing waters from Lendi barrage submerged the Dharaknal bridge in Ardhrapur. They were on the bridge when floodwaters swept away the car and the autorickshaw they were travelling in.",
+        "url": "https://indianexpress.com/article/cities/pune/search-on-for-missing-woman-in-nanded-10201496/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-20T18:38:21Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Nanded"
+      },
+      {
+        "title": "Heavy rain lashes Marathwada; 5 missing in Nanded, says CM Devendra Fadnavis",
+        "description": "Eight people were evacuated from Hassanal, while 20 others stranded in Bhaswadi and around 40 people stuck in Bhingeli are reportedly safe, Maharashtra Chief Minister Devendra Fadnavis said.",
+        "url": "https://indianexpress.com/article/cities/mumbai/heavy-rain-lashes-marathwada-5-missing-in-nanded-says-cm-devendra-fadnavis-10196321/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-18T09:36:18Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Nanded"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.36764880952380957,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "Mixed evidence: 0 supporting, 0 contradicting, 10 neutral"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Maharashtra heavy rains led to 8 deaths in Nanded\n- Claim Type: causal\n- Search Phrases: Maharashtra heavy rains, 8 deaths in Nanded, Maharashtra heavy rains 8 deaths in Nanded, Maharashtra, Nanded\n- News Articles Found: 10\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (36.8%)\n- Reasoning: Mixed evidence: 0 supporting, 0 contradicting, 10 neutral\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.8348701000213623
+  },
+  {
+    "original_claim": "Renewable energy is more expensive than fossil fuels",
+    "claim_type": "factual",
+    "extracted_phrases": [
+      "Renewable energy",
+      "more expensive than fossil",
+      "Renewable energy more expensive than fossil",
+      "Renewable",
+      "Renewable energy is more expensive than fossil fuels"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Renewable energy is more expensive than fossil fuels\n- Claim Type: factual\n- Search Phrases: Renewable energy, more expensive than fossil, Renewable energy more expensive than fossil, Renewable, Renewable energy is more expensive than fossil fuels\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.796576499938965
+  },
+  {
+    "original_claim": "Artificial intelligence will replace all human jobs",
+    "claim_type": "prediction",
+    "extracted_phrases": [
+      "Artificial intelligence",
+      "replace all human jobs",
+      "Artificial intelligence replace all human jobs",
+      "Artificial",
+      "Artificial intelligence will replace all human jobs"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Artificial intelligence will replace all human jobs\n- Claim Type: prediction\n- Search Phrases: Artificial intelligence, replace all human jobs, Artificial intelligence replace all human jobs, Artificial, Artificial intelligence will replace all human jobs\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.807112693786621
+  },
+  {
+    "original_claim": "AI will replace 50% of jobs by 2030",
+    "claim_type": "prediction",
+    "extracted_phrases": [
+      "replace 50",
+      "AI replace 50",
+      "2030",
+      "AI will replace 50% of jobs by 2030"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: AI will replace 50% of jobs by 2030\n- Claim Type: prediction\n- Search Phrases: replace 50, AI replace 50, 2030, AI will replace 50% of jobs by 2030\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.150151491165161
+  },
+  {
+    "original_claim": "Climate change will cause sea levels to rise by 2 meters",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "Climate change will",
+      "sea levels to rise",
+      "Climate change will sea levels to rise",
+      "Climate",
+      "Climate change"
+    ],
+    "news_articles": [
+      {
+        "title": "Scientists Say New Government Climate Report Twists Their Work",
+        "description": "A new Department of Energy report “fundamentally misrepresents” climate research and leaves out key context, multiple scientists cited in the report tell WIRED.",
+        "url": "https://www.wired.com/story/scientists-say-new-government-climate-report-twists-their-work/",
+        "source": "Wired",
+        "published_at": "2025-07-30T20:31:16Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate"
+      },
+      {
+        "title": "Trump’s EPA Wants to Pretend That Greenhouse Gases Aren’t a Threat to Human Health",
+        "description": "The Trump administration’s latest and greatest assault on climate change mitigation would eliminate all greenhouse gas emissions regulations for motor vehicles and engines.",
+        "url": "https://gizmodo.com/trumps-epa-wants-to-pretend-that-greenhouse-gases-arent-a-threat-to-human-health-2000636732",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T19:40:17Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate"
+      },
+      {
+        "title": "Trump Administration Moves to Destroy Satellite That Monitors Greenhouse Gases",
+        "description": "The Orbiting Carbon Observatories have been a game-changer for agriculture and climate science. Now, NASA is under pressure to terminate them.",
+        "url": "https://gizmodo.com/trump-administration-moves-to-destroy-satellite-that-monitors-greenhouse-gases-2000639234",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T20:15:35Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate"
+      },
+      {
+        "title": "The Arctic Got So Warm in February, Svalbard’s Ground Was ‘Like Soft Ice Cream’",
+        "description": "The Arctic outpost meant to safeguard humanity’s future is now ground zero for a host of issues linked to climate change.",
+        "url": "https://gizmodo.com/the-arctic-got-so-warm-in-february-svalbards-ground-was-like-soft-ice-cream-2000636102",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T13:00:08Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate change"
+      },
+      {
+        "title": "Hurricane Swarms Are a Thing We Have to Worry About Now",
+        "description": "Scientists have known climate change is increasing the severity of hurricanes for years now, but new research suggests it’s also leading to tropical cyclone clusters.",
+        "url": "https://gizmodo.com/hurricane-swarms-are-a-thing-we-have-to-worry-about-now-2000642070",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-12T19:50:35Z",
+        "relevance_score": 0.0,
+        "search_phrase": "Climate change"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.41040000000000004,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Found 1 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Climate change will cause sea levels to rise by 2 meters\n- Claim Type: causal\n- Search Phrases: Climate change will, sea levels to rise, Climate change will sea levels to rise, Climate, Climate change\n- News Articles Found: 5\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (41.0%)\n- Reasoning: Found 1 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.922868490219116
+  },
+  {
+    "original_claim": "Electric vehicles will dominate the market by 2025",
+    "claim_type": "prediction",
+    "extracted_phrases": [
+      "Electric vehicles",
+      "dominate the market by",
+      "Electric vehicles dominate the market by",
+      "Electric",
+      "2025"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Electric vehicles will dominate the market by 2025\n- Claim Type: prediction\n- Search Phrases: Electric vehicles, dominate the market by, Electric vehicles dominate the market by, Electric, 2025\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 3.8014719486236572
+  },
+  {
+    "original_claim": "Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade",
+    "claim_type": "general",
+    "extracted_phrases": [
+      "Modi embarks",
+      "embarks Japan",
+      "Japan China",
+      "China trip",
+      "trip meet"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Modi embarks on Japan, China trip; to meet Xi & Putin but won't attend Beijing's contentious Victory Day parade\n- Claim Type: general\n- Search Phrases: Modi embarks, embarks Japan, Japan China, China trip, trip meet\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 4.032166242599487
+  },
+  {
+    "original_claim": "Scientists discover new species in Amazon rainforest",
+    "claim_type": "general",
+    "extracted_phrases": [
+      "Scientists discover",
+      "discover new",
+      "new species",
+      "species Amazon",
+      "Amazon rainforest"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Scientists discover new species in Amazon rainforest\n- Claim Type: general\n- Search Phrases: Scientists discover, discover new, new species, species Amazon, Amazon rainforest\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 6.169835805892944
+  },
+  {
+    "original_claim": "Global warming is a hoax created by scientists for funding",
+    "claim_type": "factual",
+    "extracted_phrases": [
+      "Global warming",
+      "a hoax created by",
+      "Global warming a hoax created by",
+      "Global"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Global warming is a hoax created by scientists for funding\n- Claim Type: factual\n- Search Phrases: Global warming, a hoax created by, Global warming a hoax created by, Global\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 6.161790370941162
+  }
+]

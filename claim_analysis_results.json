@@ -1,0 +1,908 @@
+[
+  {
+    "original_claim": "Nanded floods caused massive destruction in Maharashtra",
+    "extracted_keywords": [
+      "nanded",
+      "floods",
+      "caused",
+      "massive",
+      "destruction"
+    ],
+    "news_articles": [
+      {
+        "title": "Army columns deployed for relief in Nanded district",
+        "description": "The Mukhed taluka of Nanded district was badly hit by floods following heavy rains over the last two days.",
+        "url": "https://indianexpress.com/article/cities/pune/army-columns-relief-nanded-10199377/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-19T16:59:15Z",
+        "relevance_score": 1.0,
+        "search_keyword": "nanded"
+      },
+      {
+        "title": "Search on for missing woman in Nanded",
+        "description": "Afrin was one of four persons who was swept away when gushing waters from Lendi barrage submerged the Dharaknal bridge in Ardhrapur. They were on the bridge when floodwaters swept away the car and the autorickshaw they were travelling in.",
+        "url": "https://indianexpress.com/article/cities/pune/search-on-for-missing-woman-in-nanded-10201496/",
+        "source": "The Indian Express",
+        "published_at": "2025-08-20T18:38:21Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "nanded"
+      },
+      {
+        "title": "More than 100 missing after flash floods in India",
+        "description": "Many rescue teams have been unable to reach the area because of damaged roads and bad weather.",
+        "url": "https://www.bbc.com/news/articles/cj3lxzpkn87o",
+        "source": "BBC News",
+        "published_at": "2025-08-06T04:54:02Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "floods"
+      },
+      {
+        "title": "Watch: Destruction in Pakistan after flash floods that have killed hundreds",
+        "description": "The majority of fatalities were recorded in the northwest Buner district, where at least 200 people were killed.",
+        "url": "https://www.bbc.com/news/videos/c707kjpxry8o",
+        "source": "BBC News",
+        "published_at": "2025-08-19T00:41:07Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "destruction"
+      },
+      {
+        "title": "Leaky Ice Dam Prompts Evacuations in Alaska as Record Floods Loom",
+        "description": "Juneau might see its third record-breaking flood in three years.",
+        "url": "https://gizmodo.com/leaky-ice-dam-prompts-evacuations-in-alaska-as-record-floods-loom-2000642448",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-13T15:10:41Z",
+        "relevance_score": 0.5,
+        "search_keyword": "floods"
+      },
+      {
+        "title": "What caused the Manchester Airport brawl?",
+        "description": "CCTV and body-cam footage captured the chain of events leading up to the arrest of two brothers.",
+        "url": "https://www.bbc.com/news/articles/c1wpwy2rjd2o",
+        "source": "BBC News",
+        "published_at": "2025-07-30T16:25:44Z",
+        "relevance_score": 0.5,
+        "search_keyword": "caused"
+      },
+      {
+        "title": "Arthur's Seat blaze likely caused by human activity - fire service",
+        "description": "The Edinburgh landmark was evacuated as the flames spread up the hill, with no reported casualties.",
+        "url": "https://www.bbc.com/news/articles/cjr11z2yx0yo",
+        "source": "BBC News",
+        "published_at": "2025-08-11T09:24:31Z",
+        "relevance_score": 0.5,
+        "search_keyword": "caused"
+      },
+      {
+        "title": "Meta Has Already Won the Smart Glasses Race",
+        "description": "By securing a billion-dollar stake in the world’s largest eyewear maker with a massive retail footprint, Meta is building both a moat and a launchpad, leaving Google trailing and Apple way behind.",
+        "url": "https://www.wired.com/story/meta-has-already-won-the-smart-glasses-race/",
+        "source": "Wired",
+        "published_at": "2025-08-25T11:00:00Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "massive"
+      },
+      {
+        "title": "Rare Supernova Rips Open a Star, Revealing Its Hidden Anatomy",
+        "description": "A new discovery offers fresh insights into the life cycle of massive stars and their imminent death.",
+        "url": "https://gizmodo.com/rare-supernova-rips-open-a-star-revealing-its-hidden-anatomy-2000645510",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-20T15:40:56Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "massive"
+      },
+      {
+        "title": "Why Donald Trump’s environmental data purge is so much worse this time",
+        "description": "Now that we're about halfway into the first year of President Donald Trump's second term, we can take stock of his administration's destruction of online environmental resources. It's worse than last time. It's also, seemingly, just the beginning - paving the…",
+        "url": "https://www.theverge.com/science/757084/data-purge-climate-change-environmental-justice-trump",
+        "source": "The Verge",
+        "published_at": "2025-08-08T23:25:48Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "destruction"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.4325,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Mixed evidence: 0 supporting, 0 contradicting, 10 neutral"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: Nanded floods caused massive destruction in Maharashtra\n- Keywords Extracted: nanded, floods, caused, massive, destruction\n- News Articles Found: 10\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (43.2%)\n- Reasoning: Mixed evidence: 0 supporting, 0 contradicting, 10 neutral\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 4.323703050613403
+  },
+  {
+    "original_claim": "COVID-19 vaccines cause autism in children",
+    "extracted_keywords": [
+      "covid",
+      "vaccines",
+      "cause",
+      "autism",
+      "children"
+    ],
+    "news_articles": [
+      {
+        "title": "Scientists Uncover Unexpected Connection Between Covid and the Common Cold",
+        "description": "If you've recently caught a cold, you might be less likely to get covid right after.",
+        "url": "https://gizmodo.com/scientists-uncover-unexpected-connection-between-covid-and-the-common-cold-2000648192",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-26T15:25:00Z",
+        "relevance_score": 1.0,
+        "search_keyword": "covid"
+      },
+      {
+        "title": "RFK Jr. Attacks Pediatricians for Daring to Recommend Covid-19 Vaccines for Kids",
+        "description": "Kennedy accused the American Academy of Pediatrics of working for Big Pharma, even as he himself has profited from attacking vaccines.",
+        "url": "https://gizmodo.com/rfk-jr-attacks-pediatricians-for-daring-to-recommend-covid-19-vaccines-for-kids-2000645554",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-20T16:10:08Z",
+        "relevance_score": 1.0,
+        "search_keyword": "vaccines"
+      },
+      {
+        "title": "Just Cause Maker’s Xbox-Exclusive Contraband Canceled Amid Recent Cuts",
+        "description": "Avalanche Studios hadn't provided an update on the shooter in years\nThe post Just Cause Maker’s Xbox-Exclusive Contraband Canceled Amid Recent Cuts appeared first on Kotaku.",
+        "url": "https://kotaku.com/just-cause-makers-xbox-exclusive-contraband-canceled-amid-recent-cuts-2000616371",
+        "source": "Kotaku",
+        "published_at": "2025-08-07T17:14:36Z",
+        "relevance_score": 1.0,
+        "search_keyword": "cause"
+      },
+      {
+        "title": "RFK Jr. Is Supporting mRNA Research—Just Not for Vaccines",
+        "description": "HHS is slashing hundreds of millions in funding for mRNA vaccines and infectious disease treatments, but leaving the door open to mRNA therapies for cancer and genetic conditions.",
+        "url": "https://www.wired.com/story/rfk-jr-is-supporting-mrna-research-just-not-for-vaccines/",
+        "source": "Wired",
+        "published_at": "2025-08-13T18:07:53Z",
+        "relevance_score": 0.8333333333333334,
+        "search_keyword": "vaccines"
+      },
+      {
+        "title": "The First Widespread Cure for HIV Could Be in Children",
+        "description": "Evidence is growing that some HIV-infected infants, if given antiretroviral drugs early in life, are able to suppress their viral loads to undetectable levels and then come off the medicine.",
+        "url": "https://www.wired.com/story/the-first-widespread-cure-for-hiv-could-be-in-children/",
+        "source": "Wired",
+        "published_at": "2025-08-01T13:19:14Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "children"
+      },
+      {
+        "title": "NYC Legionnaires’ Disease Outbreak: Cases and Deaths Double, as Officials Pinpoint the Cause",
+        "description": "Residents in five zip codes across Central Harlem are being advised to seek immediate medical care if they develop flu-like symptoms.",
+        "url": "https://gizmodo.com/nyc-legionnaires-disease-outbreak-cases-and-deaths-double-as-officials-pinpoint-the-cause-2000638967",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T16:10:42Z",
+        "relevance_score": 0.5,
+        "search_keyword": "cause"
+      },
+      {
+        "title": "An Account Using the Same Name as Trump's BLS Pick Posted Red-Pilled Conspiracy Theories",
+        "description": "A WIRED review of a now-deleted Twitter account that used the screen name “Dr. Erwin J. Antoni III” shows it posted conspiratorial content about the 2020 election, Covid-19, and Jeffrey Epstein.",
+        "url": "https://www.wired.com/story/twitter-ej-antoni-trump-bls-conspiracy-theories-epstein-covid-election-denial/",
+        "source": "Wired",
+        "published_at": "2025-08-18T21:25:31Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "covid"
+      },
+      {
+        "title": "The Grave Long-Term Effects of the Gaza Malnutrition Crisis",
+        "description": "The WHO believes one in five children in Gaza are acutely malnourished, with the health effects potentially lasting for generations.",
+        "url": "https://www.wired.com/story/how-malnutrition-affects-the-body-gaza-hunger-children-health/",
+        "source": "Wired",
+        "published_at": "2025-07-31T17:22:53Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "children"
+      }
+    ],
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AFP Fact Check",
+      "rating": "False",
+      "url": "https://factcheck.afp.com/doc.afp.com.36TP484",
+      "explanation": "This claim has been fact-checked and rated as 'False' by AFP Fact Check. The claim appears to be false or misleading."
+    },
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.48687499999999995,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Google Fact Check: REFUTED (50.0%). News analysis: Mixed evidence: 0 supporting, 0 contradicting, 7 neutral"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: COVID-19 vaccines cause autism in children\n- Keywords Extracted: covid, vaccines, cause, autism, children\n- News Articles Found: 8\n- Google Fact Check: Available\n- Confidence: 🟡 Unclear (48.7%)\n- Reasoning: Google Fact Check: REFUTED (50.0%). News analysis: Mixed evidence: 0 supporting, 0 contradicting, 7 neutral\n",
+    "sources_checked": [
+      "News API",
+      "Google Fact Check API"
+    ],
+    "processing_time": 4.440613746643066
+  },
+  {
+    "original_claim": "5G technology causes coronavirus",
+    "extracted_keywords": [
+      "technology",
+      "causes",
+      "coronavirus"
+    ],
+    "news_articles": [
+      {
+        "title": "Sony raises PlayStation 5 prices in US as tariff fears persist",
+        "description": "The Japanese technology giant cited economic challenges as it raised prices for the consoles by around $50.",
+        "url": "https://www.bbc.com/news/articles/cy081prg9jjo",
+        "source": "BBC News",
+        "published_at": "2025-08-21T01:45:10Z",
+        "relevance_score": 0.5,
+        "search_keyword": "technology"
+      },
+      {
+        "title": "A Common Virus Causes Cancer, but Most Americans Are Clueless About It",
+        "description": "A third of people don’t even know this STD exists, a new study finds.",
+        "url": "https://gizmodo.com/a-common-virus-causes-cancer-but-most-americans-are-clueless-about-it-2000643003",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-14T15:00:09Z",
+        "relevance_score": 0.5,
+        "search_keyword": "causes"
+      },
+      {
+        "title": "Samsung's terrible One UI 8 bug causes users to miss what's important",
+        "description": "Users reported problems with DND in One UI 8, as a bug is causing them to miss important alerts.",
+        "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-terrible-one-ui-8-bug-causes-users-miss-important-alerts-bug",
+        "source": "Android Central",
+        "published_at": "2025-08-26T18:46:00Z",
+        "relevance_score": 0.5,
+        "search_keyword": "causes"
+      },
+      {
+        "title": "Join Us for WIRED’s AI Power Summit",
+        "description": "On September 15, WIRED is gathering a panel of leaders across technology, politics, and media to tell you everything you need to know about the future of generative AI.",
+        "url": "https://www.wired.com/story/wired-ai-power-summit/",
+        "source": "Wired",
+        "published_at": "2025-07-31T13:16:34Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "technology"
+      },
+      {
+        "title": "They escaped Ukraine's frontlines. The sound of drones followed them",
+        "description": "As technology transforms the war in Ukraine, soldiers are experiencing a new form of trauma: \"Droneophobia\".",
+        "url": "https://www.bbc.com/news/articles/c23gjk7dlvlo",
+        "source": "BBC News",
+        "published_at": "2025-08-02T00:10:10Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "technology"
+      },
+      {
+        "title": "'Ignominy in Almaty' - the reasons for Celtic's Champions League exit",
+        "description": "BBC Scotland chief sportswriter Tom English analyses the causes of - and the likely fallout from - Celtic's Champions League exit.",
+        "url": "https://www.bbc.com/sport/football/articles/c8denljlv64o",
+        "source": "BBC News",
+        "published_at": "2025-08-27T06:40:25Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "causes"
+      },
+      {
+        "title": "What to Know About Traveling to China for Business",
+        "description": "Recent developments and an escalating trade war have made travel to cities like Beijing challenging but by no means impossible.",
+        "url": "https://www.wired.com/story/how-to-travel-to-china/",
+        "source": "Wired",
+        "published_at": "2025-08-06T13:00:00Z",
+        "relevance_score": 0.0,
+        "search_keyword": "coronavirus"
+      },
+      {
+        "title": "RTO made its biggest post-pandemic comeback in July",
+        "description": "July saw the most US employees working from the office since the pandemic began, foot traffic data from Placer.ai shows.",
+        "url": "https://www.businessinsider.com/data-most-employees-working-at-office-since-covid-rto-mandate-2025-8",
+        "source": "Business Insider",
+        "published_at": "2025-08-14T10:59:02Z",
+        "relevance_score": 0.0,
+        "search_keyword": "coronavirus"
+      },
+      {
+        "title": "Chikungunya virus not a threat to Apple's Chinese supply chain",
+        "description": "There's another virus spreading in China, but despite what you may have heard on social media, it is not airborne, is contained, and isn't comparable to the COVID-19 situation for Apple or the world yet.Foxconn likely won't be affected by the virus. Image sou…",
+        "url": "https://appleinsider.com/articles/25/08/05/chikungunya-virus-not-a-threat-to-apples-chinese-supply-chain",
+        "source": "AppleInsider",
+        "published_at": "2025-08-05T20:48:02Z",
+        "relevance_score": 0.0,
+        "search_keyword": "coronavirus"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.39166666666666666,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "Mixed evidence: 0 supporting, 0 contradicting, 6 neutral"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: 5G technology causes coronavirus\n- Keywords Extracted: technology, causes, coronavirus\n- News Articles Found: 9\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (39.2%)\n- Reasoning: Mixed evidence: 0 supporting, 0 contradicting, 6 neutral\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 2.8232343196868896
+  },
+  {
+    "original_claim": "The Earth is flat and NASA has been hiding this fact",
+    "extracted_keywords": [
+      "earth",
+      "flat",
+      "nasa",
+      "hiding",
+      "fact"
+    ],
+    "news_articles": [
+      {
+        "title": "NASA Approves Ted Cruz’s Plan to Move a Space Shuttle to Houston, Setting Up a Fight With the Smithsonian",
+        "description": "The Smithsonian acquired the shuttle from NASA in 2012, and it's openly objecting to its possible relocation.",
+        "url": "https://gizmodo.com/nasa-approves-ted-cruzs-plan-to-move-a-space-shuttle-to-houston-setting-up-a-fight-with-the-smithsonian-2000639479",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-06T16:40:56Z",
+        "relevance_score": 1.0,
+        "search_keyword": "nasa"
+      },
+      {
+        "title": "I tried cooking on Traeger's newest flat-top griddle — it's pricey, but so worth it",
+        "description": "The Traeger Flatrock 2 Zone griddle delivers even heat and durable design in a compact size. Here's what it's like to cook on and why it's worth $799.",
+        "url": "https://www.businessinsider.com/guides/kitchen/traeger-flatrock-2-zone-review",
+        "source": "Business Insider",
+        "published_at": "2025-08-05T16:55:02Z",
+        "relevance_score": 0.8333333333333334,
+        "search_keyword": "flat"
+      },
+      {
+        "title": "Data Brokers Are Hiding Their Opt-Out Pages From Google Search",
+        "description": "Dozens of companies are hiding how you can delete your personal data, The Markup and CalMatters found.",
+        "url": "https://www.wired.com/story/data-brokers-hiding-opt-out-pages-google-search/",
+        "source": "Wired",
+        "published_at": "2025-08-12T12:30:00Z",
+        "relevance_score": 0.8333333333333334,
+        "search_keyword": "hiding"
+      },
+      {
+        "title": "TikTok videos are about to get crowdsourced fact checks on them",
+        "description": "TikTok is officially rolling out Footnotes, a community fact-checking program that’s supposed to add helpful context to videos. With this update, US-based users will start seeing Footnotes on videos in the coming weeks, and will also get the option to rate th…",
+        "url": "https://www.theverge.com/news/715798/tiktok-videos-footnotes-crowdsourced-fact-checks-launch",
+        "source": "The Verge",
+        "published_at": "2025-07-30T13:31:33Z",
+        "relevance_score": 0.8333333333333334,
+        "search_keyword": "fact"
+      },
+      {
+        "title": "Everything to Remember Before Watching ‘Alien: Earth’",
+        "description": "The new FX/Hulu show from creator Noah Hawley and EP Ridley Scott starts on August 12.",
+        "url": "https://gizmodo.com/everything-to-remember-before-watching-alien-earth-2000639135",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-07T16:04:56Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "earth"
+      },
+      {
+        "title": "Alien: Earth is a brilliant and terrifying expansion of the franchise",
+        "description": "While the monsters in each of the nine Alien movies have been a little bit different, the nefarious corporate forces have remained the same. Ridley Scott's original Alien didn't need to mention Weyland-Yutani by name for it to be clear that a singular mega-co…",
+        "url": "https://www.theverge.com/tv-reviews/719173/alien-earth-review",
+        "source": "The Verge",
+        "published_at": "2025-08-12T13:16:07Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "earth"
+      },
+      {
+        "title": "Trump Administration Moves to Destroy Satellite That Monitors Greenhouse Gases",
+        "description": "The Orbiting Carbon Observatories have been a game-changer for agriculture and climate science. Now, NASA is under pressure to terminate them.",
+        "url": "https://gizmodo.com/trump-administration-moves-to-destroy-satellite-that-monitors-greenhouse-gases-2000639234",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T20:15:35Z",
+        "relevance_score": 0.5,
+        "search_keyword": "nasa"
+      },
+      {
+        "title": "EncroChat selfie led police straight to fugitive",
+        "description": "Organised crime gang boss Jamie Rothwell ran his drugs and guns empire from a flat in Barcelona.",
+        "url": "https://www.bbc.com/news/articles/cj4w17j2e1ro",
+        "source": "BBC News",
+        "published_at": "2025-08-16T13:20:17Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "flat"
+      },
+      {
+        "title": "Robinhood Tries to Rebrand Sports Betting as Investing",
+        "description": "Well, at least they're not hiding that it's just a gambling app now.",
+        "url": "https://gizmodo.com/robinhood-tries-to-rebrand-sports-betting-as-investing-2000645176",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-19T20:45:07Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "hiding"
+      },
+      {
+        "title": "Laura Loomer and the limits of posting everything",
+        "description": "For all the power she wields with the White House's affairs, Laura Loomer does not have the traditional tools that her rivals in the MAGA influencer industrial complex have - the highest follower count, the most political power, the most internet platforms, e…",
+        "url": "https://www.theverge.com/politics/760269/laura-loomer-deposition",
+        "source": "The Verge",
+        "published_at": "2025-08-15T23:36:49Z",
+        "relevance_score": 0.0,
+        "search_keyword": "fact"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely True",
+      "confidence": 0.7216,
+      "color": "green",
+      "emoji": "🟢",
+      "reasoning": "Found 1 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: The Earth is flat and NASA has been hiding this fact\n- Keywords Extracted: earth, flat, nasa, hiding, fact\n- News Articles Found: 10\n- Google Fact Check: Not available\n- Confidence: 🟢 Likely True (72.2%)\n- Reasoning: Found 1 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 4.293350696563721
+  },
+  {
+    "original_claim": "Climate change is a hoax created by scientists",
+    "extracted_keywords": [
+      "climate",
+      "change",
+      "hoax",
+      "created",
+      "scientists"
+    ],
+    "news_articles": [
+      {
+        "title": "Scientists Say New Government Climate Report Twists Their Work",
+        "description": "A new Department of Energy report “fundamentally misrepresents” climate research and leaves out key context, multiple scientists cited in the report tell WIRED.",
+        "url": "https://www.wired.com/story/scientists-say-new-government-climate-report-twists-their-work/",
+        "source": "Wired",
+        "published_at": "2025-07-30T20:31:16Z",
+        "relevance_score": 1.0,
+        "search_keyword": "climate"
+      },
+      {
+        "title": "Pokémon TCG Pocket will change card art after plagiarism accusations",
+        "description": "While you can now start collecting Pokémon TCG Pocket’s Johto-themed Wisdom of Sea and Sky expansion, two of the set’s rarest cards are being changed in response to concerns about art theft. Soon after dataminers began posting images of Wisdom of Sea and Sky’…",
+        "url": "https://www.theverge.com/nintendo/715823/pokemon-tcg-pocket-ho-oh-lugia-tracing-lanjiujiu",
+        "source": "The Verge",
+        "published_at": "2025-07-30T15:53:53Z",
+        "relevance_score": 0.8333333333333334,
+        "search_keyword": "change"
+      },
+      {
+        "title": "A Viral Cybertruck Hoax Got So Big, Tesla Had to Break Its Silence",
+        "description": "A bizarre video claiming the company remotely disabled a customer's Cybertruck went so viral that Tesla, a company famously without a PR department, was forced to publicly deny it.",
+        "url": "https://gizmodo.com/a-viral-cybertruck-hoax-got-so-big-tesla-had-to-break-its-silence-2000642000",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-12T17:05:32Z",
+        "relevance_score": 0.5,
+        "search_keyword": "hoax"
+      },
+      {
+        "title": "A modder created the iPadBook that Apple won’t",
+        "description": "Apple has little interest in merging iPadOS and macOS, or bringing its desktop operating system to its touchscreen tablet. So a Chinese modder took it upon themselves to create a hybrid laptop they’re calling the iPadBook featuring both operating systems in a…",
+        "url": "https://www.theverge.com/news/757340/custom-mod-apple-macbook-air-ipad-m4-ipad-pro",
+        "source": "The Verge",
+        "published_at": "2025-08-11T13:14:17Z",
+        "relevance_score": 0.5,
+        "search_keyword": "created"
+      },
+      {
+        "title": "Trump’s EPA Wants to Pretend That Greenhouse Gases Aren’t a Threat to Human Health",
+        "description": "The Trump administration’s latest and greatest assault on climate change mitigation would eliminate all greenhouse gas emissions regulations for motor vehicles and engines.",
+        "url": "https://gizmodo.com/trumps-epa-wants-to-pretend-that-greenhouse-gases-arent-a-threat-to-human-health-2000636732",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T19:40:17Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "climate"
+      },
+      {
+        "title": "Scientists Identify a New Glitch in Human Thinking",
+        "description": "The newly coined \"doubling-back aversion\" highlights another reason why people stubbornly refuse to change tack, researchers say.",
+        "url": "https://gizmodo.com/scientists-identify-a-new-glitch-in-human-thinking-2000643615",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-15T15:35:30Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "change"
+      },
+      {
+        "title": "Wildfire Smoke Chokes Canada and U.S., Triggering Air Quality Alerts",
+        "description": "Hundreds of uncontrolled wildfires have created a public health hazard across much of North America.",
+        "url": "https://gizmodo.com/wildfire-smoke-chokes-canada-and-u-s-triggering-air-quality-alerts-2000639059",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T16:25:58Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "created"
+      },
+      {
+        "title": "Peacock Feathers Are Stunning. They Can Also Emit Laser Beams",
+        "description": "Scientists hope their plumage project could someday lead to biocompatible lasers that could safely be embedded in the human body.",
+        "url": "https://www.wired.com/story/peacock-feathers-laser-beams/",
+        "source": "Wired",
+        "published_at": "2025-08-02T13:00:00Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "scientists"
+      },
+      {
+        "title": "This Is the Group That's Been Swatting US Universities",
+        "description": "WIRED spoke to a self-proclaimed leader of an online group called Purgatory, which charged as little as $20 to call in fake threats against schools.",
+        "url": "https://www.wired.com/story/purgatory-gores-swatting-us-universities/",
+        "source": "Wired",
+        "published_at": "2025-08-27T17:09:30Z",
+        "relevance_score": 0.16666666666666666,
+        "search_keyword": "hoax"
+      }
+    ],
+    "google_factcheck_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.9,
+      "publisher": "FactCheck.org",
+      "rating": "Spins the Facts",
+      "url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/",
+      "explanation": "This claim has been reviewed by FactCheck.org with a rating of 'Spins the Facts'. More context may be needed for a complete assessment."
+    },
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.6694074074074075,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Google Fact Check: NOT ENOUGH INFO (90.0%). News analysis: Found 2 contradicting articles vs 0 supporting"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: Climate change is a hoax created by scientists\n- Keywords Extracted: climate, change, hoax, created, scientists\n- News Articles Found: 9\n- Google Fact Check: Available\n- Confidence: 🟡 Unclear (66.9%)\n- Reasoning: Google Fact Check: NOT ENOUGH INFO (90.0%). News analysis: Found 2 contradicting articles vs 0 supporting\n",
+    "sources_checked": [
+      "News API",
+      "Google Fact Check API"
+    ],
+    "processing_time": 4.429754972457886
+  },
+  {
+    "original_claim": "Maharashtra heavy rains led to 8 deaths in Nanded",
+    "extracted_keywords": [
+      "maharashtra",
+      "heavy",
+      "rains",
+      "led",
+      "deaths"
+    ],
+    "news_articles": [
+      {
+        "title": "'Doomsday' monsoon rains lash Pakistan, killing almost 200 people",
+        "description": "Heavy monsoon rains have triggered landslides and flash floods across northern Pakistan, leaving at least 169 people dead in the last 24 hours, national and ...",
+        "url": "https://www.yahoo.com/news/articles/deadly-monsoon-rains-lash-pakistan-112349417.html",
+        "source": "Yahoo Entertainment",
+        "published_at": "2025-08-15T14:40:25Z",
+        "relevance_score": 1.0,
+        "search_keyword": "rains"
+      },
+      {
+        "title": "NYC Legionnaires’ Disease Outbreak: Cases and Deaths Double, as Officials Pinpoint the Cause",
+        "description": "Residents in five zip codes across Central Harlem are being advised to seek immediate medical care if they develop flu-like symptoms.",
+        "url": "https://gizmodo.com/nyc-legionnaires-disease-outbreak-cases-and-deaths-double-as-officials-pinpoint-the-cause-2000638967",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-05T16:10:42Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "deaths"
+      },
+      {
+        "title": "Fire slump to heavy defeat by Superchargers",
+        "description": "Northern Superchargers claim a commanding 47-run win as last year's finalists Welsh Fire collapse to 94 all out in The Hundred at Headingley.",
+        "url": "https://www.bbc.com/sport/cricket/articles/cm2v6z6v4q5o",
+        "source": "BBC News",
+        "published_at": "2025-08-07T16:49:30Z",
+        "relevance_score": 0.5,
+        "search_keyword": "heavy"
+      },
+      {
+        "title": "Tech’s Heavy Hitters Are Spending Big to Ensure a Pro-AI Congress",
+        "description": "$100 million and campaign season is nowhere in sight.",
+        "url": "https://gizmodo.com/ai-pac-congress-openai-andreessen-silicon-valley-2000647826",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-26T12:45:57Z",
+        "relevance_score": 0.5,
+        "search_keyword": "heavy"
+      },
+      {
+        "title": "EncroChat selfie led police straight to fugitive",
+        "description": "Organised crime gang boss Jamie Rothwell ran his drugs and guns empire from a flat in Barcelona.",
+        "url": "https://www.bbc.com/news/articles/cj4w17j2e1ro",
+        "source": "BBC News",
+        "published_at": "2025-08-16T13:20:17Z",
+        "relevance_score": 0.5,
+        "search_keyword": "led"
+      },
+      {
+        "title": "Investigations into deaths following Belfast dance music festival",
+        "description": "Two people have died and two remain in hospital after attending Emerge dance festival.",
+        "url": "https://www.bbc.com/news/articles/cgjye9wlx63o",
+        "source": "BBC News",
+        "published_at": "2025-08-27T10:40:07Z",
+        "relevance_score": 0.5,
+        "search_keyword": "deaths"
+      },
+      {
+        "title": "Apple Announces Fourth Store in India",
+        "description": "Apple is launching a new retail store location in India, with Apple Koregaon Park set to open on Thursday, September 4 at 1:00 p.m. local time.\n\n\n\n\n\nApple Koregaon Park is located in Pune, in the state of Maharashtra. Apple already has two retail store locati…",
+        "url": "https://www.macrumors.com/2025/08/26/apple-announces-fourth-store-in-india/",
+        "source": "MacRumors",
+        "published_at": "2025-08-26T19:44:06Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "maharashtra"
+      },
+      {
+        "title": "US EV Sales Are Booming—for Now",
+        "description": "Changes in US government support for electric vehicles have led to a buying bonanza—and a darker long-term future for the US auto industry.",
+        "url": "https://www.wired.com/story/us-ev-sales-are-booming-not-great-for-evs/",
+        "source": "Wired",
+        "published_at": "2025-08-26T10:00:00Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "led"
+      },
+      {
+        "title": "Health v heritage: Pigeon feeding ban sparks debate in India",
+        "description": "Feeding pigeons is common in Indian cities but is now controversial due to rising numbers and health risks.",
+        "url": "https://www.bbc.com/news/articles/cvg3mj0vkzro",
+        "source": "BBC News",
+        "published_at": "2025-08-17T23:32:50Z",
+        "relevance_score": 0.0,
+        "search_keyword": "maharashtra"
+      },
+      {
+        "title": "More than 100 missing after flash floods in India",
+        "description": "Many rescue teams have been unable to reach the area because of damaged roads and bad weather.",
+        "url": "https://www.bbc.com/news/articles/cj3lxzpkn87o",
+        "source": "BBC News",
+        "published_at": "2025-08-06T04:54:02Z",
+        "relevance_score": 0.0,
+        "search_keyword": "rains"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.415,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Mixed evidence: 0 supporting, 0 contradicting, 10 neutral"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: Maharashtra heavy rains led to 8 deaths in Nanded\n- Keywords Extracted: maharashtra, heavy, rains, led, deaths\n- News Articles Found: 10\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (41.5%)\n- Reasoning: Mixed evidence: 0 supporting, 0 contradicting, 10 neutral\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 6.056755065917969
+  },
+  {
+    "original_claim": "Artificial intelligence will replace all human jobs",
+    "extracted_keywords": [
+      "artificial",
+      "intelligence",
+      "replace",
+      "all",
+      "human"
+    ],
+    "news_articles": [
+      {
+        "title": "Google dunks on Apple Intelligence in new Pixel 10 ad",
+        "description": "Apple sold its iPhone 16 devices last year with a promise that a new AI-powered version of Siri would soon be a lot more personalized thanks to Apple Intelligence. Almost a year later, that Siri upgrade still isn’t here, and Apple was forced to delay its prom…",
+        "url": "https://www.theverge.com/news/718191/google-apple-intelligence-dunk-pixel-10-ad",
+        "source": "The Verge",
+        "published_at": "2025-08-04T16:47:55Z",
+        "relevance_score": 0.8333333333333334,
+        "search_keyword": "intelligence"
+      },
+      {
+        "title": "Why AI researchers are getting paid like NBA All-Stars",
+        "description": "Hello, and welcome to Decoder! This is Alex Heath, your Thursday episode guest host and deputy editor at The Verge. Today, I’m joined by Hayden Field, The Verge’s senior AI reporter. We’re talking about the AI talent wars and why some researchers are suddenly…",
+        "url": "https://www.theverge.com/decoder-podcast-with-nilay-patel/716633/ai-talent-war-meta-mark-zuckerberg-openai-nba-all-stars",
+        "source": "The Verge",
+        "published_at": "2025-07-31T14:03:44Z",
+        "relevance_score": 0.6666666666666666,
+        "search_keyword": "all"
+      },
+      {
+        "title": "Meta’s Already Bleeding AI Talent Two Months Into Hiring Spree",
+        "description": "Zuckerberg’s quest to artificial superintelligence is off to a rocky start. OpenAI, however, gets the final laugh.",
+        "url": "https://gizmodo.com/metas-already-bleeding-ai-talent-two-months-into-hiring-spree-2000649110",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-27T17:45:09Z",
+        "relevance_score": 0.5,
+        "search_keyword": "artificial"
+      },
+      {
+        "title": "AI invents new antibiotics that could kill superbugs gonorrhoea and MRSA",
+        "description": "Two new potential drugs have been designed, by an artificial intelligence model, to kill gonorrhoea and MRSA",
+        "url": "https://www.bbc.com/news/articles/cgr94xxye2lo",
+        "source": "BBC News",
+        "published_at": "2025-08-14T15:03:49Z",
+        "relevance_score": 0.5,
+        "search_keyword": "artificial"
+      },
+      {
+        "title": "All the news from Gamescom Opening Night Live 2025",
+        "description": "With Gamescom’s Opening Night Live, the summer of games comes to a close. Join Mr. Video Games himself, Geoff Keighley, on August 19th at 2PM ET as he emcees the last big video game livestream event before the kids go back to school and the adults break out t…",
+        "url": "https://www.theverge.com/news/760975/gamescom-opening-night-live-2025-news-trailers",
+        "source": "The Verge",
+        "published_at": "2025-08-19T16:45:57Z",
+        "relevance_score": 0.5,
+        "search_keyword": "all"
+      },
+      {
+        "title": "Scientists Identify a New Glitch in Human Thinking",
+        "description": "The newly coined \"doubling-back aversion\" highlights another reason why people stubbornly refuse to change tack, researchers say.",
+        "url": "https://gizmodo.com/scientists-identify-a-new-glitch-in-human-thinking-2000643615",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-15T15:35:30Z",
+        "relevance_score": 0.5,
+        "search_keyword": "human"
+      },
+      {
+        "title": "Russia Is Cracking Down on End-to-End Encrypted Calls",
+        "description": "Plus: ICE agents accidentally add a random person to a sensitive group chat, Norwegian intelligence blames the Kremlin for hacking a dam, and new facial recognition vans roam the UK.",
+        "url": "https://www.wired.com/story/russia-crack-down-end-to-end-encrypted-calling/",
+        "source": "Wired",
+        "published_at": "2025-08-16T10:30:00Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "intelligence"
+      },
+      {
+        "title": "Logitech May Soon Prove if It Made the Best Mouse Even Better",
+        "description": "The Logitech MX Master 4 could replace the best mouse of the past 8 years.",
+        "url": "https://gizmodo.com/logitech-may-soon-prove-if-it-made-the-best-mouse-even-better-2000644268",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-18T14:24:50Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "replace"
+      },
+      {
+        "title": "DJI’s First 360 Camera Is Gunning for Insta360’s Class-Leading X5",
+        "description": "Would a 360 camera with better sensors finally replace your tried and true GoPro?",
+        "url": "https://gizmodo.com/djis-first-360-camera-is-gunning-for-insta360s-class-leading-x5-2000637154",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-31T14:25:28Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "replace"
+      },
+      {
+        "title": "Peacock Feathers Are Stunning. They Can Also Emit Laser Beams",
+        "description": "Scientists hope their plumage project could someday lead to biocompatible lasers that could safely be embedded in the human body.",
+        "url": "https://www.wired.com/story/peacock-feathers-laser-beams/",
+        "source": "Wired",
+        "published_at": "2025-08-02T13:00:00Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "human"
+      }
+    ],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.6929000000000001,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Found 1 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: Artificial intelligence will replace all human jobs\n- Keywords Extracted: artificial, intelligence, replace, all, human\n- News Articles Found: 10\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (69.3%)\n- Reasoning: Found 1 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 8.855700969696045
+  },
+  {
+    "original_claim": "Renewable energy is more expensive than fossil fuels",
+    "extracted_keywords": [
+      "renewable",
+      "energy",
+      "more",
+      "expensive",
+      "than"
+    ],
+    "news_articles": [
+      {
+        "title": "Trump blames renewable energy for rising electricity prices. Experts point elsewhere",
+        "description": "With electricity prices rising at more than twice the rate of inflation, President Donald Trump has lashed out at renewable energy sources such as wind and...",
+        "url": "https://www.yahoo.com/news/articles/trump-blames-renewable-energy-rising-200917468.html",
+        "source": "Yahoo Entertainment",
+        "published_at": "2025-08-21T20:09:17Z",
+        "relevance_score": 1.0,
+        "search_keyword": "renewable"
+      },
+      {
+        "title": "Scientists Say New Government Climate Report Twists Their Work",
+        "description": "A new Department of Energy report “fundamentally misrepresents” climate research and leaves out key context, multiple scientists cited in the report tell WIRED.",
+        "url": "https://www.wired.com/story/scientists-say-new-government-climate-report-twists-their-work/",
+        "source": "Wired",
+        "published_at": "2025-07-30T20:31:16Z",
+        "relevance_score": 0.5,
+        "search_keyword": "energy"
+      },
+      {
+        "title": "Cybertruck Owners Sue Over Expensive Upgrade",
+        "description": "This is the third major lawsuit against Musk that saw major developments this week.",
+        "url": "https://gizmodo.com/cybertruck-owners-sue-2000646378",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-21T18:43:14Z",
+        "relevance_score": 0.5,
+        "search_keyword": "expensive"
+      },
+      {
+        "title": "Elon Musk Slapped With Major New Complication",
+        "description": "The reigning king of controversy has one more expensive problem.",
+        "url": "https://gizmodo.com/elon-musk-sweepstakes-lawsuit-2000646253",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-21T16:17:33Z",
+        "relevance_score": 0.5,
+        "search_keyword": "expensive"
+      },
+      {
+        "title": "Is Bristol cooler than Berlin? Play BBC Weather’s new guessing game Cooler Than Me?",
+        "description": "The new guessing game from BBC Weather",
+        "url": "https://www.bbc.com/weather/articles/cwy5r7xwq8xo",
+        "source": "BBC News",
+        "published_at": "2025-08-20T04:24:40Z",
+        "relevance_score": 0.5,
+        "search_keyword": "than"
+      },
+      {
+        "title": "Rad Power Bikes RadRunner Max Review: Faster and Safer Than Ever",
+        "description": "Rad Power Bikes’ newest high-end RadRunner Max has been upgraded to be faster and safety features, like radar car detection.",
+        "url": "https://www.wired.com/review/rad-power-bikes-radrunner-max/",
+        "source": "Wired",
+        "published_at": "2025-08-22T13:00:00Z",
+        "relevance_score": 0.5,
+        "search_keyword": "than"
+      },
+      {
+        "title": "Physicists Catch ‘Ghost Particles’ Bouncing Off Matter in Record-Breaking Experiment",
+        "description": "Physicists recorded the lowest-energy neutrino event yet, using signals from the particles’ antimatter counterpart produced in a nuclear reactor.",
+        "url": "https://gizmodo.com/physicists-catch-ghost-particles-bouncing-off-matter-in-record-breaking-experiment-2000636541",
+        "source": "Gizmodo.com",
+        "published_at": "2025-07-30T15:00:53Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "energy"
+      },
+      {
+        "title": "The Tech That Keeps Planes Flying for Ultra-Long-Haul Flights",
+        "description": "Wide wingspans, more powerful engines, and high-efficiency materials are making super long flights more possible than ever.",
+        "url": "https://www.wired.com/story/tech-necessary-for-long-haul-flghts/",
+        "source": "Wired",
+        "published_at": "2025-08-06T13:00:00Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "more"
+      },
+      {
+        "title": "Ford is doubling down on EVs — the timing is awful",
+        "description": "On Monday, Ford introduced an innovative new manufacturing process that it says will help make its EVs more sustainable, more desirable, and more importantly, more affordable. The timing couldn't have been worse. EV tax credits were set to expire at the end o…",
+        "url": "https://www.theverge.com/ford-motor-company/757719/ford-ev-platform-timing-sales-trump",
+        "source": "The Verge",
+        "published_at": "2025-08-12T11:58:54Z",
+        "relevance_score": 0.3333333333333333,
+        "search_keyword": "more"
+      },
+      {
+        "title": "This U.S. Airport Wants to Go Nuclear, and the Backlash Has Already Begun",
+        "description": "Denver International Airport believes a small modular reactor could help it meet its emissions goals, but getting the community on board presents a major hurdle.",
+        "url": "https://gizmodo.com/this-u-s-airport-wants-to-go-nuclear-and-the-backlash-has-already-begun-2000641893",
+        "source": "Gizmodo.com",
+        "published_at": "2025-08-12T15:45:48Z",
+        "relevance_score": 0.0,
+        "search_keyword": "renewable"
+      }
+    ],
+    "google_factcheck_result": {
+      "verdict": "NOT ENOUGH INFO",
+      "confidence": 0.5,
+      "publisher": "Science Feedback",
+      "rating": "Lacks context",
+      "url": "https://science.feedback.org/if-renewables-are-cheap/",
+      "explanation": "This claim has been reviewed by Science Feedback with a rating of 'Lacks context'. More context may be needed for a complete assessment."
+    },
+    "confidence_badge": {
+      "level": "Unclear",
+      "confidence": 0.55541,
+      "color": "yellow",
+      "emoji": "🟡",
+      "reasoning": "Google Fact Check: NOT ENOUGH INFO (50.0%). News analysis: Found 1 supporting articles vs 0 contradicting"
+    },
+    "analysis_summary": "\nClaim Analysis Summary:\n- Original Claim: Renewable energy is more expensive than fossil fuels\n- Keywords Extracted: renewable, energy, more, expensive, than\n- News Articles Found: 10\n- Google Fact Check: Available\n- Confidence: 🟡 Unclear (55.5%)\n- Reasoning: Google Fact Check: NOT ENOUGH INFO (50.0%). News analysis: Found 1 supporting articles vs 0 contradicting\n",
+    "sources_checked": [
+      "News API",
+      "Google Fact Check API"
+    ],
+    "processing_time": 7.499193429946899
+  }
+]

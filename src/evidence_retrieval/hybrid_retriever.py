@@ -25,10 +25,21 @@ class EvidenceRetrievalResult:
     trusted_evidence: int
     vector_evidence: int
     web_evidence: int
-    retrieval_time: float
-    freshness_score: float
-    reliability_score: float
-    errors: List[str]
+    fact_check_evidence: int = 0
+    retrieval_time: float = 0.0
+    freshness_score: float = 0.0
+    reliability_score: float = 0.0
+    errors: List[str] = None
+    semantic_scores: List[float] = None
+    clusters: List[Dict[str, Any]] = None
+
+    def __post_init__(self):
+        if self.errors is None:
+            self.errors = []
+        if self.semantic_scores is None:
+            self.semantic_scores = []
+        if self.clusters is None:
+            self.clusters = []
 
 
 class HybridEvidenceRetriever:
@@ -157,17 +168,37 @@ class HybridEvidenceRetriever:
             )
     
     def _search_trusted_sources(self, claim: str) -> List[Dict[str, Any]]:
-        """Search trusted sources for evidence."""
+        """Search trusted sources for evidence including fact-checking sources."""
         try:
-            # Search in trusted sources database
+            evidence_list = []
+            
+            # 1. Get fact-checking results (highest priority)
+            fact_check_content = self.trusted_database.get_fact_check_results(claim)
+            for content in fact_check_content:
+                source = self.trusted_database.sources.get(content.source_id)
+                evidence_list.append({
+                    "id": content.id,
+                    "text": content.full_text,
+                    "snippet": content.snippet,
+                    "url": content.url,
+                    "source": source.name if source else "Unknown",
+                    "source_type": "fact_check",
+                    "reliability_score": source.reliability_score if source else 0.9,
+                    "relevance_score": content.relevance_score,
+                    "published_date": content.published_date.isoformat(),
+                    "freshness_score": self._calculate_content_freshness(content.published_date),
+                    "tags": content.tags,
+                    "fact_check_rating": content.fact_check_rating,
+                    "verdict": content.verdict
+                })
+            
+            # 2. Search other trusted sources
             trusted_content = self.trusted_database.search_content(
                 query=claim,
                 max_results=self.max_results // 2,
                 min_relevance=0.3
             )
             
-            # Convert to evidence format
-            evidence_list = []
             for content in trusted_content:
                 source = self.trusted_database.sources.get(content.source_id)
                 evidence_list.append({
@@ -191,12 +222,13 @@ class HybridEvidenceRetriever:
             return []
     
     def _search_vector_database(self, claim: str) -> List[Dict[str, Any]]:
-        """Search vector database for evidence."""
+        """Search vector database for evidence using enhanced semantic search."""
         try:
-            # Search in vector database
-            vector_results = self.vector_retriever.search(
+            # Search in vector database with clustering
+            vector_results = self.vector_retriever.search_evidence(
                 query=claim,
-                top_k=self.max_results // 2
+                top_k=self.max_results // 2,
+                apply_clustering=True
             )
             
             # Convert to evidence format

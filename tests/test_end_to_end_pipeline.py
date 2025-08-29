@@ -92,7 +92,7 @@ class TruthLensPipelineTester:
         except ImportError as e:
             self.logger.error(f"Failed to import claim processor: {e}")
             self.claim_processor = None
-        except Exception as e:
+    except Exception as e:
             self.logger.error(f"Error initializing claim processor: {e}")
             self.claim_processor = None
     
@@ -170,8 +170,8 @@ class TruthLensPipelineTester:
             
             self.logger.info(f"Phase 2 completed: {result.checkworthy_claims} checkworthy claims found")
             return phase2_result
-            
-        except Exception as e:
+        
+    except Exception as e:
             error_msg = f"Phase 2 failed: {str(e)}"
             self.logger.error(error_msg)
             if self.debug_mode:
@@ -209,8 +209,8 @@ class TruthLensPipelineTester:
                 return phase3_result
             else:
                 # Fallback: mock evidence
-                mock_evidence = [
-                    {
+        mock_evidence = [
+            {
                         "title": "Fact-checking database",
                         "snippet": "This claim has been fact-checked by multiple sources.",
                         "url": "https://example.com/factcheck",
@@ -227,8 +227,8 @@ class TruthLensPipelineTester:
                     "success": True,
                     "note": "Using mock evidence (enhanced pipeline not available)"
                 }
-                
-        except Exception as e:
+        
+    except Exception as e:
             error_msg = f"Phase 3 failed: {str(e)}"
             self.logger.error(error_msg)
             if self.debug_mode:
@@ -307,8 +307,8 @@ class TruthLensPipelineTester:
             else:
                 explanation = f"There is insufficient evidence to determine the accuracy of this claim. More information is needed to verify this statement."
                 explanation_type = "insufficient_info"
-            
-            # Generate manipulation cues
+        
+        # Generate manipulation cues
             manipulation_cues = []
             claim_lower = claim_text.lower()
             
@@ -341,7 +341,7 @@ class TruthLensPipelineTester:
                 })
             
             phase5_result = {
-                "explanation": explanation,
+            "explanation": explanation,
                 "explanation_type": explanation_type,
                 "manipulation_cues": manipulation_cues,
                 "formatted_evidence": formatted_evidence,
@@ -351,7 +351,7 @@ class TruthLensPipelineTester:
             self.logger.info(f"Phase 5 completed: Generated {len(manipulation_cues)} manipulation cues")
             return phase5_result
             
-        except Exception as e:
+    except Exception as e:
             error_msg = f"Phase 5 failed: {str(e)}"
             self.logger.error(error_msg)
             if self.debug_mode:
@@ -394,8 +394,8 @@ class TruthLensPipelineTester:
             else:
                 # Use original text if no claims extracted
                 claim_text = normalized_text
-            
-            # Phase 3: Evidence Retrieval
+    
+    # Phase 3: Evidence Retrieval
             phase3_result = self.test_phase3_evidence_retrieval(claim_text)
             result.phase3_result = phase3_result
             
@@ -430,7 +430,7 @@ class TruthLensPipelineTester:
             result.confidence = confidence
             result.success = True
             
-        except Exception as e:
+    except Exception as e:
             error_msg = f"Pipeline failed with exception: {str(e)}"
             self.logger.error(error_msg)
             if self.debug_mode:
@@ -586,7 +586,7 @@ def main():
             
     except KeyboardInterrupt:
         print("\n\nTest interrupted by user")
-        return 1
+            return 1
     except Exception as e:
         print(f"\nTest failed with exception: {e}")
         if logging.getLogger().level <= logging.DEBUG:

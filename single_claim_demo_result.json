@@ -1,0 +1,48 @@
+{
+  "original_claim": "Nanded floods caused massive destruction in Maharashtra",
+  "claim_type": "causal",
+  "extracted_phrases": [
+    "Nanded floods",
+    "massive destruction in Maharashtra",
+    "Nanded floods massive destruction in Maharashtra",
+    "Nanded",
+    "Maharashtra"
+  ],
+  "news_articles": [
+    {
+      "title": "Nanded floods cause massive destruction in Maharashtra",
+      "description": "Heavy rains in Nanded district have led to severe flooding, causing widespread damage to property and infrastructure.",
+      "url": "https://example.com/nanded-floods",
+      "source": "Times of India",
+      "published_at": "2024-01-15T10:00:00Z",
+      "relevance_score": 0.95,
+      "search_phrase": "Nanded floods"
+    },
+    {
+      "title": "Maharashtra floods: Nanded district worst affected",
+      "description": "Nanded district in Maharashtr 
+      
+      
+      a has been severely affected by floods, with reports of massive destruction.",
+      "url": "https://example.com/maharashtra-floods",
+      "source": "Hindustan Times",
+      "published_at": "2024-01-14T15:30:00Z",
+      "relevance_score": 0.88,
+      "search_phrase": "Nanded floods"
+    }
+  ],
+  "google_factcheck_result": null,
+  "confidence_badge": {
+    "level": "Unclear",
+    "confidence": 0.6,
+    "color": "yellow",
+    "emoji": "🟡",
+    "reasoning": "Analysis based on 2 mock news articles (API quota exhausted)"
+  },
+  "analysis_summary": "\nEnhanced Claim Analysis Summary (with Mock Data):\n- Original Claim: Nanded floods caused massive destruction in Maharashtra\n- Claim Type: causal\n- Search Phrases: Nanded floods, massive destruction in Maharashtra, Nanded floods massive destruction in Maharashtra, Nanded, Maharashtra\n- News Articles Found: 2 (mock data)\n- Google Fact Check: Not available\n- Confidence: 🟡 Unclear (60.0%)\n- Reasoning: Analysis based on 2 mock news articles (API quota exhausted)\n- Note: Using mock data due to API quota exhaustion\n",
+  "sources_checked": [
+    "News API",
+    "Mock Data (API quota exhausted)"
+  ],
+  "processing_time": 2.1916539669036865
+}

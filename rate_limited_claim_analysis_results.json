@@ -1,0 +1,132 @@
+[
+  {
+    "original_claim": "Nanded floods caused massive destruction in Maharashtra",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "Nanded floods",
+      "massive destruction in Maharashtra",
+      "Nanded floods massive destruction in Maharashtra",
+      "Nanded",
+      "Maharashtra"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Nanded floods caused massive destruction in Maharashtra\n- Claim Type: causal\n- Search Phrases: Nanded floods, massive destruction in Maharashtra, Nanded floods massive destruction in Maharashtra, Nanded, Maharashtra\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 2.3244404792785645
+  },
+  {
+    "original_claim": "COVID-19 vaccines cause autism in children",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "19 vaccines",
+      "autism in children",
+      "19 vaccines autism in children",
+      "COVID",
+      "COVID-19 vaccines cause autism in children"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": {
+      "verdict": "REFUTED",
+      "confidence": 0.5,
+      "publisher": "AFP Fact Check",
+      "rating": "False",
+      "url": "https://factcheck.afp.com/doc.afp.com.36TP484",
+      "explanation": "This claim has been fact-checked and rated as 'False' by AFP Fact Check. The claim appears to be false or misleading."
+    },
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.35,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "Google Fact Check: REFUTED (50.0%). News analysis: No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: COVID-19 vaccines cause autism in children\n- Claim Type: causal\n- Search Phrases: 19 vaccines, autism in children, 19 vaccines autism in children, COVID, COVID-19 vaccines cause autism in children\n- News Articles Found: 0\n- Google Fact Check: Available\n- Confidence: 🔴 Likely False (35.0%)\n- Reasoning: Google Fact Check: REFUTED (50.0%). News analysis: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API",
+      "Google Fact Check API"
+    ],
+    "processing_time": 2.2732231616973877
+  },
+  {
+    "original_claim": "The Earth is flat and NASA has been hiding this fact",
+    "claim_type": "factual",
+    "extracted_phrases": [
+      "The Earth",
+      "flat and NASA has",
+      "The Earth flat and NASA has"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: The Earth is flat and NASA has been hiding this fact\n- Claim Type: factual\n- Search Phrases: The Earth, flat and NASA has, The Earth flat and NASA has\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 2.870513677597046
+  },
+  {
+    "original_claim": "Maharashtra heavy rains led to 8 deaths in Nanded",
+    "claim_type": "causal",
+    "extracted_phrases": [
+      "Maharashtra heavy rains",
+      "8 deaths in Nanded",
+      "Maharashtra heavy rains 8 deaths in Nanded",
+      "Maharashtra",
+      "Nanded"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: Maharashtra heavy rains led to 8 deaths in Nanded\n- Claim Type: causal\n- Search Phrases: Maharashtra heavy rains, 8 deaths in Nanded, Maharashtra heavy rains 8 deaths in Nanded, Maharashtra, Nanded\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 2.146620512008667
+  },
+  {
+    "original_claim": "AI will replace 50% of jobs by 2030",
+    "claim_type": "prediction",
+    "extracted_phrases": [
+      "replace 50",
+      "AI replace 50",
+      "2030",
+      "AI will replace 50% of jobs by 2030"
+    ],
+    "news_articles": [],
+    "google_factcheck_result": null,
+    "confidence_badge": {
+      "level": "Likely False",
+      "confidence": 0.0,
+      "color": "red",
+      "emoji": "🔴",
+      "reasoning": "No news articles found to analyze"
+    },
+    "analysis_summary": "\nEnhanced Claim Analysis Summary:\n- Original Claim: AI will replace 50% of jobs by 2030\n- Claim Type: prediction\n- Search Phrases: replace 50, AI replace 50, 2030, AI will replace 50% of jobs by 2030\n- News Articles Found: 0\n- Google Fact Check: Not available\n- Confidence: 🔴 Likely False (0.0%)\n- Reasoning: No news articles found to analyze\n",
+    "sources_checked": [
+      "News API"
+    ],
+    "processing_time": 2.08042573928833
+  }
+]

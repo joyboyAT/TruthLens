@@ -1,0 +1,102 @@
+[
+  {
+    "claim": "COVID-19 vaccines cause autism",
+    "found": true,
+    "verdict": "REFUTED",
+    "confidence": 0.5,
+    "publisher": "AFP Fact Check",
+    "rating": "False",
+    "url": "https://factcheck.afp.com/doc.afp.com.36TP484",
+    "explanation": "This claim has been fact-checked and rated as 'False' by AFP Fact Check. The claim appears to be false or misleading."
+  },
+  {
+    "claim": "5G causes coronavirus",
+    "found": true,
+    "verdict": "REFUTED",
+    "confidence": 0.5,
+    "publisher": "AAP",
+    "rating": "False. The studies cited as evidence do not claim to have found a link between 5G and COVID.",
+    "url": "https://www.aap.com.au/factcheck/bombshell-5g-covid-studies-tank-upon-closer-inspection/",
+    "explanation": "This claim has been reviewed by AAP with a rating of 'False. The studies cited as evidence do not claim to have found a link between 5G and COVID.'. More context may be needed for a complete assessment."
+  },
+  {
+    "claim": "Bill Gates wants to microchip people",
+    "found": true,
+    "verdict": "REFUTED",
+    "confidence": 0.5,
+    "publisher": "AAP",
+    "rating": "False. The Kenyan Digital ID system does not involve implanting anything in babies.",
+    "url": "https://www.aap.com.au/factcheck/kenyan-babies-are-not-targets-of-bill-gates-plot-to-implant-digital-id/",
+    "explanation": "This claim has been reviewed by AAP with a rating of 'False. The Kenyan Digital ID system does not involve implanting anything in babies.'. More context may be needed for a complete assessment."
+  },
+  {
+    "claim": "Hydroxychloroquine cures COVID-19",
+    "found": true,
+    "verdict": "REFUTED",
+    "confidence": 0.5,
+    "publisher": "AAP",
+    "rating": "False. Multiply high-quality human trials and studies have found the drug is not effective against the COVID virus.",
+    "url": "https://www.aap.com.au/factcheck/palmers-covid-drug-claim-flies-in-the-face-of-science/",
+    "explanation": "This claim has been reviewed by AAP with a rating of 'False. Multiply high-quality human trials and studies have found the drug is not effective against the COVID virus.'. More context may be needed for a complete assessment."
+  },
+  {
+    "claim": "The Earth is flat",
+    "found": true,
+    "verdict": "REFUTED",
+    "confidence": 0.9,
+    "publisher": "Australian Associated Press",
+    "rating": "False. The post misinterprets common aeronautical flight calculation methodologies.",
+    "url": "https://www.aap.com.au/factcheck/no-nasa-didnt-admit-the-earth-is-flat/",
+    "explanation": "This claim has been reviewed by Australian Associated Press with a rating of 'False. The post misinterprets common aeronautical flight calculation methodologies.'. More context may be needed for a complete assessment."
+  },
+  {
+    "claim": "Climate change is a hoax",
+    "found": true,
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.9,
+    "publisher": "FactCheck.org",
+    "rating": "Not the Whole Story",
+    "url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/",
+    "explanation": "This claim has been reviewed by FactCheck.org with a rating of 'Not the Whole Story'. More context may be needed for a complete assessment."
+  },
+  {
+    "claim": "Vaccines contain microchips",
+    "found": false,
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.0,
+    "publisher": "None",
+    "rating": "None",
+    "url": "None",
+    "explanation": "No fact-check result found in Google Fact Check API"
+  },
+  {
+    "claim": "Face masks cause oxygen deprivation",
+    "found": false,
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.0,
+    "publisher": "None",
+    "rating": "None",
+    "url": "None",
+    "explanation": "No fact-check result found in Google Fact Check API"
+  },
+  {
+    "claim": "The moon landing was fake",
+    "found": true,
+    "verdict": "REFUTED",
+    "confidence": 0.5,
+    "publisher": "AAP",
+    "rating": "False. The initial images used by newspapers were taken from the live footage beamed around the world during the landing.",
+    "url": "https://www.aap.com.au/factcheck/fake-moon-landing-claim-orbits-the-simple-facts/",
+    "explanation": "This claim has been reviewed by AAP with a rating of 'False. The initial images used by newspapers were taken from the live footage beamed around the world during the landing.'. More context may be needed for a complete assessment."
+  },
+  {
+    "claim": "Chemtrails are real",
+    "found": true,
+    "verdict": "NOT ENOUGH INFO",
+    "confidence": 0.5,
+    "publisher": "AFP Fact Check",
+    "rating": "Altered video",
+    "url": "https://factcheck.afp.com/doc.afp.com.36ZH8NR",
+    "explanation": "This claim has been reviewed by AFP Fact Check with a rating of 'Altered video'. More context may be needed for a complete assessment."
+  }
+]
