@@ -4,6 +4,8 @@ A FastAPI wrapper for the enhanced TruthLens fact-checking pipeline that provide
 
 ## 🚀 Features
 
+
+
 - **POST /verify**: Basic claim verification using News API and Guardian API
 - **POST /verify-advanced**: Full TruthLens pipeline integration
 - **GET /health**: Health check endpoint
