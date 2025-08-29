@@ -56,16 +56,20 @@ class EnhancedTruthLensPipeline:
     7. Scientific consensus handling
     """
     
-    def __init__(self, news_api_key: str, google_api_key: str = None):
+    def __init__(self, news_api_key: str, guardian_api_key: str, google_api_key: str, currents_api_key: str = None):
         """
         Initialize the enhanced TruthLens pipeline.
         
         Args:
             news_api_key: News API key
-            google_api_key: Google Fact Check API key (optional)
+            guardian_api_key: Guardian API key
+            google_api_key: Google Fact Check API key
+            currents_api_key: Currents API key (optional)
         """
         self.news_api_key = news_api_key
+        self.guardian_api_key = guardian_api_key
         self.google_api_key = google_api_key
+        self.currents_api_key = currents_api_key
         
         # Initialize components
         self.news_handler = None
@@ -82,9 +86,10 @@ class EnhancedTruthLensPipeline:
     def _initialize_components(self):
         """Initialize all enhanced components."""
         try:
-            # Initialize News API handler
-            self.news_handler = NewsHandler(self.news_api_key)
-            logger.info("News API handler initialized")
+            # Initialize Enhanced News Handler (News API + Guardian API + Currents API)
+            from src.news.enhanced_news_handler import EnhancedNewsHandler
+            self.news_handler = EnhancedNewsHandler(self.news_api_key, self.guardian_api_key, self.currents_api_key)
+            logger.info("Enhanced News Handler (News API + Guardian API + Currents API) initialized")
             
             # Initialize enhanced stance classifier
             self.stance_classifier = EnhancedStanceClassifier()
@@ -197,29 +202,45 @@ class EnhancedTruthLensPipeline:
             )
     
     def _search_news_articles(self, claim: str, max_articles: int) -> List[Dict[str, Any]]:
-        """Search for news articles using News API."""
+        """Search for news articles using News API and Guardian API."""
         if not self.news_handler:
             logger.warning("News handler not available")
             return []
         
         try:
-            # Extract search phrases from claim
-            search_phrases = self._extract_search_phrases(claim)
+            # Use the enhanced news handler to get articles from multiple sources
+            news_articles = self.news_handler.get_news_sources(claim, max_articles, days_back=30)
             
-            all_articles = []
-            for phrase in search_phrases[:3]:  # Use top 3 phrases
-                try:
-                    articles = self.news_handler.search_news(phrase, max_results=max_articles//3, days_back=30)
-                    all_articles.extend(articles)
-                    time.sleep(0.5)  # Rate limiting
-                except Exception as e:
-                    logger.warning(f"Error searching for phrase '{phrase}': {e}")
-                    continue
+            if not news_articles:
+                logger.warning("No news articles found from any source")
+                return []
             
-            return all_articles
+            # Log source breakdown
+            newsapi_count = sum(1 for a in news_articles if hasattr(a, 'source_name') and a.source_name == 'NewsAPI')
+            guardian_count = sum(1 for a in news_articles if hasattr(a, 'source_name') and a.source_name == 'Guardian')
+            currents_count = sum(1 for a in news_articles if hasattr(a, 'source_name') and a.source_name == 'Currents')
+            logger.info(f"News source breakdown: NewsAPI={newsapi_count}, Guardian={guardian_count}, Currents={currents_count}")
+            
+            # Convert to the format expected by the rest of the pipeline
+            converted_articles = []
+            for article in news_articles:
+                converted_article = {
+                    'title': article.title,
+                    'description': article.description,
+                    'content': article.content,
+                    'url': article.url,
+                    'source': article.source,
+                    'published_at': article.published_at,
+                    'relevance_score': getattr(article, 'relevance_score', 0.5),
+                    'source_name': getattr(article, 'source_name', 'Unknown'),
+                    'cross_reference_score': getattr(article, 'cross_reference_score', 0.0)
+                }
+                converted_articles.append(converted_article)
+            
+            return converted_articles
             
         except Exception as e:
-            logger.error(f"Error in news search: {e}")
+            logger.error(f"Error in enhanced news search: {e}")
             return []
     
     def _extract_search_phrases(self, claim: str) -> List[str]:
